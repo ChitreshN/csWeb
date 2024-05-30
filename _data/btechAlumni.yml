@@ -1,0 +1,644 @@
+list:
+- year: 2020
+  graduants:
+  - name: Gautam Kumar 
+    rollno:  111501008
+  - name: Kawale Vishwajeet Bhimrao 
+    rollno:  111501013
+  - name: Amit Vikram Singh 
+    rollno:  111601001
+  - name: Arko Sharma 
+    rollno:  111601002
+  - name: Gaddipati Sriharsha 
+    rollno:  111601005
+  - name: Gujjula Badrinath Reddy 
+    rollno:  111601006
+  - name: Ishan Gadgil 
+    rollno:  111601007
+  - name: Kaushal Kishore 
+    rollno:  111601008
+  - name: Kuldeep Singh Bhandari 
+    rollno:  111601009
+  - name: Kurapati Vamsi Pramod 
+    rollno:  111601010
+  - name: Nikhil Kumar Yadav 
+    rollno:  111601013
+  - name: Pankaj Kumar 
+    rollno:  111601014
+  - name: Patrick George 
+    rollno:  111601015
+  - name: Prabhjot Singh 
+    rollno:  111601016
+  - name: Rajendra Singh 
+    rollno:  111601017
+  - name: Roshin Raphel 
+    rollno:  111601018
+  - name: Sachin Hansda 
+    rollno:  111601019
+  - name: Saptadeep Das 
+    rollno:  111601020
+  - name: Satvik Choudhary 
+    rollno:  111601021
+  - name: Shaik Muhammad Mustafa Sharief 
+    rollno:  111601022
+  - name: Shiv Kumar Suthar 
+    rollno:  111601023
+  - name: Shubham Gupta 
+    rollno:  111601024
+  - name: Sourabh Aggarwal 
+    rollno:  111601025
+  - name: Sparsh Jain 
+    rollno:  111601026
+  - name: Surendra Baskey 
+    rollno:  111601027
+  - name: Vallala Vishnu Teja 
+    rollno:  111601028
+  - name: Vismay Raj. T 
+    rollno:  111601030
+  - name: Arpit Singh 
+    rollno:  111601031
+  - name: Himanshu Rai 
+    rollno:  111601032
+  - name: Ipsita Singh 
+    rollno:  111601033
+
+- year: 2021
+  graduants:
+  - name: P Deekshith
+    rollno: 111501018
+  - name: Roubal 
+    rollno:  111501027
+  - name: Venkat Sai Akash Cheerla 
+    rollno:  111601029
+  - name: Abhishek Saran 
+    rollno:  111701001
+  - name: Akhilesh Patidar 
+    rollno:  111701004
+  - name: Anish Jain 
+    rollno:  111701006
+  - name: Badal Kumar 
+    rollno:  111701008
+  - name: Chandana S K 
+    rollno:  111701009
+  - name: Dasari Sravan Kumar 
+    rollno:  111701010
+  - name: Devansh Singh Rathore 
+    rollno:  111701011
+  - name: Erasani Sajithkumar 
+    rollno:  111701012
+  - name: Himanshu Jain 
+    rollno:  111701013
+  - name: Jupalli Jaya Madhav 
+    rollno:  111701015
+  - name: Konuru Shiva Dhanush 
+    rollno:  111701016
+  - name: Madaka Srikar Reddy 
+    rollno:  111701017
+  - name: Marella Shiva Sai Teja 
+    rollno:  111701018
+  - name: Md Talha Yaseen Khan 
+    rollno:  111701019
+  - name: Pakalapati Manas Sanjay 
+    rollno:  111701020
+  - name: Priyanshu Shrivastav 
+    rollno:  111701022
+  - name: Pulagam Prudhvi Vardhan Reddy 
+    rollno:  111701023
+  - name: Rakesh Kumar 
+    rollno:  111701024
+  - name: Sai Deekshith Katukojwala 
+    rollno:  111701025
+  - name: Sakshi Rathore 
+    rollno:  111701026
+  - name: Shruti Umat 
+    rollno:  111701027
+  - name: Sirpa Sahul 
+    rollno:  111701028
+  - name: Vaibhav Jindal 
+    rollno:  111701029
+  - name: Vipin Kumar Seth 
+    rollno:  111701030
+  - name: Drisya P 
+    rollno:  111701031
+  - name: Muhammed Yaseen 
+    rollno:  111701032
+  - name: Navaneeth M Nambiar 
+    rollno:  111701033
+
+ 
+- year: 2019
+  graduants:
+  - name:  Libin N George
+    rollno: 111501015
+
+  - name: Adrian McDonald Tariang
+    rollno: 111501001
+
+  - name: Ande Vinay Krishna
+    rollno: 111501004
+
+  - name: Anish M M
+    rollno: 111501006
+
+  - name: Aryan Raj
+    rollno: 111501007
+
+  - name: Harsh Yadav
+    rollno: 111501009
+
+  - name: Jayaprakash A
+    rollno: 111501010
+
+  - name: Jude K Anil
+    rollno: 111501011
+
+  - name: Kasireddy Durga Prasad Reddy
+    rollno: 111501012
+
+  - name: Libin N George
+    rollno: 111501015
+
+  - name: M Aditya
+    rollno: 111501016
+
+  - name: O V Adithya Kumar 
+    rollno: 111501017
+
+  - name: Patel Parth Pragneshkumar 
+    rollno: 111501019
+
+  - name: Polu Varshith 
+    rollno: 111501020
+
+  - name: Prabal Vashisht
+    rollno: 111501021
+
+  - name: Rahul Dhawan
+    rollno: 111501023
+
+  - name: Rajat Sharma
+    rollno: 111501024
+
+  - name: Ravindra Kumar Vaishya
+    rollno: 111501025
+
+  - name: Rohith Reddy G
+    rollno: 111501026
+
+  - name: Sakkurthi Sindhu Teja Siddhardha
+    rollno: 111501028
+
+  - name: Upadhye Ashitosh Bharat 
+    rollno: 111501029
+
+  - name: Vishal Kumar Chaudhary
+    rollno: 111501030
+
+  - name: Akshat Choube
+    rollno: 111501031
+
+  - name: Amish Ranjan
+    rollno: 111501032
+
+  - name: Athul M A
+    rollno: 111501033
+
+  - name: Axel James
+    rollno: 111501034
+
+  - name: Ayush Mittal
+    rollno: 111501035
+
+  - name: Sooraj Tom
+    rollno: 111501036
+
+  - name: Suman Saurav Panda
+    rollno: 111501037
+
+  - name: Vaka Sai Nishanth
+    rollno: 111501038
+
+ 
+- year: 2022
+  graduants:
+    - name: NVS Vishnu Kanth Reddy
+      rollno: 111601012
+      fa: Dr. Uma Divakaran
+
+    - name: AVINASH KUMAR SHARMA
+      rollno: 111701007
+      fa: Dr. G.P. Balakumar
+
+    - name: ALISETTI SAI VAMSI
+      rollno: 111801002
+      fa: Dr. Albert Sunny
+   
+    - name: ANISH N KRISHNAN
+      rollno: 111801003
+      fa: Dr. Albert Sunny
+   
+    - name: ARCHIT JAIN
+      rollno: 111801004
+      fa: Dr. Albert Sunny
+   
+    - name: ARPAN TRIPATHI
+      rollno: 111801005
+      fa: Dr. Albert Sunny
+   
+    - name: ASWIN KRISHNA B
+      rollno: 111801006
+      fa: Dr. Albert Sunny
+   
+    - name: ASWIN S VIJAY
+      rollno: 111801007
+      fa: Dr. Albert Sunny
+    - name: DUDDU SRITHA HADASSAH
+      rollno: 111801012
+      fa: Dr. Albert Sunny
+   
+    - name: GARVIT MALHAN
+      rollno: 111801013
+      fa: Dr. Piyush P Kurur
+
+    - name: HARSH PARIHAR
+      rollno: 111801015
+      fa: Dr. Piyush P Kurur
+   
+    - name: HIMANI JAIN
+      rollno: 111801016
+      fa: Dr. Piyush P Kurur
+   
+    - name: IRENE CASMIR
+      rollno: 111801017
+      fa: Dr. Piyush P Kurur
+   
+    - name: JEMUNIGANI JISHNU
+      rollno: 111801019
+      fa: Dr. Piyush P Kurur
+   
+    - name: JUTTU GAJENDRA ANURAG
+      rollno: 111801020
+      fa: Dr. Piyush P Kurur
+
+    - name: KOTHI NIRUPAM REDDY
+      rollno: 111801022
+      fa: Dr. Piyush P Kurur
+   
+    - name: MANAS SHARMA
+      rollno: 111801023
+      fa: Dr. Piyush P Kurur
+   
+    - name: MAREDDY VIVEKANANDA REDDY
+      rollno: 111801024
+      fa: Dr. Piyush P Kurur
+   
+    - name: MITUL RAMESHCHANDRA KATARIA
+      rollno: 111801025
+      fa: Dr. Vivek Chaturvedi
+
+    - name: NEERAJ SANJAY PATIL
+      rollno: 111801027
+      fa: Dr. Vivek Chaturvedi
+   
+    - name: P S HARIKRISHNAN
+      rollno: 111801028
+      fa: Dr. Vivek Chaturvedi
+   
+    - name: PACHAPPAGARI GURUNADH
+      rollno: 111801029
+      fa: Dr. Vivek Chaturvedi
+   
+    - name: PARMANAND KUMAR
+      rollno: 111801030
+      fa: Dr. Vivek Chaturvedi
+   
+    - name: PARUCHURI PAVANKARTHIK
+      rollno: 111801031
+      fa: Dr. Vivek Chaturvedi
+
+    - name: PELLAKURU VAMSI
+      rollno: 111801033
+      fa: Dr. Vivek Chaturvedi
+   
+    - name: PULAVARTI VINAY KUMAR
+      rollno: 111801034
+      fa: Dr. Vivek Chaturvedi
+   
+    - name: RAJEEV GOYAL
+      rollno: 111801035
+      fa: Dr. Vivek Chaturvedi
+   
+    - name: RAMAKURI ABHISEK D.JOY
+      rollno: 111801036
+      fa: Dr. Vivek Chaturvedi
+   
+    - name: SAIROOP BODEPUDI
+      rollno: 111801037
+      fa: Dr. Vivek Chaturvedi
+   
+    - name: SAMEER DHIMAN
+      rollno: 111801038
+      fa: Dr. Prithvi Narayan P
+   
+    - name: SANNALA MAHITHA
+      rollno: 111801039
+      fa: Dr. Prithvi Narayan P
+   
+    - name: SIDDHARTH RAHUL SHAH
+      rollno: 111801040
+      fa: Dr. Prithvi Narayan P
+   
+    - name: SUBHAJIT KARMAKAR
+      rollno: 111801041
+      fa: Dr. Prithvi Narayan P
+   
+    - name: SUBHASH S
+      rollno: 111801042
+      fa: Dr. Prithvi Narayan P
+   
+    - name: SUCHITRA YECHURI
+      rollno: 111801043
+      fa: Dr. Prithvi Narayan P
+   
+    - name: TAUSIF IQBAL
+      rollno: 111801044
+      fa: Dr. Prithvi Narayan P
+   
+    - name: VELUDANDI SAI VIPUL MOHAN
+      rollno: 111801045
+      fa: Dr. Prithvi Narayan P
+   
+    - name: VISHAL RAO
+      rollno: 111801046
+      fa: Dr. Prithvi Narayan P
+   
+    - name: YOGESH R
+      rollno: 111801047
+      fa: Dr. Prithvi Narayan P
+   
+    - name: YUVRAJ RAGHUVANSHI
+      rollno: 111801048
+      fa: Dr. Prithvi Narayan P
+   
+    - name: ZISHAN SHEIKH
+      rollno: 111801049
+      fa: Dr. Prithvi Narayan P
+
+    - name: ANIKET SINGH RAJPOOT
+      rollno: 111801051
+      fa: Dr. Albert Sunny 
+
+    - name: PARUL SANGWAN
+      rollno: 111801053
+      fa: Dr. Piyush P Kurur 
+   
+    - name: SAHIL JAYANT CHAUDHARI
+      rollno: 111801054
+      fa: Dr. Vivek Chaturvedi 
+   
+    - name: VISHESH MUNJAL
+      rollno: 111801055
+      fa: Dr. Prithvi Narayan P 
+   
+    - name: K M RASWANTH
+      rollno: 111801056
+      fa: Dr. Prithvi Narayan P 
+
+   
+    - name: ABDULLAH KHAN (*)
+      rollno: 111801001
+      fa: Dr. Albert Sunny
+
+
+    - name: MOHAMAD HASSAN N C (*)
+      rollno: 111801026
+      fa: Dr. Vivek Chaturvedi
+
+    - name: ASHISH KUMAR GUPTA (*)
+      rollno: 111801052
+      fa: Dr. Piyush P Kurur 
+   
+- year: 2023
+  graduants:
+    - name: Anagha M S
+      rollno: 111701005
+      fa: Dr. G.P. Balakumar
+
+    - name: CHILAKA PRASANTH KUMAR
+      rollno: 111801010
+      fa: Dr. Albert Sunny
+
+    - name: GOURAV NISHAD
+      rollno: 111801014
+      fa: Dr. Piyush P Kurur
+   
+    - name: KATROTH VEERAJ KUMAR RATHOD
+      rollno: 111801021
+      fa: Dr. Piyush P Kurur
+
+    - name: ABHISHEK SINGH SOLANKI
+      rollno: 111801050
+      fa: Dr. Albert Sunny 
+ 
+   
+    - name: Abraham Mathew Illickan (*)
+      rollno: 111901003
+      fa: Dr. Unnikrishnan C
+   
+    - name: Aditya Agarwal
+      rollno: 111901004
+      fa: Dr. Unnikrishnan C
+   
+    - name: Aditya Agarwal (*)
+      rollno: 111901005
+      fa: Dr. Sandeep Chandran
+   
+    - name: Aiswarya H (*)
+      rollno: 111901006
+      fa: Dr. Sandeep Chandran
+   
+    - name: Akkapaka Manikanta
+      rollno: 111901007
+      fa: Dr. Sandeep Chandran
+   
+    - name: Amish Ashish Saxena
+      rollno: 111901008
+      fa: Dr. Krithika R
+   
+    - name: Anurag Jha
+      rollno: 111901010
+      fa: Dr. Krithika R
+   
+    - name: Asha Jose (*)
+      rollno: 111901011
+      fa: Dr. Krithika R
+   
+    - name: Athul M A
+      rollno: 111901012
+      fa: Dr. Krithika R
+   
+    - name: B Sai Subrahmanyam (*)
+      rollno: 111901013
+      fa: Dr. Krithika R
+   
+    - name: Bandaru Rupesh Rahul
+      rollno: 111901014
+      fa: Dr. Krithika R
+   
+    - name: Bandi Kaushik
+      rollno: 111901015
+      fa: Dr. Krithika R
+   
+    - name: Bhagavatula Anish
+      rollno: 111901016
+      fa: Dr. Krithika R
+   
+    - name: Bijji Deepak
+      rollno: 111901017
+      fa: Dr. Krithika R
+   
+    - name: Boda Pranav Aditya
+      rollno: 111901018
+      fa: Dr. Krithika R
+   
+    - name: Challa Srinija
+      rollno: 111901019
+      fa: Dr. Krithika R
+   
+   
+    - name: Dadi Sujith Reddy
+      rollno: 111901021
+      fa: Dr. Krithika R
+   
+    - name: Deon Saji (*)
+      rollno: 111901022
+      fa: Dr. Sandeep Chandran
+   
+    - name: Gangasani Sreeja
+      rollno: 111901023
+      fa: Dr. Sandeep Chandran
+   
+    - name: Ishwar Govind (*)
+      rollno: 111901024
+      fa: Dr. Sandeep Chandran
+   
+    - name: Jasir K
+      rollno: 111901025
+      fa: Dr. Sandeep Chandran
+   
+    - name: Joel Sam Mathew (*)
+      rollno: 111901026
+      fa: Dr. Sandeep Chandran
+   
+    - name: Katragadda Yagnesh (*)
+      rollno: 111901027
+      fa: Dr. Sandeep Chandran
+   
+    - name: Kundan Pal
+      rollno: 111901028
+      fa: Dr. Sandeep Chandran
+   
+   
+    - name: Mayank Singla
+      rollno: 111901030
+      fa: Dr. Sandeep Chandran
+   
+    - name: Mohammad Umar Sultan
+      rollno: 111901031
+      fa: Dr. Sandeep Chandran
+   
+    - name: Mohammed Abdul Azeem
+      rollno: 111901032
+      fa: Dr. Sandeep Chandran
+   
+    - name: Morem Jayanth Kumar
+      rollno: 111901033
+      fa: Dr. Satyajit Das
+   
+    - name: Narayana Sai Charan
+      rollno: 111901034
+      fa: Dr. Satyajit Das
+   
+    - name: Narvik Nandan Vesangi (*)
+      rollno: 111901035
+      fa: Dr. Satyajit Das
+   
+    - name: Nenavath Srinivas
+      rollno: 111901037
+      fa: Dr. Satyajit Das
+   
+    - name: Padala SSSS V Sri Vishnu Subhash
+      rollno: 111901038
+      fa: Dr. Satyajit Das
+   
+    - name: Parichita Das
+      rollno: 111901039
+      fa: Dr. Satyajit Das
+   
+    - name: Parvathy S Kumar (*)
+      rollno: 111901040
+      fa: Dr. Satyajit Das
+   
+    - name: Polisetty Vamsi
+      rollno: 111901041
+      fa: Dr. Satyajit Das
+   
+   
+    - name: Rebbavarapu Nitish Kumar
+      rollno: 111901043
+      fa: Dr. Unnikrishnan C
+   
+    - name: Rudr Tiwari
+      rollno: 111901044
+      fa: Dr. Unnikrishnan C
+   
+    - name: Rupesh Kumar
+      rollno: 111901045
+      fa: Dr. Unnikrishnan C
+   
+    - name: Saurabh Kumar
+      rollno: 111901046
+      fa: Dr. Unnikrishnan C
+   
+    - name: Sughandhan S
+      rollno: 111901049
+      fa: Dr. Unnikrishnan C
+   
+    - name: Varun Ganta
+      rollno: 111901051
+      fa: Dr. Unnikrishnan C
+   
+    - name: Vikas Naik Dharavath
+      rollno: 111901052
+      fa: Dr. Unnikrishnan C
+   
+    - name: Harsh Dubey (*)
+      rollno: 111901053
+      fa: Dr. Unnikrishnan C
+   
+    - name: Hrishi Raaj Singh Chauhan
+      rollno: 111901054
+      fa: Dr. Unnikrishnan C
+   
+    - name: Jerry John Thomas (*)
+      rollno: 111901055
+      fa: Dr. Unnikrishnan C
+   
+    - name: Naren Loganathan (*)
+      rollno: 111901056
+      fa: Dr. Satyajit Das
+   
+    - name: Neel Kabra (*)
+      rollno: 111901057
+      fa: Dr. Satyajit Das
+   
+    - name: Satyam Mishra (*)
+      rollno: 111901058
+      fa: Dr. Krithika R
+   
+    - name: Shubham Raj
+      rollno: 111901059
+      fa: Dr. Sandeep Chandran
+   
+
+

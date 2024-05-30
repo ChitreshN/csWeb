@@ -1,0 +1,184 @@
+list:
+- name: "Albert Sunny"
+  designation: "Associate Professor"
+  edu: "PhD, IISc Bangalore"
+  url: "https://iitpkd.ac.in/people/albert"
+  joined: "June 2018"
+  phone: "389"
+  email: albert
+  research: "Distributed and Interconnected Systems - Modelling, Analysis and Resource Allocation"
+  iitpkdpubid: "1272"
+  office: "Room No. 
+
+Nila Campus"
+
+- name: "Sandeep Chandran"
+  designation: "Assistant Professor"
+  edu: "PhD, IIT Delhi"
+  url: "https://iitpkd.ac.in/people/sandeepchandran"
+  phone: "388"
+  email: sandeepchandran
+  research: "Computer Architecture and CAD for VLSI"
+  iitpkdpubid: "2403"
+  office: "Room No. "
+
+- name: "Vivek Chaturvedi"
+  designation: "Associate Professor"
+  edu: "PhD, Florida International University"
+  url: "https://iitpkd.ac.in/people/vivek"
+  joined: "July 2018"
+  phone: "391"
+  email: vivek
+  research: "Computer Architecture, Embedded Systems, Real-time Systems, Cybersecurity"
+  iitpkdpubid: "1736"
+  office: "Room No. 
+
+Nila Campus"
+
+- name: "Unnikrishnan Cheramangalath"
+  designation: "Assistant Professor"
+  edu: "PhD, IISc Bangalore"
+  url: "https://iitpkd.ac.in/people/unnikrishnan"
+  phone: "387"
+  email: unnikrishnan
+  research: "Systems and Software - Compilers and Programming Languages, High Performance Computing"
+  iitpkdpubid: "4234"
+  office: "Room No. 
+
+Nila Campus"
+
+- name: "Satyajit Das"
+  designation: "Assistant Professor"
+  edu: "PhD, University of South Brittany and University of Bologna"
+  url: "https://iitpkd.ac.in/people/satyajitdas"
+  phone: "386"
+  email: satyajitdas
+  research: "Computer Architecture, AI on Edge, Reconfigurable Computing, Compiler, Low Power Design"
+  iitpkdpubid: "4289"
+  office: "Room No. 
+
+Nila Campus"
+
+- name: "Krishnamoorthy Dinesh"
+  designation: "Assistant Professor"
+  edu: "PhD, IIT Madras"
+  url: "https://iitpkd.ac.in/people/kdinesh"
+  joined: "October 2022"
+  phone: "383"
+  email: kdinesh
+  research: "Theoretical Computer Science - Complexity Theory, Communication Complexity, Pseudorandomness"
+  iitpkdpubid: "11633"
+  office: "Room No. 01
+
+Academic Block,
+
+Ahalia Campus"
+
+- name: "Krithika Ramaswamy"
+  designation: "Associate Professor"
+  edu: "PhD, IIT Madras"
+  url: "https://iitpkd.ac.in/people/krithika"
+  joined: "2018"
+  phone: "399"
+  email: krithika
+  research: "Theoretical Computer Science - Parameterized and Approximation Algorithms, Graph Theory, Combinatorics"
+  iitpkdpubid: "1717"
+  office: "Room No. 117
+
+Academic Block,
+
+Ahalia Campus"
+
+- name: "Jasine Babu"
+  designation: "Associate Professor and Head"
+  edu: "PhD, IISc Bangalore"
+  url: "https://iitpkd.ac.in/people/jasine"
+  joined: "2016"
+  phone: "394"
+  email: jasine
+  research: "Theoretical Computer Science - Algorithms, Graph Theory, Combinatorics, Program Analysis"
+  iitpkdpubid: "103"
+  office: "Room No. 110
+
+Academic Block,
+
+Ahalia Campus"
+
+- name: "Deepak Rajendraprasad"
+  designation: "Associate Professor"
+  edu: "PhD, IISc Bangalore"
+  url: "https://iitpkd.ac.in/people/deepak"
+  joined: "2016"
+  phone: "392"
+  email: deepak
+  research: "Theoretical Computer Science - Graph Theory and Combinatorics"
+  iitpkdpubid: "49"
+  office: "Room No. 08
+
+Academic Block,
+
+Ahalia Campus"
+
+- name: "Piyush P Kurur"
+  designation: "Associate Professor"
+  edu: "PhD, IMSc Chennai"
+  url: "https://iitpkd.ac.in/people/ppk"
+  phone: "397"
+  email: ppk
+  research: "Theoretical Computer Science - Programming Languages, Type Theory, Proof Assistants, Embedded Domain Specific languages, Algebraic Complexity"
+  office: "Room No. 201
+
+Academic Block,
+
+Ahalia Campus"
+
+- name: "Sahely Bhadra"
+  designation: "Assistant Professor"
+  edu: "PhD, IISc Bangalore"
+  url: "https://iitpkd.ac.in/people/sahely"
+  joined: "June 2017"
+  phone: "395"
+  email: sahely
+  research: "Machine Learning, Optimization, Time Series Data, Bioinformatics"
+  iitpkdpubid: "104"
+  office: "Room No. 110
+
+Academic Block,
+
+Ahalia Campus"
+
+- name: "Koninika Pal"
+  designation: "Assistant Professor"
+  edu: "PhD, Technical University Kaiserslautern"
+  url: "https://iitpkd.ac.in/people/kpal"
+  phone: "385"
+  email: kpal
+  research: "Knowledge Base Curation, Indexing and Similarity Search, Question Answering Systems"
+  office: "Room No. 117
+
+Academic Block,
+
+Ahalia Campus"
+
+- name: "Srimanta Bhattacharya"
+  designation: "Assistant Professor"
+  edu: "PhD, Indian Statistical Institute, Kolkata"
+  url: "https://iitpkd.ac.in/people/srimanta"
+  joined: "2022-03-25"
+  phone: "382"
+  email: srimanta
+  research: "Cryptography and Discrete Mathematics"
+  office: "Room No. "
+
+- name: "Anish Hirwe"
+  designation: "Assistant Professor"
+  edu: "PhD, IIT Hyderabad"
+  url: "https://iitpkd.ac.in/people/anish"
+  joined: "2023-01-23"
+  email: anish
+  research: "Systems and Networking, Software-Defined Networking, Network Function Virtualization, ML for Networks, 5G"
+  office: "Room No. 122
+
+Academic Block,
+
+Ahalia Campus"

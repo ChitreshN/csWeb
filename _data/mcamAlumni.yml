@@ -1,0 +1,54 @@
+list:
+- year: 2022
+  graduants:
+   - name:  Athira S
+     rollno: 112002002
+   - name:  Avijit Mondal
+     rollno: 112002003
+   - name:  Keerthana A
+     rollno: 112002004
+   - name:  Mathews George
+     rollno: 112002005
+   - name:  Rengamani B
+     rollno: 112002007
+   - name:  Vishnuvardhan Prem
+     rollno: 112002009
+
+- year: 2023
+  graduants: 
+   - name:  BHASKER UPADHYAY
+     rollno: 112102001
+
+ 
+   - name:  KARRI NIRNAESHITHA
+     rollno: 112102002
+
+ 
+   - name:  Lalatendu Keshari Nayak
+     rollno: 112102003
+
+ 
+   - name:  RAJESH BUDANIA
+     rollno: 112102004
+
+ 
+   - name:  Sanjeev Kumar Rawat
+     rollno: 112102005
+
+ 
+   - name:  Sneha Chakraborty
+     rollno: 112102006
+
+ 
+   - name:  Suman Majumder
+     rollno: 112102007
+
+ 
+   - name:  SURAPANENI SAI PRIYANKA
+     rollno: 112102008
+
+ 
+   - name:  Vishnu Kant Tiwari
+     rollno: 112102009
+
+

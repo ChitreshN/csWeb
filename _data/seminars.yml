@@ -1,0 +1,23 @@
+list:
+- title: Test seminar
+  speaker: I J Matrix
+  description:
+  date: 1 April 2021
+  people:
+  show: yes
+
+- title: Test seminar
+  speaker: Polymath
+  description:
+  date: 1 April 2020
+  people:
+  show: no
+
+- title: Test seminar
+  speaker: Stud
+  description:
+  date: 1 April 2019
+  people:
+  show: no
+
+

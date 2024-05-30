@@ -1,0 +1,22 @@
+list:
+- name:  Haragopal Mangipudi
+  designation: Adjunct Faculty 
+  affiliation: Founder of guNaka® consulting and the co-creator of finUNO®
+  url: https://iitpkd.ac.in/people/haragopal.mangipudi
+  joined: 2022-08-04 
+  phone:
+  email:  haragopal
+  expertise: Software product management, Software for banking and financial sector
+  office:
+
+- name: Ramaswamy Krishnan Chittur
+  designation: Adjunct Faculty
+  affiliation: Principal Software Developer at Microsoft India
+  url: https://iitpkd.ac.in/people/chittur
+  joined: 2022-08-04
+  phone:
+  email: chittur
+  expertise: Software Development, Consumer Security 
+  office:
+
+

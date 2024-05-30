@@ -1,0 +1,102 @@
+list:
+- projectdetails: "ZIGBEE-based Wireless Sensor Network for Landslide"
+  duration: "2020 - 2022"
+  principalinvestigators: "Albert Sunny,  Sudheesh T. K."
+  fundingagency: "Indian Space Research Organisation"
+
+- projectdetails: "Oriented Diameter of Graphs"
+  duration: "2020 - 2023"
+  principalinvestigators: "Deepak Rajendraprasad"
+  fundingagency: "SERB - MATRICS"
+
+- projectdetails: "Raaz: A cryptographic library with formal guarantees"
+  duration: "2019 - 2022"
+  principalinvestigators: "Piyush P. Kurur"
+  fundingagency: "DST - Interdisciplinary Cyber Physical Systems"
+
+- projectdetails: "Towards Automating Deterministic Bug Reproduction during Post- silicon Validation"
+  duration: "2020 - 2023"
+  principalinvestigators: "Sandeep Chandran"
+  fundingagency: "Semiconductor Research Corporation"
+
+- projectdetails: "High-speed Online Monitoring of Software Applications"
+  duration: "2020 - 2022"
+  principalinvestigators: "Sandeep Chandran"
+  fundingagency: "SERB - Start-Up Research Grant"
+
+- projectdetails: "Framework and Compiler for Social Network Analysis"
+  duration: "2021 - 2023"
+  principalinvestigators: "Unnikrishnan Cheramangalath, Chandra Shekar Lakshminarayanan (CSE, IIT Madras)"
+  fundingagency: "National Supercomputing Mission (NSM)"
+
+- projectdetails: "Energy efficient CGRA Accelerator"
+  duration: "2020 - 2022"
+  principalinvestigators: "Satyajit Das"
+  fundingagency: SERB
+
+- projectdetails: "Cyber physical systems for smart agriculture"
+  duration: "2021 - 2026"
+  principalinvestigators: "Satyajit Das, Mrinal Das, 
+
+Sahely Bhadra, Sreenath V"
+  fundingagency: IPTIF
+
+- projectdetails: "Unified Framework for Collaborative Intelligent Systems"
+  duration: "2021 - 2026"
+  principalinvestigators: "Albert Sunny, Sandeep Chandran, Vivek Chaturvedi"
+  fundingagency: "Sponsored by NM-ICPS (through IPTIF)"
+
+- projectdetails: "Securing Deep Neural Networks against Adversarial Attacks in Medical Imaging"
+  duration: "Dec 2021 - Dec 2024"
+  principalinvestigators: "Vivek Chaturvedi"
+  fundingagency: "C3I-Hub IIT Kanpur (DST)"
+
+- projectdetails: "Eternal Vertex Cover Problem of Bipartite Graphs, Constant Treewidth Graphs and Planar graphs"
+  duration: "July 2022 - July 2025"
+  principalinvestigators: "Jasine Babu"
+  fundingagency: "SERB POWER"
+
+- projectdetails: "Robust Multi-view Leaarning for Extreme Events Detection and Prediction in Time Series Data"
+  duration: "2021 - 2024"
+  principalinvestigators: Sahely
+  fundingagency: "SERB CRG"
+
+  principalinvestigators: Sahely
+  fundingagency: NRB
+
+- projectdetails: "Balance in Chaos - Searching for Equitable Patterns in Edge- Colored Graphs"
+  projecttype: "Sponsored Projects"
+  projectnumber: "2023-138-CSE-KRR-SERB-SP"
+  duration: "23 Jan 2023 - 22 Jan 2026"
+  principalinvestigators: "
+
+Krithika Ramaswamy"
+  coinvestigators: "Jasine Babu &
+
+Deepak Rajendraprasad"
+  fundingagency: "SERB CRG"
+  totalbudget: "Rs.1919082"
+
+- projectdetails: "Complexity of Graph Contraction Problems"
+  projecttype: "Sponsored Projects"
+  projectnumber: "2023-134-CSE-KRR-SERB-SP"
+  duration: "12 January 2023 - 11 January 2026"
+  principalinvestigators: "Krithika Ramaswamy"
+  coinvestigators: "-"
+  fundingagency: "SERB MATRICS"
+  totalbudget: "Rs.6,60,000"
+
+- projectdetails: "Fix Point Computation of Herbrand Equivalence of Expressions in Data Flow Frameworks using Abstract Interpretation"
+  projecttype: "Sponsored Projects"
+  projectnumber: "2023-133-CSE-JAB-SERB-SP"
+  duration: "10 January 2023 - 09 January 2026"
+  principalinvestigators: "Jasine Babu"
+  coinvestigators: "-"
+  fundingagency: "SERB MATRICS"
+  totalbudget: "Rs.6,60,000"
+
+- projectdetails: "Towards Building Quantity-Rich Knowledge Bases"
+  projecttype: "Sponsored Projects"
+  projectnumber: "2022-123-DS-KOP-SERB-SP"
+  duration: "09 November 2022 - 08 November 2024"
+  principalinvestigators: "Dr. Koninika Pal"

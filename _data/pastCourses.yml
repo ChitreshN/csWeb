@@ -1,0 +1,1470 @@
+list:
+- year: 2015
+  semester: July-Dec 
+  courselist:
+        - code: CS1100
+          name: Computational Engineering
+          faculty: Jasine Babu 
+          slot: 
+          room: 
+
+- year: 2016
+  semester: July-Dec
+  courselist:
+    - code: CS1100
+      name: Computational Engineering                   
+      faculty: Jasine, Deepak    
+      slot: 
+      room: 
+
+    - code:   CS2100
+      name:  Discrete Mathematics for Computer Science   
+      faculty: Deepak            
+      slot: 
+      room: 
+
+    - code:   CS2110
+      name:  Computer Programming Laboratory             
+      faculty: Jasine            
+      slot: 
+      room: 
+
+- year: 2017
+  semester: Jan-May
+  courselist:
+    - code:   CS2200
+      name:  Languages, Machines and Computation        
+      faculty:  Deepak            
+      slot: 
+      room: 
+
+    - code:   CS2600
+      name:  Computer Organisation                      
+      faculty: V. Kamakoti (IITM)
+      slot: 
+      room: 
+
+    - code:   CS2800
+      name:  Data Structures and Algorithms             
+      faculty:  Jasine            
+      slot: 
+      room: 
+
+    - code:   CS2610
+      name:  Computer Organisation Laboratory           
+      faculty:  V. Kamakoti (IITM)
+      slot: 
+      room: 
+
+    - code:   CS2810
+      name:  Data Structures and Algorithms Laboratory  
+      faculty:  Jasine            
+      slot: 
+      room: 
+
+- year: 2017
+  semester: July-Dec
+  courselist:
+    - code:   CS2100
+      name:  Discrete Mathematics for Computer Science  
+      faculty:  Deepak            
+      slot: 
+      room: 
+
+    - code:   CS2110
+      name:  Computer Programming Lab                   
+      faculty:  Deepak, Sahely    
+      slot: 
+      room: 
+
+    - code:   CS3030
+      name:  Paradigms of Programming                   
+      faculty:  Mrinal            
+      slot: 
+      room: 
+
+    - code:   CS3300
+      name:  Language Translators                       
+      faculty:  Piyush            
+      slot: 
+      room: 
+
+    - code:   CS3310
+      name:  Language Translators Laboratory            
+      faculty:  Piyush            
+      slot: 
+      room: 
+
+    - code:   CS3500
+      name:  Operating Systems                          
+      faculty:  Jasine            
+      slot: 
+      room: 
+
+    - code:   CS3510
+      name:  Operating Systems Laboratory               
+      faculty:  Jasine            
+      slot: 
+      room: 
+
+    - code:   CS4801
+      name:  Principles of Machine Learning             
+      faculty:  Sahely            
+      slot: 
+      room: 
+
+    - code:   CS4803
+      name:  Model Checking                             
+      faculty: B. Srivathsan (CMI)                 
+      slot: 
+      room: 
+
+    - code:   CS5820
+      name:  Probability and Computing                  
+      faculty: John Augustine (CSE, IITM)                 
+      slot: 
+      room: 
+
+- year: 2018
+  semester: Jan-May
+  courselist:
+    - code: CS1020 
+      name:  Introduction to Programming
+      faculty:  Deepak, Debarati (CHE, IITPKD)
+      slot: 
+      room: 
+
+    - code: CS2200 
+      name:  Languages, Machines and Computation
+      faculty:  Deepak                
+      slot: 
+      room: 
+
+    - code: CS2600 
+      name:  Computer Organisation
+      faculty:  Sabu Emmanuel (Adjunct)
+      slot: 
+      room: 
+
+    - code: CS2610 
+      name:  Computer Organisation Lab
+      faculty: Sabu Emmanuel (Adjunct)         
+      slot: 
+      room: 
+
+    - code: CS2800 
+      name:  Data Structures and Algorithms
+      faculty:  Jasine                
+      slot: 
+      room: 
+
+    - code: CS2810 
+      name:  Data Structures and Algorithms lab
+      faculty:  Jasine                
+      slot: 
+      room: 
+
+    - code: CS3200 
+      name:  Computer Networks
+      faculty:  Piyush                
+      slot: 
+      room: 
+
+    - code: CS3210 
+      name:  Computer Networks Lab
+      faculty:  Piyush                
+      slot: 
+      room: 
+
+    - code: CS3700 
+      name:  Introduction to Database systems
+      faculty:  Sahely                
+      slot: 
+      room: 
+
+    - code: CS3710 
+      name:  Database systems laboratory
+      faculty:  Sahely, Mrinal 
+      slot: 
+      room: 
+
+    - code: CS4502 
+      name:  Convex Optimization
+      faculty:  Sahely                
+      slot: 
+      room: 
+
+    - code: CS4507 
+      name:  Theory and  Practise of Data Science
+      faculty:  Mrinal                
+      slot: 
+      room: 
+
+    - code: CS4802 
+      name:  Design and Analysis of Algorithms    
+      faculty: Mathew Francis (ISI Chennai)                     
+      slot: 
+      room: 
+
+    - code: CS6001 
+      name:  Topics in  Graph Theory
+      faculty:  Deepak, Jasine        
+      slot: 
+      room: 
+
+- year: 2018
+  semester: July-Dec
+  courselist:
+    - code:   CS2010
+      name:  Logic for Computing                        
+      faculty:  Deepak           
+      slot: 
+      room: 
+
+    - code:   CS2030
+      name:  Data Structures and Algorithms             
+      faculty:  Krithika         
+      slot: 
+      room: 
+
+    - code:   CS2130
+      name:  Data Structures and Algorithms Laboratory  
+      faculty:  Krithika, Albert 
+      slot: 
+      room: 
+
+    - code:   CS3010
+      name:  Operating Systems                          
+      faculty:  Jasine           
+      slot: 
+      room: 
+
+    - code:   CS3110
+      name:  Operating Systems Laboratory               
+      faculty:  Jasine, Vivek    
+      slot: 
+      room: 
+
+    - code:   CS3030
+      name:  Paradigms of Programming                   
+      faculty:  Piyush           
+      slot: 
+      room: 
+
+    - code:   CS3130
+      name:  Paradigms of Programming Laboratory        
+      faculty:  Piyush           
+      slot: 
+      room: 
+
+    - code:   CS4011
+      name:  Artificial Intelligence                    
+      faculty:   Chandra Shekar  
+      slot: 
+      room: 
+
+    - code:   CS4111
+      name:  Artificial Intelligence Laboratory         
+      faculty:   Chandra Shekar  
+      slot: 
+      room: 
+
+    - code:   CS4400
+      name:  Principles of Software Engineering         
+      faculty:  Mrinal           
+      slot: 
+      room: 
+
+    - code:   CS4410
+      name:  Principles of Software Engineering Lab     
+      faculty: Mrinal 
+      slot: 
+      room: 
+
+    - code:   CS4501
+      name:  Game Theory                                
+      faculty:  Albert           
+      slot: 
+      room: 
+
+    - code:   CS4503
+      name:  Combinatorics                              
+      faculty:  Deepak           
+      slot: 
+      room: 
+
+    - code:   CS4505
+      name:  Advanced Computer Architecture             
+      faculty:  Vivek            
+      slot: 
+      room: 
+
+    - code:   CS4801
+      name:  Principles of Machine Learning             
+      faculty:  Sahely           
+      slot: 
+      room: 
+
+    - code:   CS4803
+      name:  Model Checking (NPTEL)                     
+      faculty: B. Srivathsan (CMI)
+      slot: 
+      room: 
+
+    - code:   CS5001
+      name:  Topics in Machine Learning                 
+      faculty:  Sahely, Mrinal   
+      slot: 
+      room: 
+
+    - code:   CS5002
+      name:  Functional Programming                     
+      faculty:  Piyush           
+      slot: 
+      room: 
+
+    - code:   CS4110
+      name:  Project Phase 1                            
+      faculty:  All CSE Faculty  
+      slot: 
+      room: 
+
+- year: 2019
+  semester: Jan-May
+  courselist:
+    - code:   CS1020
+      name:  Introduction to Programming                
+      faculty:  Deepak, Jasine, Krithika, Mrinal 
+      slot: 
+      room: 
+
+    - code:   CS2020
+      name:  Discrete Mathematics for Computer Science  
+      faculty:  Deepak                           
+      slot: 
+      room: 
+
+    - code:   CS2040
+      name:  Design and Analysis of Algorithms          
+      faculty:  Krithika                         
+      slot: 
+      room: 
+
+    - code:   CS2060
+      name:  Computer Organisation                      
+      faculty:  Vivek                            
+      slot: 
+      room: 
+
+    - code:   CS2160
+      name:  Computer Organisation Laboratory           
+      faculty:  Vivek, Sandeep                   
+      slot: 
+      room: 
+
+    - code:   CS2080
+      name:  Artificial Intelligence                    
+      faculty:  Chandra Shekar                   
+      slot: 
+      room: 
+
+    - code:   CS2180
+      name:  Artificial Intelligence Laboratory         
+      faculty:  Chandra Shekar, Albert           
+      slot: 
+      room: 
+
+    - code:   CS3020
+      name:  Database Management Systems                
+      faculty:  Sahely                           
+      slot: 
+      room: 
+
+    - code:   CS3120
+      name:  Database Management Systems Laboratory     
+      faculty:  Sahely, Mrinal                   
+      slot: 
+      room: 
+
+    - code:   CS3040
+      name:  Compiler Design                            
+      faculty:  Piyush                           
+      slot: 
+      room: 
+
+    - code:   CS3140
+      name:  Compiler Design Laboratory                 
+      faculty:  Piyush                           
+      slot: 
+      room: 
+
+    - code:   CS4602
+      name:  Convex Optimization                        
+      faculty:  Albert                           
+      slot: 
+      room: 
+
+    - code:   CS5004
+      name:  Approximation Algorithms                   
+      faculty:  Jasine                           
+      slot: 
+      room: 
+
+    - code:   CS5005
+      name:  Parallel Programming                       
+      faculty:  Sandeep                          
+      slot: 
+      room: 
+
+    - code:   CS4120
+      name:  Project Phase 2                            
+      faculty:  All CSE Faculty                  
+      slot: 
+      room: 
+
+- year: 2019
+  semester: July-Dec
+  courselist:
+    - code:   CS2010
+      name:  Logic for Computing                          
+      faculty: Jasine               
+      slot: 
+      room: 
+
+    - code:   CS2030
+      name:  Data Structures and Algorithms               
+      faculty: Sahely               
+      slot: 
+      room: 
+
+    - code:   CS2130
+      name:  Data Structures and Algorithms Laboratory    
+      faculty: Sahely, Krithika     
+      slot: 
+      room: 
+
+    - code:   CS3010
+      name:  Operating Systems                            
+      faculty: Sandeep              
+      slot: 
+      room: 
+
+    - code:   CS3110
+      name:  Operating Systems Laboratory                 
+      faculty: Sandeep, Jasine      
+      slot: 
+      room: 
+
+    - code:   CS3030
+      name:  Paradigms of Programming                     
+      faculty: Piyush               
+      slot: 
+      room: 
+
+    - code:   CS3130
+      name:  Paradigms of Programming Laboratory          
+      faculty: Piyush, Unnikrishnan 
+      slot: 
+      room: 
+
+    - code:   CS3050
+      name:  Theory of Computation                        
+      faculty: Deepak               
+      slot: 
+      room: 
+
+    - code:   CS4010
+      name:  Computer Networks                            
+      faculty: Albert               
+      slot: 
+      room: 
+
+    - code:   CS4150
+      name:  Computer Networks Laboratory                 
+      faculty: Albert               
+      slot: 
+      room: 
+
+    - code:   CS4505
+      name:  Advanced Computer Architecture               
+      faculty: Vivek                
+      slot: 
+      room: 
+
+    - code:   CS5003
+      name:  Parameterized Algorithms                     
+      faculty: Krithika             
+      slot: 
+      room: 
+
+    - code:   CS5007
+      name:  Deep Learning                                
+      faculty: Mrinal               
+      slot: 
+      room: 
+
+    - code:   CS5008
+      name:  Reinforcement Learning                       
+      faculty: Chandra Shekar       
+      slot: 
+      room: 
+
+    - code:   CS5511
+      name:  Probability Models                           
+      faculty: Mrinal               
+      slot: 
+      room: 
+
+    - code:   CS5509
+      name:  Embedded Systems                             
+      faculty: Satyajit             
+      slot: 
+      room: 
+
+    - code:   CS5510
+      name:  Compiler Optimization and Program Analysis   
+      faculty: Unnikrishnan         
+      slot: 
+      room: 
+
+    - code:   CS4110
+      name:  Project Phase 1                              
+      faculty: All CSE Faculty      
+      slot: 
+      room: 
+
+    - code:   CS5512
+      name:  Machine Learning
+      faculty: Sahely
+      slot: 
+      room: 
+
+
+- year: 2020
+  semester: Jan-May
+  courselist:
+    - code:   CS1020 
+      name: Introduction to Programming                 
+      faculty: Albert, Sandeep          
+      slot: 
+      room: 
+
+    - code:   CS2020 
+      name: Discrete Mathematics for Computer Science   
+      faculty: Jasine                   
+      slot: 
+      room: 
+
+    - code:   CS2040 
+      name: Design and Analysis of Algorithms           
+      faculty: Krithika                 
+      slot: 
+      room: 
+
+    - code:   CS2060 
+      name: Computer Organisation                       
+      faculty: Vivek                    
+      slot: 
+      room: 
+
+    - code:   CS2160 
+      name: Computer Organisation Laboratory            
+      faculty: Vivek                    
+      slot: 
+      room: 
+
+    - code:   CS2080 
+      name: Artificial Intelligence                     
+      faculty: Chandra Shekar           
+      slot: 
+      room: 
+
+    - code:   CS2180 
+      name: Artificial Intelligence Laboratory          
+      faculty: Chandra Shekar, Krithika 
+      slot: 
+      room: 
+
+    - code:   CS3020 
+      name: Database Management Systems                 
+      faculty: Mrinal                   
+      slot: 
+      room: 
+
+    - code:   CS3120 
+      name: Database Management Systems Laboratory      
+      faculty: Sahely, Mrinal           
+      slot: 
+      room: 
+
+    - code:   CS3040 
+      name: Compiler Design                             
+      faculty: Unnikrishnan             
+      slot: 
+      room: 
+
+    - code:   CS3140 
+      name: Compiler Design Laboratory                  
+      faculty: Unnikrishnan, Piyush     
+      slot: 
+      room: 
+
+    - code:   CS4503 
+      name: Combinatorics                               
+      faculty: Deepak                   
+      slot: 
+      room: 
+
+    - code:   CS5002 
+      name: Functional Programming                      
+      faculty: Piyush                   
+      slot: 
+      room: 
+
+    - code:   CS5512 
+      name: Machine Learning                            
+      faculty: Sahely                   
+      slot: 
+      room: 
+
+    - code:   CS5613 
+      name: Cryptography                                
+      faculty: Satyajit                 
+      slot: 
+      room: 
+
+    - code:   CS4120 
+      name: Project Phase 2                             
+      faculty: All CSE Faculty          
+      slot: 
+      room: 
+
+- year: 2020
+  semester: Jul-Dec
+  courselist:
+    - code:   CS2010
+      name:  Logic for Computing                        
+      faculty:  Krithika                     
+      slot: 
+      room: 
+
+    - code:   CS2030
+      name:  Data Structures and Algorithms             
+      faculty:  Unnikrishnan                 
+      slot: 
+      room: 
+
+    - code:   CS2130
+      name:  Data Structures and Algorithms Laboratory  
+      faculty:  Unnikrishnan, Chandra Shekar 
+      slot: 
+      room: 
+
+    - code:   CS3010
+      name:  Operating Systems                          
+      faculty:  Sandeep                      
+      slot: 
+      room: 
+
+    - code:   CS3110
+      name:  Operating Systems Laboratory               
+      faculty:  Sandeep, Satyajit            
+      slot: 
+      room: 
+
+    - code:   CS3030
+      name:  Paradigms of Programming                   
+      faculty:  Piyush                       
+      slot: 
+      room: 
+
+    - code:   CS3130
+      name:  Paradigms of Programming Laboratory        
+      faculty:  Piyush                       
+      slot: 
+      room: 
+
+    - code:   CS3050
+      name:  Theory of Computation                      
+      faculty:  Deepak                       
+      slot: 
+      room: 
+
+    - code:   CS4010
+      name:  Computer Networks                          
+      faculty:  Albert                       
+      slot: 
+      room: 
+
+    - code:   CS4150
+      name:  Computer Networks Laboratory               
+      faculty:  Albert                       
+      slot: 
+      room: 
+
+    - code:   CS5009
+      name:  Algorithms                                 
+      faculty:  Jasine                       
+      slot: 
+      room: 
+
+    - code:   CS5013
+      name:  Topics in Discrete Mathematics             
+      faculty:  Krithika                     
+      slot: 
+      room: 
+
+    - code:   CS5017
+      name:  Theory of Computation                      
+      faculty:  Deepak                       
+      slot: 
+      room: 
+
+    - code:   CS5019
+      name:  Advanced Computer Architecture             
+      faculty:  Vivek                        
+      slot: 
+      room: 
+
+    - code:   CS5119
+      name:  Advanced Computer Architecture Lab         
+      faculty:  Vivek                        
+      slot: 
+      room: 
+
+    - code:   CS5011
+      name:  Optimisation for Machine Learning          
+      faculty:   Chandra Shekar              
+      slot: 
+      room: 
+
+    - code:   CS5005
+      name:  Parallel Programming                       
+      faculty:  Unnikrishnan                 
+      slot: 
+      room: 
+
+    - code:   CS5512
+      name:  Machine Learning                           
+      faculty:  Sahely                       
+      slot: 
+      room: 
+
+    - code:   CS5101
+      name:  Machine Learning Lab                       
+      faculty:  Sahely                       
+      slot: 
+      room: 
+
+    - code:   CS5004
+      name:  Approximation Algorithms                   
+      faculty:  Jasine                       
+      slot: 
+      room: 
+
+    - code:   CS5015
+      name:  Data Engineering                           
+      faculty:  Mrinal                       
+      slot: 
+      room: 
+
+    - code:   CS5103
+      name:  Data Engineering Lab                       
+      faculty:  Mrinal                       
+      slot: 
+      room: 
+
+    - code:   CS5104
+      name:  Big Data Analytics                         
+      faculty:  Satyajit                     
+      slot: 
+      room: 
+
+    - code:   CS5107
+      name:  Programming Lab                            
+      faculty:  Albert, Sandeep, Vivek       
+      slot: 
+      room: 
+
+    - code:   CS5617
+      name:  Software Engineering                       
+      faculty: Mr. Ramaswamy
+      slot: 
+      room: 
+
+    - code:   CS4110
+      name:  Project Phase 1                            
+      faculty:  All CSE Faculty              
+      slot: 
+      room: 
+
+- year: 2021
+  semester: Jan-May
+  courselist:
+    - code:   CS1020 
+      name: Introduction to Programming                     
+      faculty:  Albert, Sandeep       
+      slot: 
+      room: 
+
+    - code:   CS2020 
+      name: Discrete Mathematics for Computer Science       
+      faculty:  Deepak, Krithika      
+      slot: 
+      room: 
+
+    - code:   CS2040 
+      name: Design and Analysis of Algorithms               
+      faculty:  Jasine                
+      slot: 
+      room: 
+
+    - code:   CS2060 
+      name: Computer Organisation                           
+      faculty:  Vivek                 
+      slot: 
+      room: 
+
+    - code:   CS2160 
+      name: Computer Organisation Laboratory                
+      faculty:  Vivek, Sandeep        
+      slot: 
+      room: 
+
+    - code:   CS2080 
+      name: Artificial Intelligence                         
+      faculty:  Chandra Shekar        
+      slot: 
+      room: 
+
+    - code:   CS2180 
+      name: Artificial Intelligence Laboratory              
+      faculty:  Chandra Shekar        
+      slot: 
+      room: 
+
+    - code:   CS3020 
+      name: Database Management Systems                     
+      faculty:  Sahely                
+      slot: 
+      room: 
+
+    - code:   CS3120 
+      name: Database Management Systems Laboratory          
+      faculty:  Mrinal                
+      slot: 
+      room: 
+
+    - code:   CS3040 
+      name: Compiler Design                                 
+      faculty:  Piyush                
+      slot: 
+      room: 
+
+    - code:   CS3140 
+      name: Compiler Design Laboratory                      
+      faculty:  Piyush, Unnikrishnan  
+      slot: 
+      room: 
+
+    - code:   CS5003 
+      name: Parameterized Algorithms                        
+      faculty:  Krithika              
+      slot: 
+      room: 
+
+    - code:   CS5007 
+      name: Deep Learning                                   
+      faculty:  Mrinal                
+      slot: 
+      room: 
+
+    - code:   CS5008 
+      name: Reinforcement Learning                          
+      faculty:  Chandra Shekar        
+      slot: 
+      room: 
+
+    - code:   CS5010
+      name:  Graph Theory and Combinatorics                 
+      faculty:  Jasine                
+      slot: 
+      room: 
+
+    - code:   CS5012 
+      name: AI for Cybersecurity                            
+      faculty:  Vivek                 
+      slot: 
+      room: 
+
+    - code:   CS5014 
+      name: Foundations of Data Science & Machine Learning  
+      faculty:  Deepak                
+      slot: 
+      room: 
+
+    - code:   CS5016 
+      name: Computational Methods and Applications          
+      faculty:  Albert                
+      slot: 
+      room: 
+
+    - code:   CS5102 
+      name: System on Chip Design                           
+      faculty:  Satyajit              
+      slot: 
+      room: 
+
+    - code:   CS5104 
+      name: Big Data Analytics                              
+      faculty:  Satyajit              
+      slot: 
+      room: 
+
+    - code:   CS5618
+      name:  Real Time Systems                              
+      faculty:  Unnikrishnan          
+      slot: 
+      room: 
+
+    - code:   CS5619 
+      name: Synthesis of Digital Systems                    
+      faculty:  Sandeep               
+      slot: 
+      room: 
+
+    - code:   CS6004 
+      name: Logic                                           
+      faculty:  Piyush                
+      slot: 
+      room: 
+
+    - code:   CS4120 
+      name: Project Phase 2                                 
+      faculty:  All CSE Faculty       
+      slot: 
+      room: 
+
+- year: 2021
+  semester: Jul-Dec
+  courselist:
+    - code:   CS2010
+      name:  Logic for Computing                        
+      faculty:  Krithika                     
+      slot: 
+      room: 
+
+    - code:   CS4010
+      name:  Computer Networks
+      faculty:  Albert               
+      slot: 
+      room: 
+
+    - code:   CS4150
+      name:  Computer Networks Lab
+      faculty:  Albert               
+      slot: 
+      room: 
+
+
+ 
+    - code:   CS2030
+      name:  Data Structures and Algorithms             
+      faculty:  Jasine                 
+      slot: 
+      room: 
+
+    - code:   CS2130
+      name:  Data Structures and Algorithms Laboratory  
+      faculty:  Jasine
+      slot: 
+      room: 
+
+    - code:   CS3010
+      name:  Operating Systems                          
+      faculty:  Sandeep                      
+      slot: 
+      room: 
+
+    - code:   CS3110
+      name:  Operating Systems Laboratory               
+      faculty:  Sandeep, Satyajit            
+      slot: 
+      room: 
+
+    - code:   CS3030
+      name:  Paradigms of Programming                   
+      faculty:  Piyush                       
+      slot: 
+      room: 
+
+    - code:   CS3130
+      name:  Paradigms of Programming Laboratory        
+      faculty:  Piyush                       
+      slot: 
+      room: 
+
+    - code:   CS3050
+      name:  Theory of Computation                      
+      faculty:  Deepak                       
+      slot: 
+      room: 
+
+    - code:   CS5620
+      name:  Computer Vision                      
+      faculty:  Satyajit                       
+      slot: 
+      room: 
+      
+    - code:   CS5617
+      name:  Software Engineering                       
+      faculty: Mr. Ramaswamy
+      slot: 
+      room: 
+
+    - code:   CS4110
+      name:  Project Phase 1                            
+      faculty:  All CSE Faculty              
+      slot: 
+      room: 
+      
+    - code:   CS5011
+      name:   Optimization
+      faculty: Sahely 
+      slot: 
+      room: 
+
+    - code:   CS5002
+      name:  Functional Programming 
+      faculty: Piyush 
+      slot: 
+      room: 
+
+    - code:   CS5009
+      name:  Algorithms
+      faculty: Krithika 
+      slot: 
+      room: 
+
+    - code:   CS5013
+      name: Topics in Discrete Mathematics  
+      faculty:  Deepak
+      slot: 
+      room: 
+
+    - code:   CS5017
+      name:  Theory of Computation
+      faculty:  Deepak
+      slot: 
+      room: 
+
+    - code:   CS5019
+      name:  Advanced Computer Architecture 
+      faculty:  Sandeep 
+      slot: 
+      room: 
+
+
+    - code:   CS5820
+      name:    Probability and Computing 
+      faculty: Satyadev (CSE, IITK)
+      slot: 
+      room: 
+
+    - code:   CS5621
+      name:    Information Retrieval
+      faculty: Mrinal, Koninika
+      slot: 
+      room: 
+
+    - code:   CS5512
+      name:  Machine Learning 
+      faculty: Sahely
+      slot: 
+      room: 
+
+    - code:   CS5101
+      name:  Machine Learning Lab
+      faculty: Sahely
+      slot: 
+      room: 
+
+
+    - code:   CS5510
+      name:  Compiler Optimization and Program Analysis   
+      faculty: Unnikrishnan         
+      slot: 
+      room: 
+
+    - code:   CS5107
+      name:  Programming Lab                            
+      faculty:  Albert, Sandeep, Vivek       
+      slot: 
+      room: 
+
+
+
+- year: 2022
+  semester: Jan-May
+  courselist:
+    - code: CS1020
+      faculty: Unnikrishnan C (coordinator), Krishnamoorthy Dinesh, Vivek Chadurvedi
+      slot: E, L2, L3, L4
+      room: Auditorium, AAB; Computer Lab, AAB
+      name: Introduction to Programming
+
+    - code: CS2020
+      faculty: Satyadev Nandakumar
+      slot: A
+      room:
+      name: Discrete Mathematics for Computer Science
+
+    - code: CS2040
+      faculty: Jasine Babu
+      slot: B, T5, L3
+      room: 
+      name: Design and Analysis of Algorithms
+
+    - code: CS2060
+      faculty: Sandeep Chandran
+      slot: E
+      room:
+      name: Computer Organisation
+
+    - code: CS2080
+      faculty: C K Narayanan
+      slot: C
+      room:
+      name: Artificial Intelligence
+
+    - code: CS2160
+      faculty: Sandeep Chandran
+      slot: L4
+      room:
+      name: Computer Organization Lab
+
+    - code: CS2180
+      faculty: C K Narayanan
+      slot: L5
+      room:
+      name: Artificial Intelligence Lab
+
+    - code: CS3020
+      faculty: Koninika Pal
+      slot: A
+      room:
+      name: Database Management Systems
+
+    - code: CS3040
+      faculty: Piyush Kurur
+      slot: H
+      room:
+      name: Compiler Design
+
+    - code: CS3120
+      faculty: Koninika Pal, Sahely Bhadra
+      slot: L3
+      room:
+      name: Database Management System Lab
+
+    - code: CS3140
+      faculty: Piyush Kurur
+      slot: L4
+      room:
+      name: Compiler Design Lab
+
+    - code: CS5005
+      faculty: Unnikrishnan C
+      slot: C
+      room:
+      name: Parallel Programming
+
+    - code: CS5010
+      faculty: Krithika Ramaswamy
+      slot: A
+      room: AAB 33
+      name: Graph Theory and Combinatorics
+
+    - code: CS5012
+      faculty: Vivek Chaturvedi
+      slot: H, T5
+      room: AAB 18
+      name: AI for Cyber Security
+
+    - code: CS5014
+      faculty: Deepak Rajendraprasad
+      slot: B
+      room: AAB aud
+      name: Foundations of Data Science and Machine Learning
+
+    - code: CS5016
+      faculty: Albert Sunny
+      slot: E
+      room: AAB 18
+      name: Computational Methods and Applications
+
+    - code: CS5616
+      faculty: Krishnamoorthy Dinesh
+      slot: F
+      room: AAB 33
+      name: Computational Complexity
+
+    - code: CS6003
+      faculty: Deepak Rajendraprasad
+      slot: D
+      room: AAB 18
+      name: Probabilistic Method
+
+    - code: CS5104
+      faculty: Satyajit Das
+      slot: T2
+      room: AAB 18
+      name: Big Data Lab
+
+    - code: CS6006
+      faculty: Sahely Bhadra
+      slot: C
+      room: AAB 33
+      name: Responsible AI
+
+    - code: CS5626
+      faculty: Kiran (Intel), Vivek Chadurvedi
+      slot: B
+      room: AAB 18
+      name: PreSilicon Design Verification using Formal Property Verification
+
+
+- year: 2022
+  semester: Aug-Dec
+  courselist:
+
+    - code: "CS5013"
+      faculty: "Krithika Ramaswamy"
+      slot: "D2 (Tue), A2 (Mon)"
+      room: "A 112"
+
+    - code: "CS5009"
+      faculty: "Jasine Babu"
+      slot: "C2, H (Wed)"
+      room: "A 120"
+
+    - code: "CS3130"
+      faculty: "Piyush P Kurur"
+      slot: "P5"
+      room: "A. Comp Lab (1st floor)"
+
+    - code: "CS5614"
+      faculty: "Srimanta Bhattacharya"
+      slot: "A2 (Thu), B2 (Thu), B1"
+      room: "A. 18"
+
+    - code: "CS5628"
+      faculty: "Sandeep Chandran"
+      slot: D
+      room: "A. 120"
+
+    - code: "CS5633"
+      faculty: "Jasine Babu"
+      slot: "F, J"
+      room: "A. 120"
+
+    - code: "CS6002"
+      faculty: "Krithika R"
+      slot: D
+      room: "A. 119"
+
+    - code: "CS5627"
+      faculty: "Piyush P Kurur"
+      slot: E
+      room: "A. Aud"
+
+    - code: "DS5005"
+      faculty: "Sahely Bhadra"
+      slot: D
+      room: "A. 112"
+
+    - code: "CS5019"
+      faculty: "Vivek Chaturvedi"
+      slot: C
+      room: "A. 120"
+
+    - code: "CS5119"
+      faculty: "Vivek Chaturvedi"
+      slot: "P2"
+      room: "A. Comp Lab (1st floor)"
+
+    - code: "CS5107"
+      faculty: "Deepak Rajendraprasad, Krishnamoorthy Dinesh"
+      slot: "P3"
+      room: "A. Comp Lab (1st floor)"
+
+    - code: "CS4010"
+      faculty: "Albert Sunny"
+      slot: C
+      room: "A. 18"
+
+    - code: "CS4150"
+      faculty: "Albert Sunny"
+      slot: "P4"
+      room: "A. Comp Lab (Ground floor)"
+
+    - code: "CS4110"
+      faculty: "Srimanta Bhattacharya"
+
+    - code: "DS5603"
+      faculty: "Koninika Pal"
+      slot: D
+      room: "A. MBA 211"
+
+    - code: "DS3010"
+      faculty: "Sahely Bhadra, Narayanan C K"
+      slot: "P6"
+      room: "A 112, A. Comp. Lab (1st Floor), A. Electronics Lab"
+
+    - code: "CS3050"
+      faculty: "Krishnamoorthy Dinesh"
+      slot: A
+      room: "A. 18"
+
+    - code: "CS5017"
+      faculty: "Krishnamoorthy Dinesh"
+      slot: A
+      room: "A. 112"
+
+    - code: "CS3030"
+      faculty: "Piyush P. Kurur"
+      slot: "P5"
+      room: "A. Comp lab (Ground floor)"
+
+    - code: "DS5602"
+      faculty: "Satyajit Das"
+      slot: F
+      room: "A. Comp lab (Ground floor)"
+
+    - code: "CS3010"
+      faculty: "Sandeep Chandran"
+      slot: B
+      room: "A. 18"
+
+    - code: "CS3110"
+      faculty: "Sandeep Chandran"
+      slot: "P7"
+      room: "A. Comp lab (Ground floor)"
+
+    - code: "CS2010"
+      faculty: "Deepak Rajendraprasad"
+      slot: G
+      room: "A. 18"
+
+    - code: "CS2030"
+      faculty: "Unnikrishan C"
+      slot: D
+      room: "A. 18"
+
+    - code: "CS2130"
+      faculty: "Unnikrishan C"
+      slot: "P6"
+      room: "A. Comp lab (Ground floor)"
+
+- year: 2023
+  semester: Jan-May
+  courselist:
+    - code: ID1110
+      faculty: Albert Sunny, Srimanta Bhattacharya, Sovan Das (IITPKD Mech), Piyush Kurur
+      slot: E, L2, L3, L4
+      room: Auditorium, AAB; Computer Lab, AAB
+
+    - code: "CS2020"
+      faculty: "Jasine Babu"
+      slot: "M; E (Wed)"
+      room: "A 18"
+
+    - code: "CS2040"
+      faculty: "Krithika Ramaswamy"
+      slot: "G; D (Wed)"
+      room: "A 18"
+
+    - code: "CS2060"
+      faculty: "Vivek Chaturvedi "
+      slot: "F (Tue, Thu)"
+      room: "A 18"
+
+    - code: "CS2080"
+      faculty: "Narayanan C Krishnan"
+      slot: "D (Mon, Fri); C1"
+      room: "A 18"
+
+    - code: "CS2160"
+      faculty: "Vivek Chaturvedi "
+      slot: "P6"
+      room: "A Comp Lab (G Floor)"
+
+    - code: "CS2180"
+      faculty: "Krithika Ramaswamy & Dinesh K"
+      slot: "P5"
+      room: "A Comp Lab (G Floor)"
+
+    - code: "CS3020"
+      faculty: "Koninika Pal"
+      slot: "A, A1"
+      room: "A 18"
+
+    - code: "CS3040"
+      faculty: "Unnikrishnan C"
+      slot: "C; F (Fri)"
+      room: "A 18"
+
+    - code: "CS3120"
+      faculty: "Koninika Pal & Sahely Bhadra"
+      slot: "P4"
+      room: "A Comp Lab (G Floor)"
+
+    - code: "CS3140"
+      faculty: "Unnikrishnan C"
+      slot: "P7"
+      room: "A Comp Lab (G Floor)"
+
+    - code: "CS5016"
+      faculty: "Albert Sunny"
+      slot: "P2"
+      room: "A Comp Lab (G Floor)"
+
+    - code: "CS5014"
+      faculty: "Deepak Rajendraprasad"
+      slot: "F (Tue,Thu)"
+      room: "A Aud"
+
+    - code: "CS5616"
+      faculty: "Krishnamoorthy Dinesh"
+      slot: "M, C1 "
+      room: "A 119"
+
+    - code: "CS5820"
+      faculty: "Deepak Rajendraprasad"
+      slot: "I "
+      room: "A 18"
+
+    - code: "CS5634"
+      faculty: "Piyush P. Kurur"
+      slot: J
+      room: "A 18"
+
+    - code: "CS5619"
+      faculty: "Sandeep Chandran"
+      slot: "H (Mon); E (Mon); D (Mon,Wed)"
+      room: "A 119"
+
+    - code: "CS5010"
+      faculty: "Srimanta Bhattacharya"
+      slot: K
+      room: "A 18"
+
+    - code: "DS5604"
+      faculty: "Sahely Bhadra"
+      slot: F
+      room: "A 119"
+
+    - code: "DS5102"
+      faculty: "Satyajit Das"
+      slot: "P6 "
+      room: "A Comp Lab (1st floor)"

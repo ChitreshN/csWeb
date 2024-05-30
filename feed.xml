@@ -1,0 +1,48 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/assets/rss/rss-style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    {% if site.title %}
+    <title>{{ site.title | xml_escape }}</title>
+    {% endif %}
+    {% if site.rss-description %}
+    <description>{{ site.rss-description | xml_escape }}</description>
+    {% endif %}
+    <link>{{ '' | absolute_url }}</link>
+    <link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
+    {% assign excerpt_length = site.excerpt_length | default: 50 %}
+    {% assign colloquium_link = "/department-colloquium/"%}
+    {% assign sortedWorkshop = site.data.workshops.list | sort: "date" | reverse %}
+    {% for notice in sortedWorkshop limit: 20  %}
+      <entry>
+        <title>{{ notice.title | markdownify | strip_html | xml_escape }}</title>
+	{% if notice.description %}
+        <description>
+          {{ notice.description | markdownify | strip_html | xml_escape | truncatewords: excerpt_length }}
+        </description>
+	{% endif %}
+        <published>{{ notice.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</published>
+	<link>{{ notice.link | absolute_url }}</link>
+        <guid isPermaLink="true">{{ notice.link | absolute_url }}</guid>
+      </entry>
+    {% endfor %}
+    {% assign sortedColloquium = site.data.colloquium.list | sort: "date" | reverse %}
+    {% for notice in sortedColloquium limit: 20  %}
+      {% if notice.show %}
+      <entry>
+        <title>{{ notice.title | markdownify | strip_html | xml_escape }}</title>
+	{% if notice.description %}
+        <description>
+          {{ notice.description | markdownify | strip_html | xml_escape | truncatewords: excerpt_length }}
+        </description>
+	{% endif %}
+        <published>{{ notice.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</published>
+	<link>{{ colloquium_link | absolute_url }}#{{notice.title | slugify}}</link>
+        <guid isPermaLink="true">{{ colloquium_link | absolute_url }}#{{notice.title | slugify}}</guid>
+      </entry>
+      {% endif %}
+    {% endfor %}
+
+</feed>

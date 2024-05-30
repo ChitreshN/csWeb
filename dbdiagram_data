@@ -1,0 +1,365 @@
+// another table for all faculty
+Table allfaculty {
+name VARCHAR
+designation VARCHAR
+edu VARCHAR
+url VARCHAR
+joined VARCHAR
+phone VARCHAR
+email VARCHAR [PRIMARY KEY]
+research VARCHAR
+iitpkdpubid VARCHAR
+office VARCHAR
+}
+// done
+
+Table adjfaculty {
+affiliation VARCHAR
+email VARCHAR [PRIMARY KEY]
+expertise VARCHAR
+}
+ref {adjfaculty.email - allfaculty.email}
+
+
+Table announce {
+UniqueID SERIAL  [PRIMARY KEY]
+date VARCHAR
+title VARCHAR
+show BOOLEAN
+description VARCHAR
+notifypublic BOOLEAN
+link VARCHAR
+}
+
+Table awards {
+UniqueID SERIAL  [PRIMARY KEY]
+title VARCHAR
+description VARCHAR
+date VARCHAR
+show BOOLEAN
+}
+// DONE
+// co investigator in projects
+// project number is pkey
+// table with fac email and project id; is principal investigator
+// get rid of placements
+// faculty -> cse_faculty
+// talk: speaker + venue
+// scholar fac table
+// msAlumni and phdalumni thesis title
+// split scholars to phd an ms
+// delete seminars
+
+// TODO
+// placement year passout year
+// table for salary range info
+
+Table btech {
+year INT
+name VARCHAR
+rollno INT [PRIMARY KEY]
+faEmail VARCHAR
+}
+ref {btech.faEmail > allfaculty.email}
+
+Table btechAlumni {
+year INT
+name VARCHAR
+rollno INT [PRIMARY KEY]
+faEmail VARCHAR
+}
+ref {btechAlumni.faEmail > allfaculty.email}
+
+Table carousels {
+UniqueID SERIAL  [PRIMARY KEY]
+image VARCHAR
+}
+
+Table colloquium {
+UniqueID SERIAL  [PRIMARY KEY]
+title VARCHAR
+speaker VARCHAR
+description VARCHAR
+speakerbio VARCHAR
+date VARCHAR
+time VARCHAR
+venue VARCHAR
+host VARCHAR
+show BOOLEAN
+images LIST(VARCHAR)
+imagesLayout VARCHAR
+}
+
+Table currentCourses {
+code VARCHAR [PRIMARY KEY]
+fac_email LIST(VARCHAR)
+slot VARCHAR
+room VARCHAR
+}
+
+Table currentNPTELCourses {
+code VARCHAR [PRIMARY KEY]
+title VARCHAR
+credits VARCHAR
+link VARCHAR
+}
+
+Table cse_faculty {
+email VARCHAR [PRIMARY KEY]
+}
+ref {cse_faculty.email - allfaculty.email}
+
+Table internship {
+UniqueID SERIAL  [PRIMARY KEY]
+name VARCHAR
+facEmail VARCHAR
+numpos VARCHAR
+duration VARCHAR
+apply VARCHAR
+}
+ref {internship.facEmail > allfaculty.email}
+
+Table mcam {
+year INT
+name VARCHAR
+rollno INT [PRIMARY KEY]
+fa VARCHAR
+}
+ref {mcam.fa > allfaculty.email}
+
+Table mcamAlumni {
+year INT
+name VARCHAR
+rollno INT [PRIMARY KEY]
+}
+
+Table msAlumni {
+year INT
+name VARCHAR
+rollno VARCHAR [PRIMARY KEY]
+program VARCHAR
+doj VARCHAR
+area VARCHAR
+advisor VARCHAR
+// /*  //new
+thesisTitle VARCHAR
+// */
+}
+
+Table msocd {
+year INT
+name VARCHAR
+rollno INT [PRIMARY KEY]
+fa VARCHAR
+}
+
+Table msocdAlumni {
+year INT
+name VARCHAR
+rollno INT [PRIMARY KEY]
+}
+
+Table openPos {
+UniqueID SERIAL  [PRIMARY KEY]
+name VARCHAR
+faculty VARCHAR
+quals VARCHAR
+numpos VARCHAR
+responsibility VARCHAR
+apply VARCHAR
+}
+// ONE courses TODO1
+/*
+types of fields in all sheets - current we
+"course" table
+  link pastCourses, currentCourses
+scripts to add data [yq]
+
+sqliteviewer
+*/
+
+Table courses {
+code VARCHAR   [PRIMARY KEY]
+title VARCHAR
+core LIST(VARCHAR)
+credits VARCHAR
+category VARCHAR
+proposingfaculty_email LIST(VARCHAR)
+curriculum LIST(VARCHAR)
+prereq VARCHAR
+}
+
+Table pastCourses {
+year INT [PRIMARY KEY]
+semester VARCHAR
+code VARCHAR [PRIMARY KEY]
+name VARCHAR
+fac_email VARCHAR
+slot VARCHAR
+room VARCHAR
+}
+
+Table phdAlumni {
+year INT
+name VARCHAR
+rollno INT [PRIMARY KEY]
+doj VARCHAR
+area VARCHAR
+advisor VARCHAR
+// /*  //new
+thesisTitle VARCHAR
+// */
+thesis_submitted VARCHAR
+next VARCHAR
+}
+
+/*
+Table placement {
+
+UniqueID SERIAL  [PRIMARY KEY]
+prog VARCHAR
+registered INT
+year INT
+range VARCHAR
+count INT
+median VARCHAR
+average VARCHAR
+min VARCHAR
+max VARCHAR
+}*/
+
+Table postdoc {
+name VARCHAR
+email VARCHAR [PRIMARY KEY]
+research VARCHAR
+host VARCHAR
+url VARCHAR
+}
+
+Table projects {
+projID VARCHAR  [PRIMARY KEY]
+projectdetails VARCHAR
+duration VARCHAR
+fundingagency VARCHAR
+projecttype VARCHAR
+projectnumber VARCHAR
+totalbudget VARCHAR
+}
+
+Table projectFaculty {
+  projID VARCHAR [PRIMARY KEY]
+  facEmail VARCHAR [PRIMARY KEY]
+  isPrincipal BOOLEAN
+}
+Ref: "allfaculty"."email" < "projectFaculty"."facEmail"
+Ref: "projects"."projID" < "projectFaculty"."projID"
+
+
+Table PhDscholars {
+name VARCHAR
+rollno VARCHAR [PRIMARY KEY]
+program VARCHAR
+doj VARCHAR
+area VARCHAR
+url VARCHAR
+type VARCHAR
+otherdepartment VARCHAR
+}
+
+Table PhDscholarAdvisor {
+  rollno VARCHAR [PRIMARY KEY]
+  facEmail VARCHAR [PRIMARY KEY]
+}
+Ref: "allfaculty"."email" < "PhDscholarAdvisor"."facEmail"
+Ref: "PhDscholars"."rollno" < "PhDscholarAdvisor"."rollno"
+
+Table MSscholars {
+name VARCHAR
+rollno VARCHAR [PRIMARY KEY]
+program VARCHAR
+doj VARCHAR
+area VARCHAR
+url VARCHAR
+type VARCHAR
+otherdepartment VARCHAR
+}
+
+Table MSscholarAdvisor {
+  rollno VARCHAR [PRIMARY KEY]
+  facEmail VARCHAR [PRIMARY KEY]
+}
+Ref: "allfaculty"."email" < "MSscholarAdvisor"."facEmail"
+Ref: "MSscholars"."rollno" < "MSscholarAdvisor"."rollno"
+
+/*
+Table seminars {
+UniqueID SERIAL  [PRIMARY KEY]
+title VARCHAR
+speaker VARCHAR
+description VARCHAR
+date VARCHAR
+people VARCHAR
+show BOOLEAN
+}
+*/
+
+Table staff {
+name VARCHAR
+office VARCHAR
+designation VARCHAR
+email VARCHAR [PRIMARY KEY]
+details VARCHAR
+}
+
+Table stats {
+year INT [PRIMARY KEY]
+btech INT
+mtech INT
+ms INT
+phd INT
+}
+
+Table talks {
+title VARCHAR
+speaker VARCHAR   [PRIMARY KEY]
+description VARCHAR
+speakerbio VARCHAR
+date VARCHAR
+time VARCHAR
+venue VARCHAR     [PRIMARY KEY]
+host VARCHAR
+show BOOLEAN
+type VARCHAR
+images LIST(VARCHAR)
+}
+
+Table talkseries {
+UniqueID SERIAL  [PRIMARY KEY]
+title VARCHAR
+speaker VARCHAR
+speakerbio VARCHAR
+description VARCHAR
+date VARCHAR
+venue VARCHAR
+host VARCHAR
+show BOOLEAN
+images LIST(VARCHAR)
+imagesLayout VARCHAR
+}
+
+Table workshops {
+UniqueID SERIAL  [PRIMARY KEY]
+date DATE
+title VARCHAR
+link VARCHAR
+description VARCHAR
+}
+
+
+Ref: "allfaculty"."email" < "talkseries"."host"
+
+Ref: "allfaculty"."email" < "msocd"."fa"
+
+Ref: "courses"."code" < "currentCourses"."code"
+
+Ref: "courses"."code" < "pastCourses"."code"

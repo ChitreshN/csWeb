@@ -1,0 +1,16 @@
+list:
+- name: AI cluster
+  faculty: Satyajit Das
+  quals: B.Tech in CSE/EE/ECE - Need prior knowledge in Deep Learning, compiler and programming in C++, Python
+  numpos: 2
+  responsibility: Carry out independent research and additional tasks as recommended by the mentor
+  apply: "via [link](https://forms.gle/CpSE2Bva1MKHFMbm8)"
+
+- name: Towards Automating Deterministic Bug Reproduction during Post- silicon Validation
+  faculty: Sandeep Chandran
+  quals: B.E/M.S/PhD 
+  numpos: 2-3
+  responsibility: Depending on skill level
+  apply: "Send an mail to the respective faculty"
+
+ 

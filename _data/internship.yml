@@ -1,0 +1,20 @@
+list:
+- name: "The project is about development of frameworks for AI accelerators: You need prior knowledge in Deep Learning, compiler and programming in C++, Python"
+  faculty: Satyajit Das
+  numpos: 2
+  duration: For 6 months
+  apply: "via this [link](https://forms.gle/CpSE2Bva1MKHFMbm8)"
+
+- name: HPC and Compilers
+  faculty: Unnikrishnan
+  duration: For 3 months
+  numpos: 2
+  apply: "Email concerned faculty"
+
+- name:  Develop cycle accurate simulator (in C++) for LEON3 processor
+  faculty: Sandeep Chandran
+  duration: For 2 months
+  numpos: 1
+  apply: "Email concerned faculty"
+
+

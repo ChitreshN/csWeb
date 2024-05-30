@@ -1,0 +1,67 @@
+{% assign p = include.program  %}
+<h2> Placement statistics for {{p}} </h2>
+  {% assign pData = site.data.placement.list | where: "prog", p %}
+  {% assign pDataSorted = pData | sort : "year"  | reverse  %}
+ <table class="table">
+ <thead class="thead-dark">
+  <tr>
+   <th scope="col"> Program </th>
+   <th scope="col"> Year </th>
+   <th scope="col"> Registered </th>
+   <th scope="col"> Placed </th>
+   <th scope="col"> Average CTC </th>
+   <th scope="col"> Distribution </th>
+  </tr>
+ </thead>
+ <tbody>
+  {% for pDataSortedYear in pDataSorted %}
+   {% assign sum = 0 %}
+  {% for d in  pDataSortedYear.data %}
+    {% assign sum = sum | plus : d.count %}
+  {% endfor %}
+   <tr>
+   <td> {{p}} </td>
+   <td> {{pDataSortedYear.year}}-{{pDataSortedYear.year | plus : 1  }} </td> 
+   <td> {{ pDataSortedYear.registered}}  </td>
+   <td> {{ sum}}  </td>
+   <td>  {{ pDataSortedYear.average}}  </td>
+   <td>
+<div class="col-md-8">
+<canvas id="myChart-{{pDataSortedYear.prog}}-{{pDataSortedYear.year}}" width="300" height="150"></canvas>
+
+<div markdown="0">
+<script>
+
+
+new Chart("myChart-{{pDataSortedYear.prog}}-{{pDataSortedYear.year}}", {
+type: 'pie',
+    data: {
+      labels: [ {% for d in pDataSortedYear.data  %}
+            '{{d.range}}',
+               {% endfor %}],
+      datasets: [{
+        label: 'Number of students',
+        data: [{% for d in pDataSortedYear.data  %}
+            '{{d.count}}',
+               {% endfor %}],
+        backgroundColor: ["#0074D9", "#FF4136", "#2ECC40", "#FF851B", "#7FDBFF", "#B10DC9", "#FFDC00", "#001f3f", "#39CCCC", "#01FF70", "#85144b", "#F012BE", "#3D9970", "#111111", "#AAAAAA"]
+      }]
+    },
+    options: {
+       plugins: {
+      legend: {
+        position: 'bottom'
+      }
+      }
+    }
+   });
+</script>
+</div>
+</div>
+</td>
+</tr>
+   {% endfor %}
+</tbody>
+</table>
+
+

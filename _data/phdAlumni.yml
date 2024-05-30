@@ -1,0 +1,25 @@
+list:
+- year: 2022
+  graduants:
+   - name: Veena Prabhakaran
+     rollno: 111704003
+     program: PhD
+     doj: July 2017
+     area: Graph Theory, Algorithms
+     advisor: Jasine Babu
+     thesis_submitted:
+     next: 
+
+   - name: Deepu Benson
+     rollno: 111704001
+     program: PhD
+     doj: July 2017
+     area: Graph Theory, Algorithms
+     advisor: Jasine Babu, Deepak Rajendraprasad
+     thesis_submitted:
+     next: 
+
+
+
+  
+

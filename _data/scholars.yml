@@ -1,0 +1,250 @@
+list:
+- name: "Sreejith K P"
+  rollno: "111704002"
+  program: PhD
+  doj: "July 2017"
+  area: "Graph Theory, Combinatorics"
+  advisor: "Deepak Rajendraprasad"
+  url: "https://iitpkd.ac.in/people/sreejith"
+
+- name: "Ardra P S"
+  rollno: "111914001"
+  program: PhD
+  doj: "July 2019"
+  area: "Graph Theory and Algorithms"
+  advisor: "Krithika Ramaswamy"
+
+- name: "Jishy Samuel"
+  rollno: "111914003"
+  program: PhD
+  doj: "July 2019"
+  area: "Machine Learning"
+  advisor: "Sahely Bhadra"
+  type: "External candidate (Vikram Sarabhai Space Centre, ISRO)"
+
+- name: "Neha A S"
+  rollno: "111914005"
+  program: PhD
+  doj: "July 2019"
+  area: "Machine Learning"
+  advisor: "Vivek Chaturvedi"
+
+- name: "Reshma Prasad"
+  rollno: "111914006"
+  program: PhD
+  doj: "July 2019"
+  area: "Slice Allocation in 5G Networks"
+  advisor: "Albert Sunny"
+
+- name: "Shabana K M"
+  rollno: "111914007"
+  program: PhD
+  doj: "July 2019"
+  area: "AI in Education"
+  advisor: "Chandrasekhar Lakshminarayanan"
+
+- name: "Lijo M Jose"
+  rollno: "112004005"
+  program: PhD
+  doj: "Dec 2019"
+  area: "Graph Theory, Combinatorics"
+  advisor: "Deepak Rajendraprasad"
+
+- name: "Abdul Rahoof T P"
+  rollno: "112004001"
+  program: PhD
+  doj: "Dec 2019"
+  area: "Machine Learning"
+  advisor: "Chandrasekhar Lakshminarayanan"
+
+- name: "Akshara Ravi"
+  rollno: "112004002"
+  program: PhD
+  doj: "Dec 2019"
+  area: "Computer Systems & Security"
+  advisor: "Vivek Chaturvedi"
+
+- name: "Shine Parekkadan Sunny"
+  rollno: "112014002"
+  program: PhD
+  doj: "Aug 2020"
+  area: "Energy Efficient AI Accelerator"
+  advisor: "Satyajit Das"
+  type: "External candidate (DRDO)"
+
+- name: "Kevin Jude Concessao"
+  rollno: "112014001"
+  program: PhD
+  doj: "Aug 2020"
+  area: HPC
+  advisor: "Unnikrishnan Cheramangalath"
+
+- name: "Chilankamol Sunny"
+  rollno: "112004004"
+  program: PhD
+  doj: "Dec 2019"
+  area: "Computer Systems"
+  advisor: "Satyajit Das"
+
+- name: "Amrutha Benny"
+  rollno: "112004003"
+  program: PhD
+  doj: "Dec 2019"
+  area: "Post-silicon Validation"
+  advisor: "Sandeep Chandran"
+
+- name: "Ganesh P"
+  rollno: "112104001"
+  program: PhD
+  doj: "Jan 2021"
+  area: "Theoretical CS"
+  advisor: "Jasine Babu"
+
+- name: "Kutty Malu V K"
+  rollno: "112104002"
+  program: PhD
+  doj: "Jan 2021"
+  area: "Graph Theory and Algorithms"
+  advisor: "Krithika Ramaswamy"
+
+- name: "Harshitha C"
+  rollno: "112003002"
+  program: MS
+  doj: "Dec 2019"
+  area: "Post-silicon Validation"
+  advisor: "Sandeep Chandran"
+
+- name: "Julin Shaji"
+  rollno: "112103001"
+  program: MS
+  doj: "Jan 2021"
+  area: "Formally verified Hardware Description Language"
+  advisor: "Piyush P Kurur"
+
+- name: "Rajesh R"
+  rollno: "112114002"
+  program: PhD
+  doj: "Jan 2021"
+  area: GNN
+  advisor: "Unnikrishnan Cheramangalath"
+  type: "External candidate (DRDO)"
+
+- name: "Nilanjana Debnath"
+  rollno: "112113001"
+  program: MS
+  doj: "Jan 2021"
+  area: "HPC + ML"
+  advisor: "Unnikrishnan Cheramangalath"
+
+- name: "Dev Saini"
+  rollno: "112113002"
+  program: MS
+  doj: "Aug 2021"
+  advisor: "Vivek Chaturvedi"
+
+- name: "Krishnaveni K S"
+  rollno: "112114004"
+  program: PhD
+  doj: "Aug 2021"
+  advisor: "Albert Sunny"
+
+- name: "Indu K B"
+  rollno: "112204001"
+  program: PhD
+  doj: "Jan 2022"
+  advisor: "Albert Sunny and Sandeep Chandran"
+
+- name: "S.Christie Sajitha"
+  rollno: "112204002"
+  program: PhD
+  doj: "Jan 2022"
+  advisor: "Satyajit Das"
+
+- name: "Subhadip Das"
+  rollno: "112204003"
+  program: PhD
+  doj: "Jan 2022"
+  area: "Theoretical CS"
+  advisor: "Krishnamoorthy Dinesh"
+
+- name: "Chedambadi Pradeep"
+  rollno: "112204004"
+  program: PhD
+  doj: "Jan 2022"
+  advisor: "Vivek Chaturvedi"
+  type: "External Candidate (Indian Navy)"
+
+- name: "Cipriyano Simoes"
+  rollno: "112204005"
+  program: "M.Sc+PhD dual degree"
+  doj: "Jan 2022"
+  area: "Theoretical CS"
+  advisor: "Jasine Babu"
+
+- name: "Abhilasha S"
+  rollno: "111814001"
+  program: PhD
+  doj: "2018"
+  advisor: "Sahely Bhadra"
+
+- name: "Vineetha E V"
+  rollno: "112114003"
+  program: PhD
+  doj: "2021"
+  area: "Machine Learning"
+  advisor: "Sahely Bhadra"
+
+- name: "Pawan Kumar"
+  rollno: "212214002"
+  program: PhD
+  doj: "2022"
+  area: "Graph Theory"
+  advisor: "Deepak Rajendraprasad, Srimanta Bhattacharya"
+  otherdepartment: "Department of Mathematics"
+
+- name: "Deepa Sara John"
+  rollno: "112214001"
+  program: PhD
+  doj: "2022"
+  advisor: "Jasine Babu"
+  type: "External Candidate (ISRO)"
+
+- name: "Chandana S"
+  rollno: "112303001"
+  program: MS
+  doj: "Jan 2022"
+  area: "Theoretical CS"
+  advisor: "Krishnamoorthy Dinesh"
+
+- name: "Abhishek Nath"
+  rollno: "212304001"
+  program: PhD
+  doj: "Dec 2022"
+  area: "Theoretical CS"
+  advisor: "Krishnamoorthy Dinesh"
+  otherdepartment: "Department of Mathematics"
+
+- name: "Manochitra M"
+  rollno: "112304001"
+  program: PhD
+  doj: "Dec 2022"
+  area: "Certified Circuit Synthesis"
+  advisor: "Sandeep Chandran, Piyush P Kurur"
+
+- name: "Arishmita Biswas"
+  rollno: "112313001"
+  program: MS
+  doj: "Aug 2023"
+  advisor: "Anish Hirwe"
+
+- name: "Thania Kumar"
+  rollno: "112314002"
+  program: PhD
+  doj: "Aug 2023"
+  advisor: "Anish Hirwe"
+
+- name: "Nandakumar E"
+  rollno: "112314001"
+  program: PhD
+  doj: "Aug 2023"
+  advisor: "Unnikrishnan Cheramangalath"

@@ -1,0 +1,110 @@
+list:
+- code: "CS2011"
+  faculty: "Sandeep Chandran"
+  slot: A
+  room: "A01-002"
+
+- code: "CS2013"
+  faculty: "Albert Sunny"
+  slot: "E2, PA2"
+  room: "N 204, N CS Comp Lab (70)"
+
+- code: "CS2020A"
+  faculty: "Deepak Rajendraprasad"
+  slot: "B+Q"
+  room: "A01-002"
+
+- code: "CS2111"
+  faculty: "Sandeep Chandran"
+  slot: "PA4"
+  room: "N CS Comp Lab (70)"
+
+- code: "CS3010"
+  faculty: "Jasine Babu"
+  slot: B
+  room: "A01-102"
+
+- code: "CS3050"
+  faculty: "Krishnamoorthy Dinesh"
+  slot: "A+E4"
+  room: "A01-102"
+
+- code: "CS3110"
+  faculty: "Jasine Babu, Dinesh K"
+  slot: "PA1"
+  room: "N CS Comp Lab (70)"
+
+- code: "CS3130"
+  faculty: "Piyush P Kurur, Unnikrishnan C"
+  slot: "PA5"
+  room: "A01, Comp Lab 1"
+
+- code: "CS4010"
+  faculty: "Anish Hirwe"
+  slot: B
+  room: "A01-212"
+
+- code: "CS4150"
+  faculty: "Anish Hirwe"
+  slot: "PA1"
+  room: "A01, Comp Lab 1"
+
+- code: "CS5005"
+  faculty: "Unnikrishnan C"
+  slot: K
+  room: "A01-102"
+
+- code: "CS5009"
+  faculty: "Krithika Ramaswamy"
+  slot: "I, E5"
+  room: "A01-018"
+
+- code: "CS5013"
+  faculty: "Srimanta Bhattacharya"
+  slot: K
+  room: "A01-212"
+
+- code: "CS5017"
+  faculty: "Krishnamoorthy Dinesh"
+  slot: "A+E4"
+  room: "A01-102"
+
+- code: "CS5019"
+  faculty: "Vivek Chaturvedi"
+  slot: K
+  room: "A01-118"
+
+- code: "CS5107"
+  faculty: "Satyajit Das"
+  slot: "PM1"
+  room: "A01 Comp Lab 2"
+
+- code: "CS5119"
+  faculty: "Vivek Chaturvedi"
+  slot: "PM3"
+  room: "N CC, Comp Lab (48)"
+
+- code: "CS5613"
+  faculty: "Srimanta Bhattacharya"
+  slot: F
+  room: "A01-102"
+
+- code: "CS5617"
+  faculty: "Ramaswamy Krishnan"
+  slot: "PA5"
+  room: "Nila CS Lab (70)"
+
+- code: "CS5627"
+  faculty: "Piyush P Kurur"
+  slot: L
+  room: "A01-102"
+
+- code: "DS5602"
+  faculty: "Satyajit Das"
+  slot: F
+  room: "A01-001"
+
+- code: "CS3030"
+  faculty: "Piyush Kurur"
+  slot: "D+E5"
+  room: "A01-102"

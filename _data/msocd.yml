@@ -1,0 +1,153 @@
+list:
+- year: 2022
+  studentlist: 
+   - name:  ANIKET KUMAR 
+     rollno:  152202001 
+     fa:  Satyajit Das
+
+   - name:  Anupam Yedida 
+     rollno:  152202002 
+     fa:  Satyajit Das
+
+   - name:  Dipu Kumar Singh 
+     rollno:  152202004 
+     fa:  Revathy Padmanabhan
+
+   - name:  Jayjeet Ganguly 
+     rollno:  152202006 
+     fa:  Satyajit Das
+
+   - name:  Karthik Dhondi 
+     rollno:  152202007 
+     fa:  Unnikrishnan C
+
+   - name:  Karuna Biswas 
+     rollno:  152202008 
+     fa:  Unnikrishnan C
+
+   - name:  Muhammed Nihal K V 
+     rollno:  152202009 
+     fa:  Sandeep Chandran
+
+   - name:  Neharaj Gautam 
+     rollno:  152202010 
+     fa:  Sandeep Chandran
+
+   - name:  Pasupulati Madhulatha 
+     rollno:  152202012 
+     fa:  Sandeep Chandran
+
+   - name:  Rajneesh Patel 
+     rollno:  152202013 
+     fa:  Revathy Padmanabhan
+
+   - name:  Sagar Kumar 
+     rollno:  152202014 
+     fa:  Vivek Chaturvedi
+
+   - name:  SAHABLAL BIND 
+     rollno:  152202015 
+     fa:  Revathy Padmanabhan
+
+   - name:  Srinidhi Baddam 
+     rollno:  152202016 
+     fa:  Revathy Padmanabhan
+
+   - name:  Subham Ball 
+     rollno:  152202017 
+     fa:  Vivek Chaturvedi
+
+   - name:  vanapalli nitish sai kumar 
+     rollno:  152202019 
+     fa:  Vivek Chaturvedi
+
+   - name:  Vivek Yadav 
+     rollno:  152202021 
+     fa:  Revathy Padmanabhan
+
+   - name:  Teja S N 
+     rollno:  152202022 
+     fa:  Revathy Padmanabhan
+
+   - name:  Shushmasri Ch 
+     rollno:  152202023 
+     fa:  Revathy Padmanabhan
+
+   - name:  Gemaraju Raji 
+     rollno:  152202024 
+     fa:  Revathy Padmanabhan
+
+   - name:  Aditya Kumar Gupta 
+     rollno:  152202025 
+     fa:  Revathy Padmanabhan
+
+
+- year: 2023
+  studentlist: 
+   - name: Abhishek Kumar
+     rollno: 152302001
+     fa: Dr. Vivek
+
+   - name: Aniket Narayan Rajak
+     rollno: 152302002
+     fa: Dr. Vivek
+
+   - name: Anjali Sharma
+     rollno: 152302003
+     fa: Dr. Vivek
+
+   - name: Chandana Kasireddy
+     rollno: 152302004
+     fa: Dr. Vivek
+
+   - name: Chetanya Modi
+     rollno: 152302005
+     fa: Dr. Subramaniyam 
+
+   - name: Kamal Rakesh Telagathoti
+     rollno: 152302006
+     fa: Dr. Subramaniyam 
+
+   - name: Kunal Gupta
+     rollno: 152302007
+     fa: Dr. Subramaniyam  
+
+   - name: Manish Anil Borkar
+     rollno: 152302008
+     fa: Dr. Subramaniyam 
+
+   - name: Rishi Ritvik Raj A
+     rollno: 152302009
+     fa: Dr. Sandeep 
+
+   - name: Sandeep Basak
+     rollno: 152302010
+     fa: Dr. Sandeep 
+
+   - name: Saumya Saurav Sahoo
+     rollno: 152302011
+     fa: Dr. Sandeep 
+
+   - name: Srinivas Ramavath
+     rollno: 152302012
+     fa: Dr. Sandeep 
+
+   - name: Dijith .S
+     rollno: 152302013
+     fa: Dr. Satyajit Das
+
+   - name: Shaik Taju
+     rollno: 152302014
+     fa: Dr. Satyajit Das
+
+   - name: Jyotsna S V
+     rollno: 152302015
+     fa: Dr. Satyajit Das
+
+   - name: Amal S S
+     rollno: 152302016
+     fa: Dr. Satyajit Das
+
+   - name: Chavva Deepika
+     rollno: 152302017
+     fa: Dr. Satyajit Das

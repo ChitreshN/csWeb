@@ -1,0 +1,813 @@
+list:
+- year: 2020
+  studentlist:
+    - name: KARAVADI SUCHITH
+      rollno: 112001001
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: AARYUMAN SAWAI
+      rollno: 112001002
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: ADITYA RAJ
+      rollno: 112001003
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: AGHNASH RANJITH
+      rollno: 112001004
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: ALUGONDA SATHVIK
+      rollno: 112001005
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: ARADHYA BIJALWAN
+      rollno: 112001006
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: ARAVIND S
+      rollno: 112001007
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: ARUN SANKAR
+      rollno: 112001008
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: ATYAM LAKSHMI NIKHITHA
+      rollno: 112001009
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: DALVI MANGESH RAMDAS
+      rollno: 112001010
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: GEDDAM GOWTHAM
+      rollno: 112001011
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: GODHA RAKESH
+      rollno: 112001012
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: GUNJA THANMAYEE
+      rollno: 112001013
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: KAMUJU SUSHMA
+      rollno: 112001014
+      fa: Dr. Reenu Punnoose
+   
+    - name: KANANI HARSH DILIPBHAI
+      rollno: 112001015
+      fa: Dr. Reenu Punnoose
+   
+    - name: KAUSTUBH
+      rollno: 112001016
+      fa: Dr. Reenu Punnoose
+   
+    - name: KAUSTUBH SHAMKANT CHAVAN
+      rollno: 112001017
+      fa: Dr. Reenu Punnoose
+   
+    - name: KAVYA SYAMALA
+      rollno: 112001018
+      fa: Dr. Reenu Punnoose
+   
+    - name: LEKSHMI R NAIR
+      rollno: 112001019
+      fa: Dr. Reenu Punnoose
+   
+    - name: M ANISH GOUD
+      rollno: 112001020
+      fa: Dr. Reenu Punnoose
+   
+    - name: MAJJIGAPU LIKHITH REDDY
+      rollno: 112001021
+      fa: Dr. Reenu Punnoose
+   
+    - name: MALVIA NIHARIKA
+      rollno: 112001022
+      fa: Dr. Reenu Punnoose
+   
+    - name: MANIKANTA GUDIPUDI
+      rollno: 112001023
+      fa: Dr. Reenu Punnoose
+   
+    - name: MAYANK RAWAT
+      rollno: 112001024
+      fa: Dr. Reenu Punnoose
+   
+    - name: MIDUTHURI PAVAN KUMAR REDDY
+      rollno: 112001025
+      fa: Dr. Reenu Punnoose
+   
+    - name: MIS AB V P
+      rollno: 112001026
+      fa: Dr. Reenu Punnoose
+   
+    - name: MODUKURI VENKATA NAGASURYA
+      rollno: 112001027
+      fa: Dr. Amrita Roy
+   
+    - name: NIDEESH N
+      rollno: 112001028
+      fa: Dr. Amrita Roy
+   
+    - name: PASUPULETI LIKHITHA
+      rollno: 112001029
+      fa: Dr. Amrita Roy
+   
+    - name: PRAYAG KRISHNA A
+      rollno: 112001032
+      fa: Dr. Amrita Roy
+   
+    - name: PRIYANSHU GUPTA
+      rollno: 112001033
+      fa: Dr. Amrita Roy
+   
+    - name: RAPETI SIDDHU NEEHAL
+      rollno: 112001034
+      fa: Dr. Amrita Roy
+   
+    - name: SAARANG S
+      rollno: 112001035
+      fa: Dr. Amrita Roy
+   
+    - name: SAHIL
+      rollno: 112001036
+      fa: Dr. Amrita Roy
+   
+    - name: SATISH PATIDAR
+      rollno: 112001037
+      fa: Dr. Amrita Roy
+   
+    - name: SHAILAB CHAUHAN
+      rollno: 112001038
+      fa: Dr. Amrita Roy
+   
+    - name: SHUBH PAREEK
+      rollno: 112001039
+      fa: Dr. Amrita Roy
+   
+    - name: SHUBHANG KEDIA
+      rollno: 112001040
+      fa: Dr. G Sujatha
+   
+    - name: SIDHARTH CHADHA
+      rollno: 112001041
+      fa: Dr. G Sujatha
+   
+    - name: SREELAKSHMI A
+      rollno: 112001042
+      fa: Dr. G Sujatha
+   
+    - name: SUJIT MANDAVA
+      rollno: 112001043
+      fa: Dr. G Sujatha
+   
+    - name: SYED ABDUL MATEEN
+      rollno: 112001044
+      fa: Dr. G Sujatha
+   
+    - name: THOGATA JAGADEESH
+      rollno: 112001045
+      fa: Dr. G Sujatha
+   
+    - name: VAIBHAV B. NAGRALE
+      rollno: 112001046
+      fa: Dr. G Sujatha
+   
+    - name: VANGA MONESH
+      rollno: 112001047
+      fa: Dr. G Sujatha
+   
+    - name: VEMULA VINEELA
+      rollno: 112001048
+      fa: Dr. G Sujatha
+   
+    - name: VIKAS SAINI
+      rollno: 112001049
+      fa: Dr. G Sujatha
+   
+    - name: VINAY INGLE
+      rollno: 112001050
+      fa: Dr. G Sujatha
+   
+    - name: VM SREERAM
+      rollno: 112001051
+      fa: Dr. G Sujatha
+   
+    - name: YUKTA SALUNKHE
+      rollno: 112001052
+      fa: Dr. G Sujatha
+   
+    - name: JYOTHIRADITHYA
+      rollno: 112001053
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: NAGPURE PRATHAM RAVINDRA
+      rollno: 112001054
+      fa: Dr. Deepak Rajendraprasad
+   
+    - name: SANJH MAHESHWARI
+      rollno: 112001055
+      fa: Dr. Reenu Punnoose
+   
+    - name: SNEHA BHATTACHARJEE
+      rollno: 112001056
+      fa: Dr. Amrita Roy
+   
+    - name: SUSAN VARGHESE PADATH
+      rollno: 112001057
+      fa: Dr. Sujatha
+   
+- year: 2019
+  studentlist:
+    - name: Nallabothula Pavani
+      rollno: 111901001
+      fa: Dr. Unnikrishnan C
+   
+    - name: Anhad Naad
+      rollno: 111901009
+      fa: Dr. Krithika R
+  
+    - name: Chimme Yuvaraj
+      rollno: 111901020
+      fa: Dr. Krithika R
+   
+    - name: Mahitha Avirneni
+      rollno: 111901029
+      fa: Dr. Sandeep Chandran
+  
+    - name: Rajitha Sabavath
+      rollno: 111901042
+      fa: Dr. Satyajit Das
+  
+- year: 2018
+  studentlist:
+    - name: JANDRAPALLI NITHESH CHANDRA
+      rollno: 111701014
+      fa: Dr. Albert Sunny
+  
+    - name: BODA AKHILESH
+      rollno: 111801009
+      fa: Dr. Albert Sunny
+  
+    - name: PATERU VENKATESH
+      rollno: 111801032
+      fa: Dr. Vivek Chaturvedi
+   
+- year: 2021
+  studentlist:
+    - name: ABHINAY RATHORE
+      rollno: 112101001
+      fa: Dr.Balakumar G P 
+   
+    - name: MANISH M HANCHATE
+      rollno: 112101002
+      fa: Dr.Balakumar G P 
+   
+    - name: SUNAPRAL SWARNALATHA BAI
+      rollno: 112101003
+      fa: Dr.Balakumar G P 
+   
+    - name: AMITHABH A
+      rollno: 112101004
+      fa: Dr.Balakumar G P 
+   
+    - name: BALAGA SANTHOSHI KUMARI
+      rollno: 112101005
+      fa: Dr.Balakumar G P 
+   
+    - name: BEJJANKI KARTHIKEYA
+      rollno: 112101006
+      fa: Dr.Balakumar G P 
+   
+    - name: CHALLA PAVAN KUMAR REDDY
+      rollno: 112101008
+      fa: Dr.Balakumar G P 
+   
+    - name: CHANDRAKANTA DHURWEY
+      rollno: 112101009
+      fa: Dr.Balakumar G P 
+   
+    - name: CHAPATI ANUSHA
+      rollno: 112101010
+      fa: Dr.Balakumar G P 
+   
+    - name: CHEKKALA SANDEEP REDDY
+      rollno: 112101011
+      fa: Dr.Balakumar G P 
+   
+    - name: CHITTURI LAASYA PRIYA
+      rollno: 112101012
+      fa: Dr.Balakumar G P 
+   
+    - name: DHANAVATH RAKESH
+      rollno: 112101013
+      fa: Dr.Balakumar G P 
+   
+    - name: DONTHUBOYINA SAI HEMANTH REDDY
+      rollno: 112101014
+      fa: Dr.Balakumar G P 
+   
+    - name: ENJAM SUMA
+      rollno: 112101015
+      fa: Dr.Balakumar G P 
+   
+    - name: ESHWAR PRASAD PALLAKONDA
+      rollno: 112101016
+      fa: Dr.Balakumar G P 
+   
+    - name: EVANS SAMUEL BIJU
+      rollno: 112101017
+      fa: Dr.Balakumar G P 
+   
+    - name: GANTA DANIEL RUTHVIK
+      rollno: 112101018
+      fa: Dr.Balakumar G P 
+   
+    - name: JAIN RACHIT SANDEEP
+      rollno: 112101019
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: JATIN KUMAWAT
+      rollno: 112101020
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: JUVVALA REVANTH
+      rollno: 112101021
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: KADU ARNAV RAJESH
+      rollno: 112101022
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: KARUMUDI  HARIKA
+      rollno: 112101023
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: KOMARABATHINA SRUJANA JASMINE
+      rollno: 112101024
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: KSHITIJ MAHENDRA GHODAKE
+      rollno: 112101025
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: LIKITH ANAPARTY
+      rollno: 112101026
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: MANTRIPRAGADA VENKATA KARTHIKEYA
+      rollno: 112101027
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: MOHAMMAD ADNAN
+      rollno: 112101028
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: MUDADLA PRAGNYA
+      rollno: 112101029
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: MUDAVATH PRAKASH
+      rollno: 112101030
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: NARAYANAPU PAWAN KUMAR
+      rollno: 112101031
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: NARRA CHITRESH BALAJI REDDY
+      rollno: 112101032
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: NEERAJ KRISHNA N
+      rollno: 112101033
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: PALLA GAGAN CHANDU
+      rollno: 112101034
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: PARMAR JIGNESH JAYANTIBHAI
+      rollno: 112101035
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: POTHULA SAI PRANEETH
+      rollno: 112101036
+      fa: Dr.Dinesh Krishnamoorthy  
+   
+    - name: POTNURU SABAREESH
+      rollno: 112101037
+      fa: Dr.Koninika Pal  
+   
+    - name: PRANAV GURUPRASAD RAO
+      rollno: 112101038
+      fa: Dr.Koninika Pal  
+   
+    - name: PRIYANSHU
+      rollno: 112101039
+      fa: Dr.Koninika Pal  
+   
+    - name: SADAM ANVESH
+      rollno: 112101040
+      fa: Dr.Koninika Pal  
+   
+    - name: SAMUDRALA SAI SREEHAS
+      rollno: 112101041
+      fa: Dr.Koninika Pal  
+   
+    - name: SANDALA SAMEER
+      rollno: 112101042
+      fa: Dr.Koninika Pal  
+   
+    - name: SANI VARUN
+      rollno: 112101043
+      fa: Dr.Koninika Pal  
+   
+    - name: SHIVAM KUMAR CHAURASIYA
+      rollno: 112101044
+      fa: Dr.Koninika Pal  
+   
+    - name: SHIVANAND GARG
+      rollno: 112101045
+      fa: Dr.Koninika Pal  
+   
+    - name: TENALI SUNIL VARMA
+      rollno: 112101046
+      fa: Dr.Koninika Pal  
+   
+    - name: THAMMINEEDI HARISHMA
+      rollno: 112101047
+      fa: Dr.Koninika Pal  
+   
+    - name: THIRUMURU LAKSHMI SAGAR REDDY
+      rollno: 112101048
+      fa: Dr.Koninika Pal  
+   
+    - name: UMMANAVENA SUPRAJA
+      rollno: 112101049
+      fa: Dr.Koninika Pal  
+   
+    - name: UTSAV PATEL
+      rollno: 112101050
+      fa: Dr.Koninika Pal  
+   
+    - name: VALLURI SONALI
+      rollno: 112101051
+      fa: Dr.Koninika Pal  
+   
+    - name: VASAMSETTI SACHIN AKASH
+      rollno: 112101052
+      fa: Dr.Koninika Pal  
+   
+    - name: VISHNU NAIR
+      rollno: 112101053
+      fa: Dr.Koninika Pal  
+   
+    - name: YASH MITTAL
+      rollno: 112101054
+      fa: Dr.Koninika Pal  
+
+    - name: Maaya R Srivatsav 
+      rollno: 112101055 
+      fa: Dr.Balakumar G P (Mathematics)
+
+    - name: Prabhat Suresh 
+      rollno: 112101056 
+      fa: Dr.Balakumar G P (Mathematics)
+    - name: Sarath A 
+      rollno: 112101057 
+      fa: Dr.Dinesh Krishnamoorthy (CSE)
+    - name: Satyadev Subudhi 
+      rollno: 112101058 
+      fa: Dr.Dinesh Krishnamoorthy (CSE)
+    - name: R Sowmeya Lakshmi 
+      rollno: 112101059 
+      fa: Dr.Koninika Pal (CSE, DS)
+    - name: Vijay Sri Vaikunth 
+      rollno: 112101060 
+      fa: Dr.Koninika Pal (CSE, DS) 
+
+
+- year: 2016
+  studentlist:
+  - name: Didla Sudheer
+    rollno: 111601004
+    fa: Dr. Uma Divakaran
+
+
+- year: 2022
+  studentlist:
+     - name: ABHIRAMI R IYER
+       rollno: 112201001
+       fa: Dr. Piyush P Kurur
+
+     - name: KAMIREDDY LIKHITHA
+       rollno: 112201002
+       fa: Dr. Piyush P Kurur
+
+     - name: BERELLI GOUTHAMI
+       rollno: 112201003
+       fa: Dr. Piyush P Kurur
+
+     - name: MULUGURU PRANITHA
+       rollno: 112201004
+       fa: Dr. Piyush P Kurur
+
+     - name: PUSHTI AMIT VASOYA
+       rollno: 112201005
+       fa: Dr. Piyush P Kurur
+
+     - name: SANGAM
+       rollno: 112201006
+       fa: Dr. Piyush P Kurur
+
+     - name: SHREYA VERMA
+       rollno: 112201007
+       fa: Dr. Piyush P Kurur
+
+     - name: NANDHANA SUNIL
+       rollno: 112201008
+       fa: Dr. Piyush P Kurur
+
+     - name: SWADHA SWAROOP
+       rollno: 112201009
+       fa: Dr. Piyush P Kurur
+
+     - name: BATTULA HARSHITHA
+       rollno: 112201010
+       fa: Dr. Piyush P Kurur
+
+     - name: MALOTH SONY
+       rollno: 112201011
+       fa: Dr. Piyush P Kurur
+
+     - name: SOORYANARAYANAN G
+       rollno: 112201012
+       fa: Dr. Piyush P Kurur
+
+     - name: BHOGARAJU SHANMUKHA SRI KRISHNA
+       rollno: 112201013
+       fa: Dr. Piyush P Kurur
+
+     - name: GAJULA SRI SIVA SAI SHASHANK
+       rollno: 112201014
+       fa: Dr. Albert Sunny
+
+     - name: KAUSHIK RAWAT
+       rollno: 112201015
+       fa: Dr. Albert Sunny
+
+     - name: LOGANATH
+       rollno: 112201016
+       fa: Dr. Albert Sunny
+
+     - name: JUTURU VENKAT ROHITH
+       rollno: 112201018
+       fa: Dr. Albert Sunny
+
+     - name: NANGUNOORI SRIRAM
+       rollno: 112201019
+       fa: Dr. Albert Sunny
+
+     - name: PRIYANSHU PANDEY
+       rollno: 112201020
+       fa: Dr. Albert Sunny
+
+     - name: ASADUDDIN AHMED
+       rollno: 112201021
+       fa: Dr. Albert Sunny
+
+     - name: PONNAVOLU CHAKRADHAR REDDY
+       rollno: 112201022
+       fa: Dr. Albert Sunny
+
+     - name: CHIRAG VARSHNEY
+       rollno: 112201023
+       fa: Dr. Albert Sunny
+
+     - name: HEMANT PATHAK
+       rollno: 112201024
+       fa: Dr. Albert Sunny
+
+     - name: CHUNDI CHANDU
+       rollno: 112201025
+       fa: Dr. Albert Sunny
+
+     - name: GAJJALA BHAVANI SHANKAR
+       rollno: 112201026
+       fa: Dr. Albert Sunny
+
+     - name: NISHANT THAKUR
+       rollno: 112201027
+       fa: Dr. Vivek Chaturvedi
+
+     - name: PASUPULETI SANJAY
+       rollno: 112201028
+       fa: Dr. Vivek Chaturvedi
+
+     - name: KANIKELLA PRAMODH SAI
+       rollno: 112201029
+       fa: Dr. Vivek Chaturvedi
+
+     - name: VISHWAA P S
+       rollno: 112201030
+       fa: Dr. Vivek Chaturvedi
+
+     - name: GUMMA VENKATA GANESH
+       rollno: 112201031
+       fa: Dr. Vivek Chaturvedi
+
+     - name: SHUBHAM YADAV
+       rollno: 112201032
+       fa: Dr. Vivek Chaturvedi
+
+     - name: PRATYUSH MOHIT
+       rollno: 112201033
+       fa: Dr. Vivek Chaturvedi
+
+     - name: DARLA MANOHAR
+       rollno: 112201034
+       fa: Dr. Vivek Chaturvedi
+
+     - name: MALAKA KISHORE
+       rollno: 112201035
+       fa: Dr. Vivek Chaturvedi
+
+     - name: KINJARAPU JYOTHIKRISHNA
+       rollno: 112201036
+       fa: Dr. Vivek Chaturvedi
+
+     - name: PALAKURTHI VARUN SAI
+       rollno: 112201037
+       fa: Dr. Vivek Chaturvedi
+
+     - name: SHREYAS VADTHYA
+       rollno: 112201038
+       fa: Dr. Vivek Chaturvedi
+
+- year: 2023
+  studentlist:
+     - name: SUJIT KUMAR CHOUDHARY
+       rollno: 112301001
+       fa: Dr. Anish Hirwe
+ 
+     - name: ABOTHU VARSHA
+       rollno: 112301002
+       fa: Dr. Anish Hirwe
+ 
+     - name: BALABADRA LEPAKSHI KALYAN
+       rollno: 112301003
+       fa: Dr. Anish Hirwe
+ 
+     - name: SUMIT DNYANESHWAR GARAD
+       rollno: 112301032
+       fa: Dr. Krithika
+ 
+     - name: TATA GNANA SASI KIRAN
+       rollno: 112301033
+       fa: Dr. Krithika
+ 
+     - name: UPPALAPATI SAI HANUMA VIGNESH
+       rollno: 112301034
+       fa: Dr. Krithika
+ 
+     - name: VADDI NANDEESHWAR
+       rollno: 112301035
+       fa: Dr. Krithika
+ 
+     - name: VARUN JHA
+       rollno: 112301036
+       fa: Dr. Krithika
+ 
+     - name: YARLAGADDA AASHRITHA
+       rollno: 112301038
+       fa: Dr. Krithika
+ 
+     - name: YARRA STALIN
+       rollno: 112301039
+       fa: Dr. Krithika
+ 
+     - name: ZEESHAN MOHAMMED RANGREJ
+       rollno: 112301040
+       fa: Dr. Krithika
+ 
+     - name: BANOTH RAJESH
+       rollno: 112301004
+       fa: Dr. Anish Hirwe
+ 
+     - name: BINGI RUPESH
+       rollno: 112301005
+       fa: Dr. Anish Hirwe
+ 
+     - name: GADHIPAKA LOKESH
+       rollno: 112301007
+       fa: Dr. Anish Hirwe
+ 
+     - name: GUBBALA SAI DEEPA
+       rollno: 112301008
+       fa: Dr. Anish Hirwe
+ 
+     - name: GUNDAMARAJU HEMANTH KASHYAP
+       rollno: 112301009
+       fa: Dr. Anish Hirwe
+ 
+     - name: GUPTA ANKIT VINODKUMAR
+       rollno: 112301010
+       fa: Dr. Anish Hirwe
+ 
+     - name: JALAGAM VARSHITHA
+       rollno: 112301011
+       fa: Dr. Anish Hirwe
+ 
+     - name: JALLA CHARAN TEJ
+       rollno: 112301012
+       fa: Dr. Anish Hirwe
+ 
+     - name: KALLAKURI VENKATA SURYA BHARATH
+       rollno: 112301013
+       fa: Dr. Anish Hirwe
+ 
+     - name: KARTHIK KRISHNA M
+       rollno: 112301014
+       fa: Dr. Srimanta
+ 
+     - name: KASULA BALA KRISHNA
+       rollno: 112301015
+       fa: Dr. Srimanta
+ 
+     - name: KEMISETTY ASHIEL KALYANI
+       rollno: 112301016
+       fa: Dr. Srimanta
+ 
+     - name: KETHAVATH ARAVIND
+       rollno: 112301017
+       fa: Dr. Srimanta
+ 
+     - name: KONDURU SAIDEEP
+       rollno: 112301018
+       fa: Dr. Srimanta
+ 
+     - name: SIMEON KANDAN SONAR
+       rollno: 112301031
+       fa: Dr. Krithika
+ 
+     - name: VISHESH SRIVASTAVA
+       rollno: 112301037
+       fa: Dr. Krithika
+ 
+     - name: DEVAPRIYA PRADEEP
+       rollno: 112301006
+       fa: Dr. Anish Hirwe
+ 
+     - name: M MURALI KARTHICK
+       rollno: 112301019
+       fa: Dr. Srimanta
+ 
+     - name: MADHAV P NAIR
+       rollno: 112301020
+       fa: Dr. Srimanta
+ 
+     - name: MALLAMEEDA AJAY KUMAR
+       rollno: 112301021
+       fa: Dr. Srimanta
+ 
+     - name: MOCHARLA SAI AKASH
+       rollno: 112301022
+       fa: Dr. Srimanta
+ 
+     - name: NICHENAMETLA NIHITHA
+       rollno: 112301023
+       fa: Dr. Srimanta
+ 
+     - name: PARMAR RAAGAM HITESH
+       rollno: 112301024
+       fa: Dr. Srimanta
+ 
+     - name: PICCHAPATI PAVAN KALYAN REDDY
+       rollno: 112301025
+       fa: Dr. Srimanta
+ 
+     - name: RAMIREDDYGARI KUSHAL VARDHAN REDDY
+       rollno: 112301026
+       fa: Dr. Srimanta
+ 
+     - name: REDDIPALLY SHVETANK REDDY
+       rollno: 112301027
+       fa: Dr. Krithika
+ 
+     - name: RUDRAKSHALA LIKHITH CHANDRA
+       rollno: 112301028
+       fa: Dr. Krithika
+ 
+     - name: SABAVATH SINDHU SREE
+       rollno: 112301029
+       fa: Dr. Krithika
+ 
+     - name: SANJAYSIVA A
+       rollno: 112301030
+       fa: Dr. Krithika
+

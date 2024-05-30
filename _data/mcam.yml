@@ -1,0 +1,84 @@
+list:
+- year: 2022
+  studentlist: 
+   - name: Kritika Kashyap 
+     rollno:  112202003 
+     fa: Dr. Jasine Babu
+
+   - name: Ujjwal Verma 
+     rollno:  112202009 
+     fa: Dr. Jasine Babu
+
+   - name: Subhendu Sekhar Sahoo 
+     rollno:  112202007 
+     fa: Dr. Jasine Babu
+
+   - name: ANIKET NARGOTRA 
+     rollno:  112202001 
+     fa: Dr. Jasine Babu
+
+   - name: Milan Chakraborty 
+     rollno:  112202004 
+     fa: Dr. Jasine Babu
+
+   - name: SUSMITA BEHERA 
+     rollno:  112202008 
+     fa: Dr. Jasine Babu
+
+   - name: Zahir Khan
+     rollno: 112202010
+     fa: Dr. Jasine Babu
+
+   - name: Sidhartha Sankar Pradhan
+     rollno: 112202011    
+     fa: Dr. Jasine Babu
+
+   - rollno: 112202012  
+     name: Ashicka P Saj
+     fa: Dr. Jasine Babu
+
+   - rollno: 112202013  
+     name: Raushan Kumar
+     fa: Dr. Jasine Babu
+
+- year: 2023
+  studentlist: 
+    - name: Ankit Kumar Patel
+      rollno: 112302001
+      fa: Dr. Jasine Babu 
+
+    - name: David Shepherd Chintala
+      rollno: 112302002
+      fa: Dr. Jasine Babu 
+
+    - name: Kinshuk Kusum
+      rollno: 112302003
+      fa: Dr. Jasine Babu 
+
+    - name: Manas Singha
+      rollno: 112302004
+      fa: Dr. Jasine Babu 
+
+    - name: Nitish Rana
+      rollno: 112302005
+      fa: Dr. Jasine Babu 
+
+    - name: Rahul Radhakrishnan
+      rollno: 112302006
+      fa: Dr. Jasine Babu 
+
+    - name: Sarayu Miththira V C
+      rollno: 112302007
+      fa: Dr. Jasine Babu 
+
+    - name: Shreyojit Das
+      rollno: 112302008
+      fa: Dr. Jasine Babu 
+
+    - name: Subhadip Maity
+      rollno: 112302009
+      fa: Dr. Jasine Babu 
+
+    - name: Samuel Faindani
+      rollno: 112302010
+      fa: Dr. Jasine Babu 

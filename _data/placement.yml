@@ -1,0 +1,148 @@
+list:
+- prog: UG 
+  registered: 27
+  year: 2020
+  data:
+    - range: 6 LPA - 10 LPA
+      count: 8
+
+    - range: 10 LPA - 20 LPA
+      count: 7
+
+    - range: 20 LPA - 30 LPA
+      count: 11
+
+    - range: 30 LPA and above
+      count: 1
+
+  median: 20 LPA
+  average: 16.94 LPA
+  min: 6 LPA
+  max: 31.6 LPA
+
+- prog: UG
+  year: 2021
+  registered: 42
+  data:
+    - range: 6 LPA - 10 LPA
+      count: 7
+
+    - range: 10 LPA - 20 LPA
+      count: 23
+
+    - range: 20 LPA - 30 LPA
+      count: 8
+
+    - range: 30 LPA and above
+      count: 4
+
+  median: 15.06 LPA
+  average: 20.35 LPA
+  min: 7.5 LPA
+  max: 120 LPA
+
+- prog: UG
+  year: 2022
+  registered: 50
+  data:
+    - range: 6 LPA - 10 LPA
+      count: 6
+
+    - range: 10 LPA - 20 LPA
+      count: 19
+
+    - range: 20 LPA - 30 LPA
+      count: 12
+
+    - range: 30 LPA and above
+      count: 13
+
+  median: 11.50 LPA
+  average: 21.00 LPA
+  min: 8.00 LPA
+  max: 46.15 LPA
+
+- prog: MCaM
+  year: 2022
+  registered: 7
+  data:
+    - range: 7.5 LPA - 10 LPA
+      count: 3
+
+    - range: 10 LPA - 20 LPA
+      count: 4
+
+    - range: 20 LPA - 30 LPA
+      count: 0
+
+    - range: 30 LPA and above
+      count: 0
+
+  median: 10.00 LPA
+  average: 11.72 LPA
+  min: 6.60 LPA
+  max: 16.00 LPA
+
+
+- prog: MCaM
+  year: 2021
+  registered: 5
+  data:
+    - range: 7.5 LPA - 10 LPA
+      count: 3
+
+    - range: 10 LPA - 20 LPA
+      count: 2
+
+    - range: 20 LPA - 30 LPA
+      count: 0
+
+    - range: 30 LPA and above
+      count: 0
+
+  median: 10 LPA
+  average: 11.91 LPA
+  min: 9.5 LPA
+  max: 17.06 LPA
+
+- prog: MSoCD
+  year: 2021
+  registered: 13
+  data:
+    - range: 6 LPA - 10 LPA
+      count: 2
+
+    - range: 10 LPA - 20 LPA
+      count: 2
+
+    - range: 20 LPA - 30 LPA
+      count: 7
+
+    - range: 30 LPA and above
+      count: 0
+
+  median: 20.34 LPA
+  average: 17.83 LPA
+  min: 8.1 LPA
+  max: 24 LPA
+
+- prog: MSoCD
+  year: 2022
+  registered: 8
+  data:
+    - range: 7.5 LPA - 10 LPA
+      count: 1
+
+    - range: 10 LPA - 20 LPA
+      count: 3
+
+    - range: 20 LPA - 30 LPA
+      count: 2
+
+    - range: 30 LPA and above
+      count: 1
+
+  median: 18.00 LPA
+  average: 16.00 LPA
+  min: 7.00 LPA
+  max: 24 LPA

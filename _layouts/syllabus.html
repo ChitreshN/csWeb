@@ -1,0 +1,109 @@
+---
+layout: default
+---
+
+<div class="text-center alert alert-info" role="alert">
+<strong>Code:</strong> {{page.code}} | <strong>Category:</strong> {{page.category}} | <strong>Credits:</strong>  {{page.credits}} 
+</div>
+
+{% if page.dualcode  %}
+ <strong> This is a dual numbered course which is same as {{page.dualcode}}. <br> Please see the course page for <a href="/courses/{{page.dualcode | downcase }}-{{ page.title | replace: " ", "-" }}">  {{ page.dualcode }}</a> for more details. </strong>
+{% endif %}
+
+{% if page.status == "revised" and page.prerevisioncode == nil and page.core %}
+<strong> This syllabus has been revised in the recent past with the course number being the same. <br> Showing the latest revision in section <a href="#curriculum-2022">Curriculum 2022</a>.  The earlier version is in section <a href="#curriculum-2017">Curriculum 2017</a>.  </strong>
+{% endif %}
+
+{% if page.status == "revised" and page.prerevisioncode  %}
+<strong> This is a revision of the course {{page.prerevisioncode}}  </strong>
+{% endif %}
+
+{{content}}
+
+ <h1 id="past-offerings"> Past Offerings </h1>
+{% if page.prerevisioncode %}
+ (Note: Past offerings could be under a different course number.)
+{% endif %}
+ {% assign  pastCourseListAllYears = site.data.pastCourses.list | sort: 'year' | reverse %}
+  <ul> 
+  {% for pastCourseInfo in pastCourseListAllYears  %} 
+	{% for course in pastCourseInfo.courselist %}
+     {% assign courseCode = course.code | downcase %}
+     {% assign prevCode = page.prerevisioncode | downcase %}
+     {% assign pageCourseCode = page.code | downcase %}
+	 {% if courseCode == pageCourseCode or courseCode == prevCode %}
+	 <li> Offered in {{pastCourseInfo.semester}}, {{pastCourseInfo.year}} by {{course.faculty}} </li>
+	 {% endif %}
+	{% endfor %}
+  {% endfor %}
+  </ul>
+
+
+<h1 id="detailed-course-information"> Course Metadata </h1>
+<table class="table table-bordered">
+   <thead>
+       <tr>
+            <th>Item</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>Course Title</td>
+      <td>{{page.title}}</td>
+    </tr>
+    <tr>
+      <td>Course Code</td>
+      <td>{{page.code}}</td>
+    </tr>
+    <tr>
+      <td>Course Credits</td>
+      <td>{{page.credits}}</td>
+    </tr>
+    <tr>
+      <td>Course Category</td>
+      <td>{{page.category}}</td>
+    </tr>
+    {% if page.proposingfaculty %}
+    <tr>
+      <td>Proposing Faculty</td>
+      <td>{{page.proposingfaculty}}</td>
+    </tr>
+    {% endif %}
+    <tr>
+      <td>Approved on</td>
+      <td> Senate {{page.senateapprovedon}} of IIT Palakkad</td>
+    </tr>
+    {% if page.prerequisites %}
+    <tr>
+      <td>Course prerequisites</td>
+      <td>{{page.prerequisites}}</td>
+    </tr>
+    {% endif%}
+    {% if page.status %}
+    <tr>
+      <td>Course status</td>
+      <td>{{page.status}}</td>
+    </tr>
+    {% endif %}
+    {% if page.revisioninfo %}
+    <tr>
+      <td>Course revision information</td>
+      <td>{{page.revisioninfo}}</td>
+    </tr>
+    {% endif %}
+    {% if page.prerevisioncode %}
+    <tr>
+      <td>Course pre-revision code</td>
+      <td>{{page.prerevisioncode}}</td>
+    </tr>
+    {% endif %}
+    {% if page.dualcode %}
+    <tr>
+      <td>Course dual code</td>
+      <td>{{page.dualcode}}</td>
+    </tr>
+    {% endif %}
+
+  </tbody>
+</table>

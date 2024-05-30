@@ -1,0 +1,42 @@
+list:
+- year: 2022
+  graduants:
+   - name: Rimmon Saloman Bhosale
+     rollno: 111913001
+     program: MS
+     doj: 
+     area: Machine Learning, Deep Learning, Computer Vision 
+     advisor: Mrinal Das
+     type:
+
+   - name: Shikha Mallick
+     rollno: 111913002
+     program: MS
+     doj: 
+     area: Machine Learning, Deep Learning, Bioinformatics, computational chemistry
+     advisor: Sahely Bhadra
+     type:
+
+- year: 2023
+  graduants:
+   - name: Haritha Madhav. C
+     rollno: 111914002
+     program: MS
+     doj: July 2019
+     area: Compiler Design
+     advisor: Unnikrishnan C
+     type:
+
+   - name: "Gaurav Jain"
+     rollno: "112003001"
+     program: MS
+     doj: "2020"
+     area: "Machine Learning"
+     advisor: "Mrinal Das"
+
+
+     
+   
+
+
+  

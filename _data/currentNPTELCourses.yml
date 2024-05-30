@@ -1,0 +1,30 @@
+list:
+- code: "CS5640M"
+  title: "Applied Accelerated Artificial Intelligence"
+  credits: "3-0-0-3"
+  link: "https://nptel.ac.in/courses/106106238"
+
+- code: "CS4608M"
+  title: "Cloud Computing"
+  credits: "3-0-0-3"
+  link: "https://nptel.ac.in/courses/106105167"
+
+- code: "CS5641M"
+  title: "Introduction To Game Theory And Mechanism Design"
+  credits: "3-0-0-3"
+  link: "https://nptel.ac.in/courses/106101237"
+
+- code: "CS5644M"
+  title: "Social Network Analysis"
+  credits: "3-0-0-3"
+  link: "https://nptel.ac.in/courses/106106239"
+
+- code: "CS5642M"
+  title: "Introduction To Machine Learning"
+  credits: "3-0-0-3"
+  link: "https://nptel.ac.in/courses/106106139"
+
+- code: "CS5643M"
+  title: "Reinforcement Learning"
+  credits: "3-0-0-3"
+  link: "https://nptel.ac.in/courses/106106143"
