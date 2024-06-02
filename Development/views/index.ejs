@@ -18,11 +18,9 @@
           <%}else{%>
           <option id="select">Select</option>
           <%}%>
-          <option value="courses" id="courses">courses</option>
-          <option value="professors" id="professors">professors</option>
-          <option value="time table" id="time_table">time table</option>
-          <option value="Talks" id="talks">Talks</option>
-          <option value="events" id="events">events</option>          
+          <%for(var i=0;i<tables.length;i++){%>
+            <option value="<%=tables[i].table_name%>" ><%=tables[i].table_name%></option>
+          <%}%>
         </select>
         <input type="submit" value="Go">
       </form>
