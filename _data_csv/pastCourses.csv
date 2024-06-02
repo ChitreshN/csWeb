@@ -1,246 +1,246 @@
-INTEGER	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT
-year	semester	room	faculty1	faculty2	name	code	slot
-2015	July-Dec		Jasine Babu		Computational Engineering	CS1100	
-2016	July-Dec		Jasine Babu	Deepak Rajendraprasad	Computational Engineering	CS1100	
-2016	July-Dec		Deepak Rajendraprasad		Discrete Mathematics for Computer Science	CS2100	
-2016	July-Dec		Jasine Babu		Computer Programming Laboratory	CS2110	
-2017	Jan-May		Deepak Rajendraprasad		Languages, Machines and Computation	CS2200	
-2017	Jan-May		V. Kamakoti (IITM)		Computer Organisation	CS2600	
-2017	Jan-May		Jasine Babu		Data Structures and Algorithms	CS2800	
-2017	Jan-May		V. Kamakoti (IITM)		Computer Organisation Laboratory	CS2610	
-2017	Jan-May		 Jasine Babu		Data Structures and Algorithms Laboratory	CS2810	
-2017	July-Dec		Deepak Rajendraprasad		Discrete Mathematics for Computer Science	CS2100	
-2017	July-Dec		Deepak Rajendraprasad	 Sahely Bhadra	Computer Programming Lab	CS2110	
-2017	July-Dec		Mrinal		Paradigms of Programming	CS3030	
-2017	July-Dec		Piyush		Language Translators	CS3300	
-2017	July-Dec		Piyush		Language Translators Laboratory	CS3310	
-2017	July-Dec		Jasine		Operating Systems	CS3500	
-2017	July-Dec		Jasine		Operating Systems Laboratory	CS3510	
-2017	July-Dec		Sahely		Principles of Machine Learning	CS4801	
-2017	July-Dec		B. Srivathsan (CMI)		Model Checking	CS4803	
-2017	July-Dec		John Augustine (CSE, IITM)		Probability and Computing	CS5820	
-2018	Jan-May		Deepak, Debarati (CHE, IITPKD)		Introduction to Programming	CS1020	
-2018	Jan-May		Deepak		Languages, Machines and Computation	CS2200	
-2018	Jan-May		Sabu Emmanuel (Adjunct)		Computer Organisation	CS2600	
-2018	Jan-May		Sabu Emmanuel (Adjunct)		Computer Organisation Lab	CS2610	
-2018	Jan-May		Jasine		Data Structures and Algorithms	CS2800	
-2018	Jan-May		Jasine		Data Structures and Algorithms lab	CS2810	
-2018	Jan-May		Piyush		Computer Networks	CS3200	
-2018	Jan-May		Piyush		Computer Networks Lab	CS3210	
-2018	Jan-May		Sahely		Introduction to Database systems	CS3700	
-2018	Jan-May		Sahely, Mrinal		Database systems laboratory	CS3710	
-2018	Jan-May		Sahely		Convex Optimization	CS4502	
-2018	Jan-May		Mrinal		Theory and  Practise of Data Science	CS4507	
-2018	Jan-May		Mathew Francis (ISI Chennai)		Design and Analysis of Algorithms	CS4802	
-2018	Jan-May		Deepak, Jasine		Topics in  Graph Theory	CS6001	
-2018	July-Dec		Deepak		Logic for Computing	CS2010	
-2018	July-Dec		Krithika		Data Structures and Algorithms	CS2030	
-2018	July-Dec		Krithika, Albert		Data Structures and Algorithms Laboratory	CS2130	
-2018	July-Dec		Jasine		Operating Systems	CS3010	
-2018	July-Dec		Jasine, Vivek		Operating Systems Laboratory	CS3110	
-2018	July-Dec		Piyush		Paradigms of Programming	CS3030	
-2018	July-Dec		Piyush		Paradigms of Programming Laboratory	CS3130	
-2018	July-Dec		Chandra Shekar		Artificial Intelligence	CS4011	
-2018	July-Dec		Chandra Shekar		Artificial Intelligence Laboratory	CS4111	
-2018	July-Dec		Mrinal		Principles of Software Engineering	CS4400	
-2018	July-Dec		Mrinal		Principles of Software Engineering Lab	CS4410	
-2018	July-Dec		Albert		Game Theory	CS4501	
-2018	July-Dec		Deepak		Combinatorics	CS4503	
-2018	July-Dec		Vivek		Advanced Computer Architecture	CS4505	
-2018	July-Dec		Sahely		Principles of Machine Learning	CS4801	
-2018	July-Dec		B. Srivathsan (CMI)		Model Checking (NPTEL)	CS4803	
-2018	July-Dec		Sahely, Mrinal		Topics in Machine Learning	CS5001	
-2018	July-Dec		Piyush		Functional Programming	CS5002	
-2018	July-Dec		All CSE Faculty		Project Phase 1	CS4110	
-2019	Jan-May		Deepak, Jasine, Krithika, Mrinal		Introduction to Programming	CS1020	
-2019	Jan-May		Deepak		Discrete Mathematics for Computer Science	CS2020	
-2019	Jan-May		Krithika		Design and Analysis of Algorithms	CS2040	
-2019	Jan-May		Vivek		Computer Organisation	CS2060	
-2019	Jan-May		Vivek, Sandeep		Computer Organisation Laboratory	CS2160	
-2019	Jan-May		Chandra Shekar		Artificial Intelligence	CS2080	
-2019	Jan-May		Chandra Shekar, Albert		Artificial Intelligence Laboratory	CS2180	
-2019	Jan-May		Sahely		Database Management Systems	CS3020	
-2019	Jan-May		Sahely, Mrinal		Database Management Systems Laboratory	CS3120	
-2019	Jan-May		Piyush		Compiler Design	CS3040	
-2019	Jan-May		Piyush		Compiler Design Laboratory	CS3140	
-2019	Jan-May		Albert		Convex Optimization	CS4602	
-2019	Jan-May		Jasine		Approximation Algorithms	CS5004	
-2019	Jan-May		Sandeep		Parallel Programming	CS5005	
-2019	Jan-May		All CSE Faculty		Project Phase 2	CS4120	
-2019	July-Dec		Jasine		Logic for Computing	CS2010	
-2019	July-Dec		Sahely		Data Structures and Algorithms	CS2030	
-2019	July-Dec		Sahely, Krithika		Data Structures and Algorithms Laboratory	CS2130	
-2019	July-Dec		Sandeep		Operating Systems	CS3010	
-2019	July-Dec		Sandeep, Jasine		Operating Systems Laboratory	CS3110	
-2019	July-Dec		Piyush		Paradigms of Programming	CS3030	
-2019	July-Dec		Piyush, Unnikrishnan		Paradigms of Programming Laboratory	CS3130	
-2019	July-Dec		Deepak		Theory of Computation	CS3050	
-2019	July-Dec		Albert		Computer Networks	CS4010	
-2019	July-Dec		Albert		Computer Networks Laboratory	CS4150	
-2019	July-Dec		Vivek		Advanced Computer Architecture	CS4505	
-2019	July-Dec		Krithika		Parameterized Algorithms	CS5003	
-2019	July-Dec		Mrinal		Deep Learning	CS5007	
-2019	July-Dec		Chandra Shekar		Reinforcement Learning	CS5008	
-2019	July-Dec		Mrinal		Probability Models	CS5511	
-2019	July-Dec		Satyajit		Embedded Systems	CS5509	
-2019	July-Dec		Unnikrishnan		Compiler Optimization and Program Analysis	CS5510	
-2019	July-Dec		All CSE Faculty		Project Phase 1	CS4110	
-2019	July-Dec		Sahely		Machine Learning	CS5512	
-2020	Jan-May		Albert, Sandeep		Introduction to Programming	CS1020	
-2020	Jan-May		Jasine		Discrete Mathematics for Computer Science	CS2020	
-2020	Jan-May		Krithika		Design and Analysis of Algorithms	CS2040	
-2020	Jan-May		Vivek		Computer Organisation	CS2060	
-2020	Jan-May		Vivek		Computer Organisation Laboratory	CS2160	
-2020	Jan-May		Chandra Shekar		Artificial Intelligence	CS2080	
-2020	Jan-May		Chandra Shekar, Krithika		Artificial Intelligence Laboratory	CS2180	
-2020	Jan-May		Mrinal		Database Management Systems	CS3020	
-2020	Jan-May		Sahely, Mrinal		Database Management Systems Laboratory	CS3120	
-2020	Jan-May		Unnikrishnan		Compiler Design	CS3040	
-2020	Jan-May		Unnikrishnan, Piyush		Compiler Design Laboratory	CS3140	
-2020	Jan-May		Deepak		Combinatorics	CS4503	
-2020	Jan-May		Piyush		Functional Programming	CS5002	
-2020	Jan-May		Sahely		Machine Learning	CS5512	
-2020	Jan-May		Satyajit		Cryptography	CS5613	
-2020	Jan-May		All CSE Faculty		Project Phase 2	CS4120	
-2020	Jul-Dec		Krithika		Logic for Computing	CS2010	
-2020	Jul-Dec		Unnikrishnan		Data Structures and Algorithms	CS2030	
-2020	Jul-Dec		Unnikrishnan, Chandra Shekar		Data Structures and Algorithms Laboratory	CS2130	
-2020	Jul-Dec		Sandeep		Operating Systems	CS3010	
-2020	Jul-Dec		Sandeep, Satyajit		Operating Systems Laboratory	CS3110	
-2020	Jul-Dec		Piyush		Paradigms of Programming	CS3030	
-2020	Jul-Dec		Piyush		Paradigms of Programming Laboratory	CS3130	
-2020	Jul-Dec		Deepak		Theory of Computation	CS3050	
-2020	Jul-Dec		Albert		Computer Networks	CS4010	
-2020	Jul-Dec		Albert		Computer Networks Laboratory	CS4150	
-2020	Jul-Dec		Jasine		Algorithms	CS5009	
-2020	Jul-Dec		Krithika		Topics in Discrete Mathematics	CS5013	
-2020	Jul-Dec		Deepak		Theory of Computation	CS5017	
-2020	Jul-Dec		Vivek		Advanced Computer Architecture	CS5019	
-2020	Jul-Dec		Vivek		Advanced Computer Architecture Lab	CS5119	
-2020	Jul-Dec		Chandra Shekar		Optimisation for Machine Learning	CS5011	
-2020	Jul-Dec		Unnikrishnan		Parallel Programming	CS5005	
-2020	Jul-Dec		Sahely		Machine Learning	CS5512	
-2020	Jul-Dec		Sahely		Machine Learning Lab	CS5101	
-2020	Jul-Dec		Jasine		Approximation Algorithms	CS5004	
-2020	Jul-Dec		Mrinal		Data Engineering	CS5015	
-2020	Jul-Dec		Mrinal		Data Engineering Lab	CS5103	
-2020	Jul-Dec		Satyajit		Big Data Analytics	CS5104	
-2020	Jul-Dec		Albert, Sandeep, Vivek		Programming Lab	CS5107	
-2020	Jul-Dec		Mr. Ramaswamy		Software Engineering	CS5617	
-2020	Jul-Dec		All CSE Faculty		Project Phase 1	CS4110	
-2021	Jan-May		Albert, Sandeep		Introduction to Programming	CS1020	
-2021	Jan-May		Deepak, Krithika		Discrete Mathematics for Computer Science	CS2020	
-2021	Jan-May		Jasine		Design and Analysis of Algorithms	CS2040	
-2021	Jan-May		Vivek		Computer Organisation	CS2060	
-2021	Jan-May		Vivek, Sandeep		Computer Organisation Laboratory	CS2160	
-2021	Jan-May		Chandra Shekar		Artificial Intelligence	CS2080	
-2021	Jan-May		Chandra Shekar		Artificial Intelligence Laboratory	CS2180	
-2021	Jan-May		Sahely		Database Management Systems	CS3020	
-2021	Jan-May		Mrinal		Database Management Systems Laboratory	CS3120	
-2021	Jan-May		Piyush		Compiler Design	CS3040	
-2021	Jan-May		Piyush, Unnikrishnan		Compiler Design Laboratory	CS3140	
-2021	Jan-May		Krithika		Parameterized Algorithms	CS5003	
-2021	Jan-May		Mrinal		Deep Learning	CS5007	
-2021	Jan-May		Chandra Shekar		Reinforcement Learning	CS5008	
-2021	Jan-May		Jasine		Graph Theory and Combinatorics	CS5010	
-2021	Jan-May		Vivek		AI for Cybersecurity	CS5012	
-2021	Jan-May		Deepak		Foundations of Data Science & Machine Learning	CS5014	
-2021	Jan-May		Albert		Computational Methods and Applications	CS5016	
-2021	Jan-May		Satyajit		System on Chip Design	CS5102	
-2021	Jan-May		Satyajit		Big Data Analytics	CS5104	
-2021	Jan-May		Unnikrishnan		Real Time Systems	CS5618	
-2021	Jan-May		Sandeep		Synthesis of Digital Systems	CS5619	
-2021	Jan-May		Piyush		Logic	CS6004	
-2021	Jan-May		All CSE Faculty		Project Phase 2	CS4120	
-2021	Jul-Dec		Krithika		Logic for Computing	CS2010	
-2021	Jul-Dec		Albert		Computer Networks	CS4010	
-2021	Jul-Dec		Albert		Computer Networks Lab	CS4150	
-2021	Jul-Dec		Jasine		Data Structures and Algorithms	CS2030	
-2021	Jul-Dec		Jasine		Data Structures and Algorithms Laboratory	CS2130	
-2021	Jul-Dec		Sandeep		Operating Systems	CS3010	
-2021	Jul-Dec		Sandeep, Satyajit		Operating Systems Laboratory	CS3110	
-2021	Jul-Dec		Piyush		Paradigms of Programming	CS3030	
-2021	Jul-Dec		Piyush		Paradigms of Programming Laboratory	CS3130	
-2021	Jul-Dec		Deepak		Theory of Computation	CS3050	
-2021	Jul-Dec		Satyajit		Computer Vision	CS5620	
-2021	Jul-Dec		Mr. Ramaswamy		Software Engineering	CS5617	
-2021	Jul-Dec		All CSE Faculty		Project Phase 1	CS4110	
-2021	Jul-Dec		Sahely		Optimization	CS5011	
-2021	Jul-Dec		Piyush		Functional Programming	CS5002	
-2021	Jul-Dec		Krithika		Algorithms	CS5009	
-2021	Jul-Dec		Deepak		Topics in Discrete Mathematics	CS5013	
-2021	Jul-Dec		Deepak		Theory of Computation	CS5017	
-2021	Jul-Dec		Sandeep		Advanced Computer Architecture	CS5019	
-2021	Jul-Dec		Satyadev (CSE, IITK)		Probability and Computing	CS5820	
-2021	Jul-Dec		Mrinal, Koninika		Information Retrieval	CS5621	
-2021	Jul-Dec		Sahely		Machine Learning	CS5512	
-2021	Jul-Dec		Sahely		Machine Learning Lab	CS5101	
-2021	Jul-Dec		Unnikrishnan		Compiler Optimization and Program Analysis	CS5510	
-2021	Jul-Dec		Albert, Sandeep, Vivek		Programming Lab	CS5107	
-2022	Jan-May	Auditorium, AAB; Computer Lab, AAB	Unnikrishnan C (coordinator), Krishnamoorthy Dinesh, Vivek Chadurvedi		Introduction to Programming	CS1020	E, L2, L3, L4
-2022	Jan-May		Satyadev Nandakumar		Discrete Mathematics for Computer Science	CS2020	A
-2022	Jan-May		Jasine Babu		Design and Analysis of Algorithms	CS2040	B, T5, L3
-2022	Jan-May		Sandeep Chandran		Computer Organisation	CS2060	E
-2022	Jan-May		C K Narayanan		Artificial Intelligence	CS2080	C
-2022	Jan-May		Sandeep Chandran		Computer Organization Lab	CS2160	L4
-2022	Jan-May		C K Narayanan		Artificial Intelligence Lab	CS2180	L5
-2022	Jan-May		Koninika Pal		Database Management Systems	CS3020	A
-2022	Jan-May		Piyush Kurur		Compiler Design	CS3040	H
-2022	Jan-May		Koninika Pal, Sahely Bhadra		Database Management System Lab	CS3120	L3
-2022	Jan-May		Piyush Kurur		Compiler Design Lab	CS3140	L4
-2022	Jan-May		Unnikrishnan C		Parallel Programming	CS5005	C
-2022	Jan-May	AAB 33	Krithika Ramaswamy		Graph Theory and Combinatorics	CS5010	A
-2022	Jan-May	AAB 18	Vivek Chaturvedi		AI for Cyber Security	CS5012	H, T5
-2022	Jan-May	AAB aud	Deepak Rajendraprasad		Foundations of Data Science and Machine Learning	CS5014	B
-2022	Jan-May	AAB 18	Albert Sunny		Computational Methods and Applications	CS5016	E
-2022	Jan-May	AAB 33	Krishnamoorthy Dinesh		Computational Complexity	CS5616	F
-2022	Jan-May	AAB 18	Deepak Rajendraprasad		Probabilistic Method	CS6003	D
-2022	Jan-May	AAB 18	Satyajit Das		Big Data Lab	CS5104	T2
-2022	Jan-May	AAB 33	Sahely Bhadra		Responsible AI	CS6006	C
-2022	Jan-May	AAB 18	Kiran (Intel), Vivek Chadurvedi		PreSilicon Design Verification using Formal Property Verification	CS5626	B
-2022	Aug-Dec	A 112	Krithika Ramaswamy			CS5013	D2 (Tue), A2 (Mon)
-2022	Aug-Dec	A 120	Jasine Babu			CS5009	C2, H (Wed)
-2022	Aug-Dec	A. Comp Lab (1st floor)	Piyush P Kurur			CS3130	P5
-2022	Aug-Dec	A. 18	Srimanta Bhattacharya			CS5614	A2 (Thu), B2 (Thu), B1
-2022	Aug-Dec	A. 120	Sandeep Chandran			CS5628	D
-2022	Aug-Dec	A. 120	Jasine Babu			CS5633	F, J
-2022	Aug-Dec	A. 119	Krithika R			CS6002	D
-2022	Aug-Dec	A. Aud	Piyush P Kurur			CS5627	E
-2022	Aug-Dec	A. 112	Sahely Bhadra			DS5005	D
-2022	Aug-Dec	A. 120	Vivek Chaturvedi			CS5019	C
-2022	Aug-Dec	A. Comp Lab (1st floor)	Vivek Chaturvedi			CS5119	P2
-2022	Aug-Dec	A. Comp Lab (1st floor)	Deepak Rajendraprasad, Krishnamoorthy Dinesh			CS5107	P3
-2022	Aug-Dec	A. 18	Albert Sunny			CS4010	C
-2022	Aug-Dec	A. Comp Lab (Ground floor)	Albert Sunny			CS4150	P4
-2022	Aug-Dec		Srimanta Bhattacharya			CS4110	
-2022	Aug-Dec	A. MBA 211	Koninika Pal			DS5603	D
-2022	Aug-Dec	A 112, A. Comp. Lab (1st Floor), A. Electronics Lab	Sahely Bhadra, Narayanan C K			DS3010	P6
-2022	Aug-Dec	A. 18	Krishnamoorthy Dinesh			CS3050	A
-2022	Aug-Dec	A. 112	Krishnamoorthy Dinesh			CS5017	A
-2022	Aug-Dec	A. Comp lab (Ground floor)	Piyush P. Kurur			CS3030	P5
-2022	Aug-Dec	A. Comp lab (Ground floor)	Satyajit Das			DS5602	F
-2022	Aug-Dec	A. 18	Sandeep Chandran			CS3010	B
-2022	Aug-Dec	A. Comp lab (Ground floor)	Sandeep Chandran			CS3110	P7
-2022	Aug-Dec	A. 18	Deepak Rajendraprasad			CS2010	G
-2022	Aug-Dec	A. 18	Unnikrishan C			CS2030	D
-2022	Aug-Dec	A. Comp lab (Ground floor)	Unnikrishan C			CS2130	P6
-2023	Jan-May	Auditorium, AAB; Computer Lab, AAB	Albert Sunny, Srimanta Bhattacharya, Sovan Das (IITPKD Mech), Piyush Kurur			ID1110	E, L2, L3, L4
-2023	Jan-May	A 18	Jasine Babu			CS2020	M; E (Wed)
-2023	Jan-May	A 18	Krithika Ramaswamy			CS2040	G; D (Wed)
-2023	Jan-May	A 18	Vivek Chaturvedi			CS2060	F (Tue, Thu)
-2023	Jan-May	A 18	Narayanan C Krishnan			CS2080	D (Mon, Fri); C1
-2023	Jan-May	A Comp Lab (G Floor)	Vivek Chaturvedi			CS2160	P6
-2023	Jan-May	A Comp Lab (G Floor)	Krithika Ramaswamy & Dinesh K			CS2180	P5
-2023	Jan-May	A 18	Koninika Pal			CS3020	A, A1
-2023	Jan-May	A 18	Unnikrishnan C			CS3040	C; F (Fri)
-2023	Jan-May	A Comp Lab (G Floor)	Koninika Pal & Sahely Bhadra			CS3120	P4
-2023	Jan-May	A Comp Lab (G Floor)	Unnikrishnan C			CS3140	P7
-2023	Jan-May	A Comp Lab (G Floor)	Albert Sunny			CS5016	P2
-2023	Jan-May	A Aud	Deepak Rajendraprasad			CS5014	F (Tue,Thu)
-2023	Jan-May	A 119	Krishnamoorthy Dinesh			CS5616	M, C1
-2023	Jan-May	A 18	Deepak Rajendraprasad			CS5820	I
-2023	Jan-May	A 18	Piyush P. Kurur			CS5634	J
-2023	Jan-May	A 119	Sandeep Chandran			CS5619	H (Mon); E (Mon); D (Mon,Wed)
-2023	Jan-May	A 18	Srimanta Bhattacharya			CS5010	K
-2023	Jan-May	A 119	Sahely Bhadra			DS5604	F
-2023	Jan-May	A Comp Lab (1st floor)	Satyajit Das			DS5102	P6
+INTEGER	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT
+year	semester	room	faculty1	faculty2	faculty3	faculty4	name	code	slot
+2015	July-Dec		Jasine Babu				Computational Engineering	CS1100	
+2016	July-Dec		Jasine Babu	Deepak Rajendraprasad			Computational Engineering	CS1100	
+2016	July-Dec		Deepak Rajendraprasad				Discrete Mathematics for Computer Science	CS2100	
+2016	July-Dec		Jasine Babu				Computer Programming Laboratory	CS2110	
+2017	Jan-May		Deepak Rajendraprasad				Languages, Machines and Computation	CS2200	
+2017	Jan-May		V. Kamakoti (IITM)				Computer Organisation	CS2600	
+2017	Jan-May		Jasine Babu				Data Structures and Algorithms	CS2800	
+2017	Jan-May		V. Kamakoti (IITM)				Computer Organisation Laboratory	CS2610	
+2017	Jan-May		Jasine Babu				Data Structures and Algorithms Laboratory	CS2810	
+2017	July-Dec		Deepak Rajendraprasad				Discrete Mathematics for Computer Science	CS2100	
+2017	July-Dec		Deepak Rajendraprasad	Sahely Bhadra			Computer Programming Lab	CS2110	
+2017	July-Dec		Mrinal Das				Paradigms of Programming	CS3030	
+2017	July-Dec		Piyush P Kurur				Language Translators	CS3300	
+2017	July-Dec		Piyush P Kurur				Language Translators Laboratory	CS3310	
+2017	July-Dec		Jasine Babu				Operating Systems	CS3500	
+2017	July-Dec		Jasine Babu				Operating Systems Laboratory	CS3510	
+2017	July-Dec		Sahely Bhadra				Principles of Machine Learning	CS4801	
+2017	July-Dec		B. Srivathsan (CMI)				Model Checking	CS4803	
+2017	July-Dec		John Augustine (CSE, IITM)				Probability and Computing	CS5820	
+2018	Jan-May		Deepak Rajendraprasad	Debarati Chatterjee			Introduction to Programming	CS1020	
+2018	Jan-May		Deepak Rajendraprasad				Languages, Machines and Computation	CS2200	
+2018	Jan-May		Sabu Emmanuel (Adjunct)				Computer Organisation	CS2600	
+2018	Jan-May		Sabu Emmanuel (Adjunct)				Computer Organisation Lab	CS2610	
+2018	Jan-May		Jasine Babu				Data Structures and Algorithms	CS2800	
+2018	Jan-May		Jasine Babu				Data Structures and Algorithms lab	CS2810	
+2018	Jan-May		Piyush P Kurur				Computer Networks	CS3200	
+2018	Jan-May		Piyush P Kurur				Computer Networks Lab	CS3210	
+2018	Jan-May		Sahely Bhadra				Introduction to Database systems	CS3700	
+2018	Jan-May		Sahely Bhadra	Mrinal Das			Database systems laboratory	CS3710	
+2018	Jan-May		Sahely Bhadra				Convex Optimization	CS4502	
+2018	Jan-May		Mrinal Das				Theory and  Practise of Data Science	CS4507	
+2018	Jan-May		Mathew Francis (ISI Chennai)				Design and Analysis of Algorithms	CS4802	
+2018	Jan-May		Deepak Rajendraprasad	Jasine Babu			Topics in  Graph Theory	CS6001	
+2018	July-Dec		Deepak Rajendraprasad				Logic for Computing	CS2010	
+2018	July-Dec		Krithika Ramaswamy				Data Structures and Algorithms	CS2030	
+2018	July-Dec		Krithika Ramaswamy	Albert Sunny			Data Structures and Algorithms Laboratory	CS2130	
+2018	July-Dec		Jasine Babu				Operating Systems	CS3010	
+2018	July-Dec		Jasine Babu	Vivek Chaturvedi			Operating Systems Laboratory	CS3110	
+2018	July-Dec		Piyush P Kurur				Paradigms of Programming	CS3030	
+2018	July-Dec		Piyush P Kurur				Paradigms of Programming Laboratory	CS3130	
+2018	July-Dec		Chandra Shekar				Artificial Intelligence	CS4011	
+2018	July-Dec		Chandra Shekar				Artificial Intelligence Laboratory	CS4111	
+2018	July-Dec		Mrinal				Principles of Software Engineering	CS4400	
+2018	July-Dec		Mrinal				Principles of Software Engineering Lab	CS4410	
+2018	July-Dec		Albert				Game Theory	CS4501	
+2018	July-Dec		Deepak				Combinatorics	CS4503	
+2018	July-Dec		Vivek				Advanced Computer Architecture	CS4505	
+2018	July-Dec		Sahely				Principles of Machine Learning	CS4801	
+2018	July-Dec		B. Srivathsan (CMI)				Model Checking (NPTEL)	CS4803	
+2018	July-Dec		Sahely	Mrinal Das			Topics in Machine Learning	CS5001	
+2018	July-Dec		Piyush				Functional Programming	CS5002	
+2018	July-Dec		All CSE Faculty				Project Phase 1	CS4110	
+2019	Jan-May		Deepak	Jasine Babu	Krithika Ramaswamy	Mrinal Das	Introduction to Programming	CS1020	
+2019	Jan-May		Deepak				Discrete Mathematics for Computer Science	CS2020	
+2019	Jan-May		Krithika				Design and Analysis of Algorithms	CS2040	
+2019	Jan-May		Vivek				Computer Organisation	CS2060	
+2019	Jan-May		Vivek	Sandeep Chandran			Computer Organisation Laboratory	CS2160	
+2019	Jan-May		Chandra Shekar				Artificial Intelligence	CS2080	
+2019	Jan-May		Chandra Shekar	Albert Sunny			Artificial Intelligence Laboratory	CS2180	
+2019	Jan-May		Sahely				Database Management Systems	CS3020	
+2019	Jan-May		Sahely	Mrinal Das			Database Management Systems Laboratory	CS3120	
+2019	Jan-May		Piyush				Compiler Design	CS3040	
+2019	Jan-May		Piyush				Compiler Design Laboratory	CS3140	
+2019	Jan-May		Albert				Convex Optimization	CS4602	
+2019	Jan-May		Jasine				Approximation Algorithms	CS5004	
+2019	Jan-May		Sandeep				Parallel Programming	CS5005	
+2019	Jan-May		All CSE Faculty				Project Phase 2	CS4120	
+2019	July-Dec		Jasine				Logic for Computing	CS2010	
+2019	July-Dec		Sahely				Data Structures and Algorithms	CS2030	
+2019	July-Dec		Sahely	Krithika Ramaswamy			Data Structures and Algorithms Laboratory	CS2130	
+2019	July-Dec		Sandeep				Operating Systems	CS3010	
+2019	July-Dec		Sandeep	Jasine Babu			Operating Systems Laboratory	CS3110	
+2019	July-Dec		Piyush				Paradigms of Programming	CS3030	
+2019	July-Dec		Piyush	Unnikrishnan Cheramangalathheramangalath			Paradigms of Programming Laboratory	CS3130	
+2019	July-Dec		Deepak				Theory of Computation	CS3050	
+2019	July-Dec		Albert				Computer Networks	CS4010	
+2019	July-Dec		Albert				Computer Networks Laboratory	CS4150	
+2019	July-Dec		Vivek				Advanced Computer Architecture	CS4505	
+2019	July-Dec		Krithika				Parameterized Algorithms	CS5003	
+2019	July-Dec		Mrinal				Deep Learning	CS5007	
+2019	July-Dec		Chandra Shekar				Reinforcement Learning	CS5008	
+2019	July-Dec		Mrinal				Probability Models	CS5511	
+2019	July-Dec		Satyajit				Embedded Systems	CS5509	
+2019	July-Dec		Unnikrishnan				Compiler Optimization and Program Analysis	CS5510	
+2019	July-Dec		All CSE Faculty				Project Phase 1	CS4110	
+2019	July-Dec		Sahely				Machine Learning	CS5512	
+2020	Jan-May		Albert	Sandeep Chandran			Introduction to Programming	CS1020	
+2020	Jan-May		Jasine				Discrete Mathematics for Computer Science	CS2020	
+2020	Jan-May		Krithika				Design and Analysis of Algorithms	CS2040	
+2020	Jan-May		Vivek				Computer Organisation	CS2060	
+2020	Jan-May		Vivek				Computer Organisation Laboratory	CS2160	
+2020	Jan-May		Chandra Shekar				Artificial Intelligence	CS2080	
+2020	Jan-May		Chandra Shekar	Krithika Ramaswamy			Artificial Intelligence Laboratory	CS2180	
+2020	Jan-May		Mrinal				Database Management Systems	CS3020	
+2020	Jan-May		Sahely	Mrinal Das			Database Management Systems Laboratory	CS3120	
+2020	Jan-May		Unnikrishnan				Compiler Design	CS3040	
+2020	Jan-May		Unnikrishnan	Piyush P Kurur			Compiler Design Laboratory	CS3140	
+2020	Jan-May		Deepak				Combinatorics	CS4503	
+2020	Jan-May		Piyush				Functional Programming	CS5002	
+2020	Jan-May		Sahely				Machine Learning	CS5512	
+2020	Jan-May		Satyajit				Cryptography	CS5613	
+2020	Jan-May		All CSE Faculty				Project Phase 2	CS4120	
+2020	Jul-Dec		Krithika				Logic for Computing	CS2010	
+2020	Jul-Dec		Unnikrishnan				Data Structures and Algorithms	CS2030	
+2020	Jul-Dec		Unnikrishnan	Chandra Sekhar Lakshminarayanan			Data Structures and Algorithms Laboratory	CS2130	
+2020	Jul-Dec		Sandeep				Operating Systems	CS3010	
+2020	Jul-Dec		Sandeep	Satyajit Das			Operating Systems Laboratory	CS3110	
+2020	Jul-Dec		Piyush				Paradigms of Programming	CS3030	
+2020	Jul-Dec		Piyush				Paradigms of Programming Laboratory	CS3130	
+2020	Jul-Dec		Deepak				Theory of Computation	CS3050	
+2020	Jul-Dec		Albert				Computer Networks	CS4010	
+2020	Jul-Dec		Albert				Computer Networks Laboratory	CS4150	
+2020	Jul-Dec		Jasine				Algorithms	CS5009	
+2020	Jul-Dec		Krithika				Topics in Discrete Mathematics	CS5013	
+2020	Jul-Dec		Deepak				Theory of Computation	CS5017	
+2020	Jul-Dec		Vivek				Advanced Computer Architecture	CS5019	
+2020	Jul-Dec		Vivek				Advanced Computer Architecture Lab	CS5119	
+2020	Jul-Dec		Chandra Shekar				Optimisation for Machine Learning	CS5011	
+2020	Jul-Dec		Unnikrishnan				Parallel Programming	CS5005	
+2020	Jul-Dec		Sahely				Machine Learning	CS5512	
+2020	Jul-Dec		Sahely				Machine Learning Lab	CS5101	
+2020	Jul-Dec		Jasine				Approximation Algorithms	CS5004	
+2020	Jul-Dec		Mrinal				Data Engineering	CS5015	
+2020	Jul-Dec		Mrinal				Data Engineering Lab	CS5103	
+2020	Jul-Dec		Satyajit				Big Data Analytics	CS5104	
+2020	Jul-Dec		Albert	Sandeep Chandran	Vivek Chaturvedi		Programming Lab	CS5107	
+2020	Jul-Dec		Ramaswamy				Software Engineering	CS5617	
+2020	Jul-Dec		All CSE Faculty				Project Phase 1	CS4110	
+2021	Jan-May		Albert	Sandeep Chandran			Introduction to Programming	CS1020	
+2021	Jan-May		Deepak	Krithika Ramaswamy			Discrete Mathematics for Computer Science	CS2020	
+2021	Jan-May		Jasine				Design and Analysis of Algorithms	CS2040	
+2021	Jan-May		Vivek				Computer Organisation	CS2060	
+2021	Jan-May		Vivek, Sandeep				Computer Organisation Laboratory	CS2160	
+2021	Jan-May		Chandra Shekar				Artificial Intelligence	CS2080	
+2021	Jan-May		Chandra Shekar				Artificial Intelligence Laboratory	CS2180	
+2021	Jan-May		Sahely				Database Management Systems	CS3020	
+2021	Jan-May		Mrinal				Database Management Systems Laboratory	CS3120	
+2021	Jan-May		Piyush				Compiler Design	CS3040	
+2021	Jan-May		Piyush	Unnikrishnan Cheramangalathheramangalath			Compiler Design Laboratory	CS3140	
+2021	Jan-May		Krithika				Parameterized Algorithms	CS5003	
+2021	Jan-May		Mrinal				Deep Learning	CS5007	
+2021	Jan-May		Chandra Shekar				Reinforcement Learning	CS5008	
+2021	Jan-May		Jasine				Graph Theory and Combinatorics	CS5010	
+2021	Jan-May		Vivek				AI for Cybersecurity	CS5012	
+2021	Jan-May		Deepak				Foundations of Data Science & Machine Learning	CS5014	
+2021	Jan-May		Albert				Computational Methods and Applications	CS5016	
+2021	Jan-May		Satyajit				System on Chip Design	CS5102	
+2021	Jan-May		Satyajit				Big Data Analytics	CS5104	
+2021	Jan-May		Unnikrishnan				Real Time Systems	CS5618	
+2021	Jan-May		Sandeep				Synthesis of Digital Systems	CS5619	
+2021	Jan-May		Piyush				Logic	CS6004	
+2021	Jan-May		All CSE Faculty				Project Phase 2	CS4120	
+2021	Jul-Dec		Krithika				Logic for Computing	CS2010	
+2021	Jul-Dec		Albert				Computer Networks	CS4010	
+2021	Jul-Dec		Albert				Computer Networks Lab	CS4150	
+2021	Jul-Dec		Jasine				Data Structures and Algorithms	CS2030	
+2021	Jul-Dec		Jasine				Data Structures and Algorithms Laboratory	CS2130	
+2021	Jul-Dec		Sandeep				Operating Systems	CS3010	
+2021	Jul-Dec		Sandeep	Satyajit Das			Operating Systems Laboratory	CS3110	
+2021	Jul-Dec		Piyush				Paradigms of Programming	CS3030	
+2021	Jul-Dec		Piyush				Paradigms of Programming Laboratory	CS3130	
+2021	Jul-Dec		Deepak				Theory of Computation	CS3050	
+2021	Jul-Dec		Satyajit				Computer Vision	CS5620	
+2021	Jul-Dec		Ramaswamy				Software Engineering	CS5617	
+2021	Jul-Dec		All CSE Faculty				Project Phase 1	CS4110	
+2021	Jul-Dec		Sahely				Optimization	CS5011	
+2021	Jul-Dec		Piyush				Functional Programming	CS5002	
+2021	Jul-Dec		Krithika				Algorithms	CS5009	
+2021	Jul-Dec		Deepak				Topics in Discrete Mathematics	CS5013	
+2021	Jul-Dec		Deepak				Theory of Computation	CS5017	
+2021	Jul-Dec		Sandeep				Advanced Computer Architecture	CS5019	
+2021	Jul-Dec		Satyadev Nandakumar (CSE, IITK)				Probability and Computing	CS5820	
+2021	Jul-Dec		Mrinal	Koninika Pal			Information Retrieval	CS5621	
+2021	Jul-Dec		Sahely				Machine Learning	CS5512	
+2021	Jul-Dec		Sahely				Machine Learning Lab	CS5101	
+2021	Jul-Dec		Unnikrishnan				Compiler Optimization and Program Analysis	CS5510	
+2021	Jul-Dec		Albert	Sandeep Chandran	Vivek Chaturvedi		Programming Lab	CS5107	
+2022	Jan-May	Auditorium, AAB; Computer Lab, AAB	Unnikrishnan Cheramangalath	Krishnamoorthy Dinesh	Vivek Chaturvedi		Introduction to Programming	CS1020	E, L2, L3, L4
+2022	Jan-May		Satyadev Nandakumar (CSE, IITK)				Discrete Mathematics for Computer Science	CS2020	A
+2022	Jan-May		Jasine Babu				Design and Analysis of Algorithms	CS2040	B, T5, L3
+2022	Jan-May		Sandeep Chandran				Computer Organisation	CS2060	E
+2022	Jan-May		C K Narayanan				Artificial Intelligence	CS2080	C
+2022	Jan-May		Sandeep Chandran				Computer Organization Lab	CS2160	L4
+2022	Jan-May		C K Narayanan				Artificial Intelligence Lab	CS2180	L5
+2022	Jan-May		Koninika Pal				Database Management Systems	CS3020	A
+2022	Jan-May		Piyush Kurur				Compiler Design	CS3040	H
+2022	Jan-May		Koninika Pal	Sahely Bhadra			Database Management System Lab	CS3120	L3
+2022	Jan-May		Piyush Kurur				Compiler Design Lab	CS3140	L4
+2022	Jan-May		Unnikrishnan Cheramangalath				Parallel Programming	CS5005	C
+2022	Jan-May	AAB 33	Krithika Ramaswamy				Graph Theory and Combinatorics	CS5010	A
+2022	Jan-May	AAB 18	Vivek Chaturvedi				AI for Cyber Security	CS5012	H, T5
+2022	Jan-May	AAB aud	Deepak Rajendraprasad				Foundations of Data Science and Machine Learning	CS5014	B
+2022	Jan-May	AAB 18	Albert Sunny				Computational Methods and Applications	CS5016	E
+2022	Jan-May	AAB 33	Krishnamoorthy Dinesh				Computational Complexity	CS5616	F
+2022	Jan-May	AAB 18	Deepak Rajendraprasad				Probabilistic Method	CS6003	D
+2022	Jan-May	AAB 18	Satyajit Das				Big Data Lab	CS5104	T2
+2022	Jan-May	AAB 33	Sahely Bhadra				Responsible AI	CS6006	C
+2022	Jan-May	AAB 18	Kiran	Vivek Chaturvedi			PreSilicon Design Verification using Formal Property Verification	CS5626	B
+2022	Aug-Dec	A 112	Krithika Ramaswamy					CS5013	D2 (Tue), A2 (Mon)
+2022	Aug-Dec	A 120	Jasine Babu					CS5009	C2, H (Wed)
+2022	Aug-Dec	A. Comp Lab (1st floor)	Piyush P Kurur					CS3130	P5
+2022	Aug-Dec	A. 18	Srimanta Bhattacharya					CS5614	A2 (Thu), B2 (Thu), B1
+2022	Aug-Dec	A. 120	Sandeep Chandran					CS5628	D
+2022	Aug-Dec	A. 120	Jasine Babu					CS5633	F, J
+2022	Aug-Dec	A. 119	Krithika R					CS6002	D
+2022	Aug-Dec	A. Aud	Piyush P Kurur					CS5627	E
+2022	Aug-Dec	A. 112	Sahely Bhadra					DS5005	D
+2022	Aug-Dec	A. 120	Vivek Chaturvedi					CS5019	C
+2022	Aug-Dec	A. Comp Lab (1st floor)	Vivek Chaturvedi					CS5119	P2
+2022	Aug-Dec	A. Comp Lab (1st floor)	Deepak Rajendraprasad	Krishnamoorthy Dinesh				CS5107	P3
+2022	Aug-Dec	A. 18	Albert Sunny					CS4010	C
+2022	Aug-Dec	A. Comp Lab (Ground floor)	Albert Sunny					CS4150	P4
+2022	Aug-Dec		Srimanta Bhattacharya					CS4110	
+2022	Aug-Dec	A. MBA 211	Koninika Pal					DS5603	D
+2022	Aug-Dec	A 112, A. Comp. Lab (1st Floor), A. Electronics Lab	Sahely Bhadra	Narayanan C Krishnan				DS3010	P6
+2022	Aug-Dec	A. 18	Krishnamoorthy Dinesh					CS3050	A
+2022	Aug-Dec	A. 112	Krishnamoorthy Dinesh					CS5017	A
+2022	Aug-Dec	A. Comp lab (Ground floor)	Piyush P Kurur					CS3030	P5
+2022	Aug-Dec	A. Comp lab (Ground floor)	Satyajit Das					DS5602	F
+2022	Aug-Dec	A. 18	Sandeep Chandran					CS3010	B
+2022	Aug-Dec	A. Comp lab (Ground floor)	Sandeep Chandran					CS3110	P7
+2022	Aug-Dec	A. 18	Deepak Rajendraprasad					CS2010	G
+2022	Aug-Dec	A. 18	Unnikrishnan Cheramangalath					CS2030	D
+2022	Aug-Dec	A. Comp lab (Ground floor)	Unnikrishan C					CS2130	P6
+2023	Jan-May	Auditorium, AAB; Computer Lab, AAB	Albert Sunny	Srimanta Bhattacharya	Sovan Lal Das	Piyush P Kurur		ID1110	E, L2, L3, L4
+2023	Jan-May	A 18	Jasine Babu					CS2020	M; E (Wed)
+2023	Jan-May	A 18	Krithika Ramaswamy					CS2040	G; D (Wed)
+2023	Jan-May	A 18	Vivek Chaturvedi					CS2060	F (Tue, Thu)
+2023	Jan-May	A 18	Narayanan C Krishnan					CS2080	D (Mon, Fri); C1
+2023	Jan-May	A Comp Lab (G Floor)	Vivek Chaturvedi					CS2160	P6
+2023	Jan-May	A Comp Lab (G Floor)	Krithika Ramaswamy	Krishnamoorthy Dinesh				CS2180	P5
+2023	Jan-May	A 18	Koninika Pal					CS3020	A, A1
+2023	Jan-May	A 18	Unnikrishnan Cheramangalath					CS3040	C; F (Fri)
+2023	Jan-May	A Comp Lab (G Floor)	Koninika Pal	Sahely Bhadra				CS3120	P4
+2023	Jan-May	A Comp Lab (G Floor)	Unnikrishnan Cheramangalath					CS3140	P7
+2023	Jan-May	A Comp Lab (G Floor)	Albert Sunny					CS5016	P2
+2023	Jan-May	A Aud	Deepak Rajendraprasad					CS5014	F (Tue,Thu)
+2023	Jan-May	A 119	Krishnamoorthy Dinesh					CS5616	M, C1
+2023	Jan-May	A 18	Deepak Rajendraprasad					CS5820	I
+2023	Jan-May	A 18	Piyush P Kurur					CS5634	J
+2023	Jan-May	A 119	Sandeep Chandran					CS5619	H (Mon); E (Mon); D (Mon,Wed)
+2023	Jan-May	A 18	Srimanta Bhattacharya					CS5010	K
+2023	Jan-May	A 119	Sahely Bhadra					DS5604	F
+2023	Jan-May	A Comp Lab (1st floor)	Satyajit Das					DS5102	P6
