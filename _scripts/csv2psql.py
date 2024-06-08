@@ -32,9 +32,8 @@ with open(csv_file_name, 'r') as csv_file:
     for row in csv_reader:
         data.append(row)
 
-field_names = ', '.join(field for field in fields)
-print(field_names)
+field_names = ', '.join(f'"{field}"' for field in fields)
 
 for row in data:
     data_string = ', '.join(f"'{value}'" for value in row)
-    print(f"Insert into {table_name}({field_names}) values ({data_string})")
+    print(f"Insert into {table_name}({field_names}) values ({data_string});")
