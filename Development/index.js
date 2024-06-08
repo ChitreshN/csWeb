@@ -17,13 +17,15 @@ db.connect();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.get("/",async(req,res)=>{
+    //to get list of all table names
+
     const result=await db.query("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'");
     res.render("index.ejs",{tables:result.rows});
 });
 app.post("/GetTableDropDown",async(req,res)=>{
-
+    console.log(req.body);
     var tableName=req.body.tableName;
-    
+    //to get list of table columns names
     const t=await db.query(" SELECT * FROM information_schema.columns WHERE table_name = $1;",[tableName]);
     
     var columns=[];
@@ -31,16 +33,23 @@ app.post("/GetTableDropDown",async(req,res)=>{
     {
         columns.push(t.rows[i].column_name);
     }
-  
-    res.render("index.ejs",{columns:columns,tableName:tableName});
+    //to get list of all table names
+    const result=await db.query("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'");
+    res.render("index.ejs",{dataColumnNames:columns,tableName:tableName,tables:result.rows});
 });
+
 app.post("/displayTable",async(req,res)=>{
     // Log the body content for debugging
+    const result1=await db.query("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'");
    
 
     // Extract tableName from req.body
+    // const { query, tableName, ...columnsObject } = req.body;
     const { tableName, ...columnsObject } = req.body;
-
+    // var resultQuery= await db.query(query);
+    // resultQuery=resultQuery.rows;
+    // res.render("index.ejs",{dataColumns:resultQuery.rows,tableName:tableName,heading:heading,tables:result1.rows});
+    
     // Check if tableName is provided
     if (!tableName) {
       return res.status(400).send("Table name is required");
@@ -56,8 +65,7 @@ app.post("/displayTable",async(req,res)=>{
     const result = await db.query(`SELECT ${columnNames} FROM ${tableName}`);
     
     const heading=Object.keys(result.rows[0]);
-    
-    res.render("index.ejs",{data:result.rows,tableName:tableName,heading:heading});
+    res.render("index.ejs",{dataColumns:result.rows,tableName:tableName,heading:heading,tables:result1.rows});
 
 });
 app.listen(port,()=>{
