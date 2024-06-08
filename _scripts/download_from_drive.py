@@ -22,8 +22,8 @@ else:
 
 
 # define path variables
-credentials_file_path = './credentials/credentials.json'
-clientsecret_file_path = './credentials/client_secret.json'
+credentials_file_path = './_scripts/credentials/credentials.json'
+clientsecret_file_path = './_scripts/credentials/client_secret.json'
 
 # define API scope
 SCOPE = 'https://www.googleapis.com/auth/drive'
@@ -89,9 +89,9 @@ def download_sheet_to_csv(spreadsheet_id, sheet_name):
     padded_values = [row + [''] * (max_columns - len(row)) for row in values]
 
     # Output file path
-    output_file = f'../_data_csv/{sheet_name}.csv'
+    output_file = f'./_data_csv/{sheet_name}.csv'
     if spreadsheet_name != sheet_name:
-        output_file = f'../_data_csv/{spreadsheet_name}_{sheet_name}.csv'
+        output_file = f'./_data_csv/{spreadsheet_name}_{sheet_name}.csv'
 
     with open(output_file, 'w', newline='') as f:  # Ensure consistent line endings
         writer = csv.writer(f, delimiter='\t', quoting=csv.QUOTE_MINIMAL)  # Enable quoting
