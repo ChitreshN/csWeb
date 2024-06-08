@@ -1,5 +1,5 @@
 TEXT	TEXT	DATE	TEXT	TEXT	TEXT	TEXT	INTEGER	TEXT	TEXT	TEXT	TEXT
-Code	Title	Last Modified	Credits	Category	Proposing faculty	Proposing faculty 2	Senate approved on	Prerequisites	Status	Revision info	Remarks
+Code	Title	Last Modified	Credits	Category	Proposingfaculty	Proposingfaculty2	Senate approved on	Prerequisites	Status	Revision info	Remarks
 CS5002	Functional Programming		3-0-0-3	ERC	Piyush P Kurur		5		New		
 CS5003	Parameterized Algorithms		3-0-0-3	PME	Krithika Ramaswamy		6	A first course in the design and analysis of algorithms	New		
 CS5004	Approximation Algorithms		3-0-0-3	PME	Jasine Babu		6	A first course in the design and analysis of algorithms	New		
