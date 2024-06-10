@@ -1,3 +1,0 @@
-pk	email
-email	faculty(email)
-affiliation	faculty(name),faculty(email)
