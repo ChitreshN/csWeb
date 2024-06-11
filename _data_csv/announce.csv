@@ -1,5 +1,5 @@
 INTEGER	DATE	TEXT	TEXT	TEXT	TEXT	TEXT
-uid	date	title	description	show	notifypublic	link
+UniqueID	date	title	description	show	notifypublic	link
 1	2021-12-17	Curriculum revision approved in 25th BAC		yes		
 2	2021-11-25	Dr. Deepak Rajendraprasad appointed as an associate professor in CSE.				
 3	2021-12-1	MS-PhD interviews from Dec 6 to Dec 8				

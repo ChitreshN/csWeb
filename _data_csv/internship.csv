@@ -1,5 +1,5 @@
 INTEGER	TEXT	TEXT	TEXT	TEXT	TEXT
-uid	duration	faculty	apply	name	numpos
+UniqueID	duration	faculty	apply	name	numpos
 1	For 6 months	Satyajit Das	via this [link](https://forms.gle/CpSE2Bva1MKHFMbm8)	The project is about development of frameworks for AI accelerators: You need prior knowledge in Deep Learning, compiler and programming in C++, Python	2
 2	For 3 months	Unnikrishnan Cheramangalath	Email concerned faculty	HPC and Compilers	2
 3	For 2 months	Sandeep Chandran	Email concerned faculty	Develop cycle accurate simulator (in C++) for LEON3 processor	1
