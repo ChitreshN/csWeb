@@ -37,5 +37,7 @@ field_names = ', '.join(f'"{field}"' for field in fields)
 for row in data:
     for i in range(len(row)):
         row[i] = row[i].replace("'", "")
+        row[i] = row[i].replace('[', '{')  # proper syntax for lists
+        row[i] = row[i].replace(']', '}')
     data_string = ', '.join(f"'{value}'" for value in row)
-    print(f"Insert into {table_name}({field_names}) values ({data_string});")
+    print(f'Insert into "{table_name}"({field_names}) values ({data_string});')
