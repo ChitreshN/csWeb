@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/usr/bin/bash
 psql -U postgres -d testdb -f ./_postgresDB/testdb.sql
 
 rm testInsert.sql

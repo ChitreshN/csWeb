@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/usr/bin/bash
 psql -U postgres -d csdb -f ./_postgresDB/csdb.sql
 
 LOC="./_data_csv"
