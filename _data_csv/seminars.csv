@@ -1,4 +1,5 @@
+TEXT	TEXT	TEXT	TEXT	TEXT	DATE
 people	description	speaker	show	title	date
-		I J Matrix	True	Test seminar	1 April 2021
-		Polymath	False	Test seminar	1 April 2020
-		Stud	False	Test seminar	1 April 2019
+		I J Matrix	TRUE	Test seminar	2021-04-01
+		Polymath	FALSE	Test seminar	2020-04-01
+		Stud	FALSE	Test seminar	2019-04-01
