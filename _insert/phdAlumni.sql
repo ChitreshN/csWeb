@@ -1,0 +1,2 @@
+Insert into "phdAlumni"("year", "name", "rollno", "doj", "area", "advisor1", "advisor2", "thesis_submitted", "next", "thesisTitle") values ('2022', 'Veena Prabhakaran', '111704003', 'July 2017', 'Graph Theory, Algorithms', 'Jasine Babu', '', '', '', '');
+Insert into "phdAlumni"("year", "name", "rollno", "doj", "area", "advisor1", "advisor2", "thesis_submitted", "next", "thesisTitle") values ('2022', 'Deepu Benson', '111704001', 'July 2017', 'Graph Theory, Algorithms', 'Jasine Babu', 'Deepak Rajendraprasad', '', '', '');

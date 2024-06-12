@@ -1,0 +1,15 @@
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2022', 'Athira S', '112002002');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2022', 'Avijit Mondal', '112002003');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2022', 'Keerthana A', '112002004');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2022', 'Mathews George', '112002005');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2022', 'Rengamani B', '112002007');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2022', 'Vishnuvardhan Prem', '112002009');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2023', 'BHASKER UPADHYAY', '112102001');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2023', 'KARRI NIRNAESHITHA', '112102002');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2023', 'Lalatendu Keshari Nayak', '112102003');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2023', 'RAJESH BUDANIA', '112102004');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2023', 'Sanjeev Kumar Rawat', '112102005');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2023', 'Sneha Chakraborty', '112102006');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2023', 'Suman Majumder', '112102007');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2023', 'SURAPANENI SAI PRIYANKA', '112102008');
+Insert into "mcamAlumni"("year", "name", "rollno") values ('2023', 'Vishnu Kant Tiwari', '112102009');
