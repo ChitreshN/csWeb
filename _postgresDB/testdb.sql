@@ -1,4 +1,4 @@
-CREATE TABLE "all_faculty" (
+CREATE TABLE "allfaculty" (
     "name" VARCHAR,
     "designation" VARCHAR,
     "edu" VARCHAR,
@@ -23,9 +23,9 @@ CREATE TABLE "announce" (
     "UniqueID" SERIAL PRIMARY KEY,
     "date" VARCHAR,
     "title" VARCHAR,
-    "show" BOOLEAN,
+    "show" varchar,
     "description" VARCHAR,
-    "notifypublic" BOOLEAN,
+    "notifypublic" VARCHAR,
     "link" VARCHAR
 );
 
@@ -150,6 +150,14 @@ CREATE TABLE "openPos" (
     "faculty2" VARCHAR
 );
 
+CREATE TABLE "placement" (
+    "registered" INTEGER,
+    "year" INTEGER,
+    "prog" TEXT,
+    "range" TEXT,
+    "count" INTEGER
+);
+
 -- prop fac email and list
 CREATE TABLE "courses" (
     "Code" VARCHAR PRIMARY KEY,
@@ -161,9 +169,9 @@ CREATE TABLE "courses" (
     "CoreUG" VARCHAR,
     "Credits" VARCHAR,
     "Category" VARCHAR,
-    "Proposingfaculty" VARCHAR,
-    "Proposingfaculty2" VARCHAR,
-    "Proposingfaculty3" VARCHAR,
+    "Proposing faculty" VARCHAR,
+    "Proposing faculty 2" VARCHAR,
+    "Proposing faculty 3" VARCHAR,
     "Curriculum" VARCHAR[],
     "Senate approved on" INTEGER,
     "Show" BOOLEAN,
@@ -244,6 +252,15 @@ CREATE TABLE "scholars" (
     "otherdepartment" VARCHAR
 );
 
+create table "seminars"(
+    "people" TEXT	,
+    "description"	TEXT	,
+    "speaker"	TEXT,
+    "show"	TEXT,
+    "title"	TEXT,
+    "date" TEXT
+);
+
 -- gen these from scholars file
 CREATE TABLE "MSscholarAdvisor" (
   "rollno" VARCHAR,
@@ -301,7 +318,7 @@ CREATE TABLE "talkseries" (
 
 CREATE TABLE "workshops" (
     "UniqueID" SERIAL PRIMARY KEY,
-    "date" VARCHAR,
+    "date" varchar,
     "link" VARCHAR,
     "title" VARCHAR,
     "description" VARCHAR
@@ -333,6 +350,6 @@ ALTER TABLE "projectFaculty" ADD FOREIGN KEY ("projID") REFERENCES "projects" ("
 
 --ALTER TABLE "msocd" ADD FOREIGN KEY ("fa") REFERENCES "allfaculty" ("email");
 
-ALTER TABLE "currentCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("code");
+ALTER TABLE "currentCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
 
-ALTER TABLE "pastCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("code");
+ALTER TABLE "pastCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
