@@ -1,5 +1,5 @@
 INTEGER	TEXT	TEXT	DATE	TEXT	TEXT
-uid	title	description	date	people	show
+UniqueID	title	description	date	people	show
 1	Kevin Jude (PhD student) selected as a PMRF Fellow	Kevin Jude (PhD student) was awarded the Prime Minister’s Research Fellow (PMRF) fellowship in 2021. See [here](https://iitpkd.ac.in/news/pmrf-fellows-selected-may-2021-cycle) for more details.	2021-11-15		yes
 2	First position in TCTD Challenge	Yogesh R (BTech batch 2018) was part of the team that won the first position in TCTD Challenge of the 7th Inter IIT Tech Meet.	2018-1-1		yes
 3	Second place in Smart India Hackathon	Adithya Kumar O V, Jude K Anil, Sooraj Tom and Rohit Reddy (BTech batch 2015) were part of the team that were placed second in Smart India Hackathon final in 2018.	2018-1-1		yes

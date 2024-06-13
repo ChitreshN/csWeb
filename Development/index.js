@@ -54,11 +54,15 @@ app.post("/displayTable",async(req,res)=>{
     const columns = Object.keys(columnsObject);
 
     // Join columns to create the SELECT statement
-    const columnNames = columns.join(", ");
 
     // Construct the SQL query
-    const result = await db.query(`SELECT ${columnNames} FROM ${tableName}`);
-    
+    const columnNames = Object.keys(columnsObject).map(col => `"${col}"`).join(', ');
+    const result = await db.query(`SELECT ${columnNames} FROM "${tableName}"`);
+
+    // check if table is empty
+    if (!result.rows[0]) {
+        return res.send("No entries for selected table")
+    }
     const heading=Object.keys(result.rows[0]);
     console.log(result.rows);
     // console.log(tableName);

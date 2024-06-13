@@ -1,4 +1,4 @@
-CREATE TABLE "all_faculty" (
+CREATE TABLE "allfaculty" (
     "name" VARCHAR,
     "designation" VARCHAR,
     "edu" VARCHAR,
@@ -20,17 +20,17 @@ CREATE TABLE "adjfaculty" (
 );
 
 CREATE TABLE "announce" (
-    "uid" SERIAL PRIMARY KEY,
+    "UniqueID" SERIAL PRIMARY KEY,
     "date" VARCHAR,
     "title" VARCHAR,
-    "show" BOOLEAN,
+    "show" varchar,
     "description" VARCHAR,
-    "notifypublic" BOOLEAN,
+    "notifypublic" VARCHAR,
     "link" VARCHAR
 );
 
 CREATE TABLE "awards" (
-    "uid" SERIAL PRIMARY KEY,
+    "UniqueID" SERIAL PRIMARY KEY,
     "title" VARCHAR,
     "description" VARCHAR,
     "date" VARCHAR,
@@ -42,14 +42,14 @@ CREATE TABLE "btech" (
     "year" INT,
     "name" VARCHAR,
     "rollno" INT PRIMARY KEY,
-    "fa" VARCHAR
+    "faEmail" VARCHAR
 );
 
 CREATE TABLE "btechAlumni" (
     "year" INT,
     "name" VARCHAR,
     "rollno" INT PRIMARY KEY,
-    "fa" VARCHAR
+    "faEmail" VARCHAR
 );
 
 CREATE TABLE "carousels" (
@@ -58,7 +58,7 @@ CREATE TABLE "carousels" (
 );
 
 CREATE TABLE "colloquium" (
-    "uid" SERIAL PRIMARY KEY,
+    "UniqueID" SERIAL PRIMARY KEY,
     "title" VARCHAR,
     "speaker" VARCHAR,
     "description" VARCHAR,
@@ -72,10 +72,11 @@ CREATE TABLE "colloquium" (
     "imagesLayout" VARCHAR
 );
 
+-- needs faculty emails and convert list
 CREATE TABLE "currentCourses" (
     "code" VARCHAR PRIMARY KEY,
-    "faculty1" varchar,
-    "faculty2" varchar,
+    "faculty1" varchar, --email
+    "faculty2" varchar, --email
     "slot" VARCHAR,
     "room" VARCHAR
 );
@@ -87,8 +88,9 @@ CREATE TABLE "currentNPTELCourses" (
     "Link" VARCHAR
 );
 
+-- needs email faculty
 CREATE TABLE "internship" (
-    "uid" SERIAL PRIMARY KEY,
+    "UniqueID" SERIAL PRIMARY KEY,
     "name" VARCHAR,
     "faculty" VARCHAR,
     "numpos" VARCHAR,
@@ -96,6 +98,7 @@ CREATE TABLE "internship" (
     "apply" VARCHAR
 );
 
+-- needs fa email
 CREATE TABLE "mcam" (
     "year" INT,
     "name" VARCHAR,
@@ -122,6 +125,7 @@ CREATE TABLE "msAlumni" (
     "area" VARCHAR
 );
 
+-- fa email
 CREATE TABLE "msocd" (
     "year" INT,
     "name" VARCHAR,
@@ -136,7 +140,7 @@ CREATE TABLE "msocdAlumni" (
 );
 
 CREATE TABLE "openPos" (
-    "uid" SERIAL PRIMARY KEY,
+    "UniqueID" SERIAL PRIMARY KEY,
     "quals" VARCHAR,
     "apply" VARCHAR,
     "name" VARCHAR,
@@ -146,19 +150,28 @@ CREATE TABLE "openPos" (
     "faculty2" VARCHAR
 );
 
+CREATE TABLE "placement" (
+    "registered" INTEGER,
+    "year" INTEGER,
+    "prog" TEXT,
+    "range" TEXT,
+    "count" INTEGER
+);
+
+-- prop fac email and list
 CREATE TABLE "courses" (
     "Code" VARCHAR PRIMARY KEY,
     "Title" VARCHAR,
-    "Last Modified" DATE,
+    "Last Modified" VARCHAR,
     "Core" VARCHAR[],
     "CoreMSOCD" VARCHAR,
     "CoreMCAM" VARCHAR,
     "CoreUG" VARCHAR,
     "Credits" VARCHAR,
     "Category" VARCHAR,
-    "Proposingfaculty" VARCHAR,
-    "Proposingfaculty2" VARCHAR,
-    "Proposingfaculty3" VARCHAR,
+    "Proposing faculty" VARCHAR,
+    "Proposing faculty 2" VARCHAR,
+    "Proposing faculty 3" VARCHAR,
     "Curriculum" VARCHAR[],
     "Senate approved on" INTEGER,
     "Show" BOOLEAN,
@@ -170,6 +183,7 @@ CREATE TABLE "courses" (
     "Faculty" varchar
 );
 
+-- faculty email and add these as foreign keys
 CREATE TABLE "pastCourses" (
     "year" INT,
     "semester" VARCHAR,
@@ -238,6 +252,22 @@ CREATE TABLE "scholars" (
     "otherdepartment" VARCHAR
 );
 
+create table "seminars"(
+    "people" TEXT	,
+    "description"	TEXT	,
+    "speaker"	TEXT,
+    "show"	TEXT,
+    "title"	TEXT,
+    "date" TEXT
+);
+
+-- gen these from scholars file
+CREATE TABLE "MSscholarAdvisor" (
+  "rollno" VARCHAR,
+  "facEmail" VARCHAR,
+  PRIMARY KEY ("rollno", "facEmail")
+);
+
 CREATE TABLE "staff" (
     "name" VARCHAR,
     "office" VARCHAR,
@@ -254,6 +284,7 @@ CREATE TABLE "stats" (
     "phd" INT
 );
 
+-- images list
 CREATE TABLE "talks" (
     "title" VARCHAR,
     "speaker" VARCHAR,
@@ -272,7 +303,7 @@ CREATE TABLE "talks" (
 );
 
 CREATE TABLE "talkseries" (
-    "uid" SERIAL PRIMARY KEY,
+    "UniqueID" SERIAL PRIMARY KEY,
     "show" BOOLEAN,
     "imageslayout" VARCHAR,
     "host" VARCHAR,
@@ -286,10 +317,39 @@ CREATE TABLE "talkseries" (
 );
 
 CREATE TABLE "workshops" (
-    "uid" SERIAL PRIMARY KEY,
-    "date" DATE,
+    "UniqueID" SERIAL PRIMARY KEY,
+    "date" varchar,
     "link" VARCHAR,
     "title" VARCHAR,
     "description" VARCHAR
 );
 
+--ALTER TABLE "btech" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
+
+--ALTER TABLE "btechAlumni" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
+
+--ALTER TABLE "cse_faculty" ADD FOREIGN KEY ("email") REFERENCES "allfaculty" ("email");
+
+--ALTER TABLE "internship" ADD FOREIGN KEY ("facEmail") REFERENCES "allfaculty" ("email");
+
+--ALTER TABLE "mcam" ADD FOREIGN KEY ("fa") REFERENCES "allfaculty" ("email");
+
+--ALTER TABLE "projectFaculty" ADD FOREIGN KEY ("facEmail") REFERENCES "allfaculty" ("email");
+
+ALTER TABLE "projectFaculty" ADD FOREIGN KEY ("projID") REFERENCES "projects" ("projID");
+
+--ALTER TABLE "PhDscholarAdvisor" ADD FOREIGN KEY ("facEmail") REFERENCES "allfaculty" ("email");
+
+--ALTER TABLE "PhDscholarAdvisor" ADD FOREIGN KEY ("rollno") REFERENCES "PhDscholars" ("rollno");
+
+--ALTER TABLE "MSscholarAdvisor" ADD FOREIGN KEY ("facEmail") REFERENCES "allfaculty" ("email");
+
+--ALTER TABLE "MSscholarAdvisor" ADD FOREIGN KEY ("rollno") REFERENCES "MSscholars" ("rollno");
+
+--ALTER TABLE "talkseries" ADD FOREIGN KEY ("host") REFERENCES "allfaculty" ("email");
+
+--ALTER TABLE "msocd" ADD FOREIGN KEY ("fa") REFERENCES "allfaculty" ("email");
+
+ALTER TABLE "currentCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
+
+ALTER TABLE "pastCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");

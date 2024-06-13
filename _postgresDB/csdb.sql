@@ -289,13 +289,12 @@ CREATE TABLE "workshops" (
   "description" VARCHAR
 );
 
-ALTER TABLE "allfaculty" ADD FOREIGN KEY ("email") REFERENCES "adjfaculty" ("email");
 
 ALTER TABLE "btech" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
 
 ALTER TABLE "btechAlumni" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
 
-ALTER TABLE "allfaculty" ADD FOREIGN KEY ("email") REFERENCES "cse_faculty" ("email");
+ALTER TABLE "cse_faculty" ADD FOREIGN KEY ("email") REFERENCES "allfaculty" ("email");
 
 ALTER TABLE "internship" ADD FOREIGN KEY ("facEmail") REFERENCES "allfaculty" ("email");
 
