@@ -38,17 +38,12 @@ app.post("/GetTableDropDown",async(req,res)=>{
     res.render("index.ejs",{dataColumnNames:columns,tableName:tableName,tables:result.rows});
 });
 
+
+
 app.post("/displayTable",async(req,res)=>{
     // Log the body content for debugging
     const result1=await db.query("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'");
-   
-
-    // Extract tableName from req.body
-    // const { query, tableName, ...columnsObject } = req.body;
     const { tableName, ...columnsObject } = req.body;
-    // var resultQuery= await db.query(query);
-    // resultQuery=resultQuery.rows;
-    // res.render("index.ejs",{dataColumns:resultQuery.rows,tableName:tableName,heading:heading,tables:result1.rows});
     
     // Check if tableName is provided
     if (!tableName) {
@@ -65,6 +60,10 @@ app.post("/displayTable",async(req,res)=>{
     const result = await db.query(`SELECT ${columnNames} FROM ${tableName}`);
     
     const heading=Object.keys(result.rows[0]);
+    console.log(result.rows);
+    // console.log(tableName);
+    // console.log(heading);
+    // console.log(result1.rows);
     res.render("index.ejs",{dataColumns:result.rows,tableName:tableName,heading:heading,tables:result1.rows});
 
 });

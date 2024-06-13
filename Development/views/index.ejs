@@ -13,22 +13,30 @@
 </head>
 <body>
 <!-- this is a dropdown from which you can chose the table name  -->
-      <div class="class1">
-        <form action="/GetTableDropDown" method="post">
-          <label for="tableName">Choose a Table:</label>
-          <select name="tableName">
-          <%if(locals.tableName){%>
-            <option value="<%=tableName%>"><%=tableName%></option>
-            <%}else{%>
-          <option id="select">Select</option>
-          <%}%>
-          <%for(var i=0;i<tables.length;i++){%>
-            <option value="<%=tables[i].table_name%>" ><%=tables[i].table_name%></option>
-          <%}%>
-        </select>
-        <input type="submit" value="Go">
-      </form>
-    </div>
+<div class="class1">
+  <form action="/GetTableDropDown" method="post" id="tableForm">
+    <label for="tableName">Choose a Table:</label>
+    <select name="tableName" onchange="submitForm()">
+      <% if (locals.tableName) { %>
+        <option value="<%=tableName%>"><%=tableName%></option>
+      <% } else { %>
+        <option id="select">Select</option>
+      <% } %>
+      <% for (var i = 0; i < tables.length; i++) { %>
+        <option value="<%=tables[i].table_name%>"><%=tables[i].table_name%></option>
+      <% } %>
+    </select>
+    <!-- <input type="submit" value="Go"> -->
+  </form>
+  <script>
+    function submitForm() {
+      document.getElementById('tableForm').submit();
+    }
+  </script>
+</div>
+
+
+    
 
   <!-- this provides you list of checkboxes from which you can chose the list of coulms you want to display  -->
     <%if(locals.dataColumnNames){%>
@@ -49,27 +57,30 @@
     <%}%>
 
     <!-- depending on the coulms selected here the table will be displayed -->
-     <!-- dataColumns, heading,  -->
-<div id="spreadsheet">
-    <%if(locals.dataColumns){%> 
 
-      <table>
-        <tr>
-          <% for(var j=0; j<heading.length; j++) { %>
-            <th><%= heading[j] %></th>
-          <% } %>
-        </tr>
-        <% for(var i=0; i<dataColumns.length; i++) { %>
+     <!-- dataColumns= data entries, heading= coulmn names  -->
+     <div id="spreadsheet">
+      <%if(locals.dataColumns){%> 
+  
+        <table>
           <tr>
             <% for(var j=0; j<heading.length; j++) { %>
-              <td><%= dataColumns[i][heading[j]] %></td>
+              <th><%= heading[j] %></th>
             <% } %>
           </tr>
-        <% } %>
-      </table>  
+          <% for(var i=0; i<dataColumns.length; i++) { %>
+            <tr>
+              <% for(var j=0; j<heading.length; j++) { %>
+                <td><%= dataColumns[i][heading[j]] %></td>
+              <% } %>
+            </tr>
+          <% } %>
+        </table>  
+  
+      <%}%>
+    </div>
+  
 
-    <%}%>
-  </div>
    <!-- js script for spreads sheet  -->
    <script src="https://bossanova.uk/jspreadsheet/v4/jexcel.js"></script>
    <script src="https://jsuites.net/docs/v4/jsuites.js"></script>

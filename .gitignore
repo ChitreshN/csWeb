@@ -6,7 +6,6 @@ _site/
 .bundle/
 vendor/
 _scripts/credentials
-<<<<<<< HEAD
 
 # Logs
 logs
@@ -138,5 +137,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-=======
->>>>>>> 616cb20044492da85c4be40e49798a2911d5d068
