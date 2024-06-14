@@ -13,7 +13,7 @@ do
             echo processing $name
             python3 ./_scripts/csv2psql_btech.py $LOC/$name ${name%.*} > _insert/${name%.*}.sql
             ;;
-        "courses_Core.csv" | "courses_Elective.md")
+        "courses_Core.csv" | "courses_Elective.csv")
             echo processing $name
             python3 ./_scripts/csv2psql.py $LOC/$name courses >> _insert/courses.sql
             ;;

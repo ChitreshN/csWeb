@@ -173,15 +173,16 @@ CREATE TABLE "courses" (
     "Proposingfaculty2" VARCHAR,
     "Proposingfaculty3" VARCHAR,
     "Proposingfaculty4" VARCHAR,
-    "Curriculum" VARCHAR[],
-    "Senate approved on" INTEGER,
+    "Curriculum" VARCHAR,
+    "Senate approved on" VARCHAR,
     "Show" BOOLEAN,
     "Prerequisites" VARCHAR,
     "Status" varchar,
     "Prerevision code" varchar,
     "Dual code" varchar,
     "Revision info" varchar,
-    "Faculty" varchar
+    "Faculty" varchar,
+    "Remarks" varchar
 );
 
 -- faculty email and add these as foreign keys
@@ -312,7 +313,7 @@ CREATE TABLE "talkseries" (
     "host" VARCHAR,
     "description" VARCHAR,
     "date" VARCHAR,
-    "images" VARCHAR[],
+    "images" VARCHAR,
     "speakerbio" VARCHAR,
     "venue" VARCHAR,
     "speaker" VARCHAR,
