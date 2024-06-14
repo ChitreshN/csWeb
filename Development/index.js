@@ -50,11 +50,7 @@ app.post("/displayTable",async(req,res)=>{
       return res.status(400).send("Table name is required");
     }
 
-    // Extract keys from the remaining object (excluding tableName)
-    const columns = Object.keys(columnsObject);
-
     // Join columns to create the SELECT statement
-
     // Construct the SQL query
     const columnNames = Object.keys(columnsObject).map(col => `"${col}"`).join(', ');
     const result = await db.query(`SELECT ${columnNames} FROM "${tableName}"`);
