@@ -68,7 +68,7 @@ CREATE TABLE "colloquium" (
     "venue" VARCHAR,
     "host" VARCHAR,
     "show" BOOLEAN,
-    "images" VARCHAR[],
+    "images" VARCHAR,
     "imagesLayout" VARCHAR
 );
 
@@ -103,7 +103,7 @@ CREATE TABLE "mcam" (
     "year" INT,
     "name" VARCHAR,
     "rollno" INT PRIMARY KEY,
-    "fa" VARCHAR
+    "faEmail" VARCHAR
 );
 
 CREATE TABLE "mcamAlumni" (
@@ -130,7 +130,7 @@ CREATE TABLE "msocd" (
     "year" INT,
     "name" VARCHAR,
     "rollno" INT PRIMARY KEY,
-    "fa" VARCHAR
+    "faEmail" VARCHAR
 );
 
 CREATE TABLE "msocdAlumni" (
@@ -169,9 +169,10 @@ CREATE TABLE "courses" (
     "CoreUG" VARCHAR,
     "Credits" VARCHAR,
     "Category" VARCHAR,
-    "Proposing faculty" VARCHAR,
-    "Proposing faculty 2" VARCHAR,
-    "Proposing faculty 3" VARCHAR,
+    "Proposingfaculty" VARCHAR,
+    "Proposingfaculty2" VARCHAR,
+    "Proposingfaculty3" VARCHAR,
+    "Proposingfaculty4" VARCHAR,
     "Curriculum" VARCHAR[],
     "Senate approved on" INTEGER,
     "Show" BOOLEAN,
@@ -221,15 +222,17 @@ CREATE TABLE "postdoc" (
 
 CREATE TABLE "projects" (
     "projID" VARCHAR PRIMARY KEY,
-    "Project Details" VARCHAR,
-    "Project Type" VARCHAR,
-    "Project Pumber" VARCHAR,
-    "Duration" VARCHAR,
-    "Principal Investigator 1" VARCHAR,
-    "Principal Investigator 2" VARCHAR,
-    "Principal Investigator 3" VARCHAR,
-    "Funding Agency" VARCHAR,
-    "Total Budget" VARCHAR
+    "PROJECT DETAILS" VARCHAR,
+    "PROJECT TYPE" VARCHAR,
+    "PROJECT NUMBER" VARCHAR,
+    "DURATION" VARCHAR,
+    "PRINCIPAL INVESTIGATOR 1" VARCHAR,
+    "PRINCIPAL INVESTIGATOR 2" VARCHAR,
+    "PRINCIPAL INVESTIGATOR 3" VARCHAR,
+    "PRINCIPAL INVESTIGATORS 4" VARCHAR,
+    "CO-INVESTIGATORS " VARCHAR,
+    "FUNDING AGENCY" VARCHAR,
+    "TOTAL BUDGET" VARCHAR
 );
 
 CREATE TABLE "projectFaculty" (
@@ -324,19 +327,19 @@ CREATE TABLE "workshops" (
     "description" VARCHAR
 );
 
---ALTER TABLE "btech" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
+ALTER TABLE "btech" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
 
---ALTER TABLE "btechAlumni" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
+ALTER TABLE "btechAlumni" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
 
 --ALTER TABLE "cse_faculty" ADD FOREIGN KEY ("email") REFERENCES "allfaculty" ("email");
 
---ALTER TABLE "internship" ADD FOREIGN KEY ("facEmail") REFERENCES "allfaculty" ("email");
+ALTER TABLE "internship" ADD FOREIGN KEY ("faculty") REFERENCES "allfaculty" ("email");
 
---ALTER TABLE "mcam" ADD FOREIGN KEY ("fa") REFERENCES "allfaculty" ("email");
+ALTER TABLE "mcam" ADD FOREIGN KEY ("fa") REFERENCES "allfaculty" ("email");
 
 --ALTER TABLE "projectFaculty" ADD FOREIGN KEY ("facEmail") REFERENCES "allfaculty" ("email");
 
-ALTER TABLE "projectFaculty" ADD FOREIGN KEY ("projID") REFERENCES "projects" ("projID");
+--ALTER TABLE "projectFaculty" ADD FOREIGN KEY ("projID") REFERENCES "projects" ("projID");
 
 --ALTER TABLE "PhDscholarAdvisor" ADD FOREIGN KEY ("facEmail") REFERENCES "allfaculty" ("email");
 
@@ -346,10 +349,10 @@ ALTER TABLE "projectFaculty" ADD FOREIGN KEY ("projID") REFERENCES "projects" ("
 
 --ALTER TABLE "MSscholarAdvisor" ADD FOREIGN KEY ("rollno") REFERENCES "MSscholars" ("rollno");
 
---ALTER TABLE "talkseries" ADD FOREIGN KEY ("host") REFERENCES "allfaculty" ("email");
+ALTER TABLE "talkseries" ADD FOREIGN KEY ("host") REFERENCES "allfaculty" ("email");
 
---ALTER TABLE "msocd" ADD FOREIGN KEY ("fa") REFERENCES "allfaculty" ("email");
+ALTER TABLE "msocd" ADD FOREIGN KEY ("fa") REFERENCES "allfaculty" ("email");
 
-ALTER TABLE "currentCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
+--ALTER TABLE "currentCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
 
-ALTER TABLE "pastCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
+--ALTER TABLE "pastCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
