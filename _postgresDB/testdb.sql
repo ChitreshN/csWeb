@@ -332,7 +332,7 @@ ALTER TABLE "btechAlumni" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("
 
 ALTER TABLE "internship" ADD FOREIGN KEY ("faculty") REFERENCES "allfaculty" ("email");
 
-ALTER TABLE "mcam" ADD FOREIGN KEY ("fa") REFERENCES "allfaculty" ("email");
+ALTER TABLE "mcam" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
 
 --ALTER TABLE "projectFaculty" ADD FOREIGN KEY ("facEmail") REFERENCES "allfaculty" ("email");
 
@@ -348,7 +348,7 @@ ALTER TABLE "mcam" ADD FOREIGN KEY ("fa") REFERENCES "allfaculty" ("email");
 
 ALTER TABLE "talkseries" ADD FOREIGN KEY ("host") REFERENCES "allfaculty" ("email");
 
-ALTER TABLE "msocd" ADD FOREIGN KEY ("fa") REFERENCES "allfaculty" ("email");
+ALTER TABLE "msocd" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
 
 --ALTER TABLE "currentCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
 
