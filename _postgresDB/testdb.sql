@@ -72,11 +72,10 @@ CREATE TABLE "colloquium" (
     "imagesLayout" VARCHAR
 );
 
--- needs faculty emails and convert list
 CREATE TABLE "currentCourses" (
     "code" VARCHAR PRIMARY KEY,
-    "faculty1" varchar, --email
-    "faculty2" varchar, --email
+    "faculty1" varchar, 
+    "faculty2" varchar,
     "slot" VARCHAR,
     "room" VARCHAR
 );
@@ -158,7 +157,6 @@ CREATE TABLE "placement" (
     "count" INTEGER
 );
 
--- prop fac email and list
 CREATE TABLE "courses" (
     "Code" VARCHAR PRIMARY KEY,
     "Title" VARCHAR,
@@ -185,7 +183,6 @@ CREATE TABLE "courses" (
     "Remarks" varchar
 );
 
--- faculty email and add these as foreign keys
 CREATE TABLE "pastCourses" (
     "year" INT,
     "semester" VARCHAR,
@@ -265,7 +262,6 @@ create table "seminars"(
     "date" TEXT
 );
 
--- gen these from scholars file
 CREATE TABLE "MSscholarAdvisor" (
   "rollno" VARCHAR,
   "facEmail" VARCHAR,
