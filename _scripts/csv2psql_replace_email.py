@@ -12,13 +12,14 @@ import csv
 import sys
 
 
-if len(sys.argv) != 3:
+if len(sys.argv) != 4:
     print("Error: expected file name as an argument")
-    print("python3 _scripts/csv2psql.py {file_name} {table_name}")
+    print("python3 _scripts/csv2psql.py {file_name} {table_name} {email_field}")
     sys.exit(1)
 else:
     csv_file_name = sys.argv[1]
     table_name = sys.argv[2]
+    email_field = sys.argv[3]
 
 fields = []
 types = []
@@ -37,7 +38,7 @@ with open(csv_file_name, 'r') as csv_file:
 # column to be replaced compile
 col = 0
 for i in range(len(fields)):
-    if (fields[i] == 'host'):
+    if (fields[i] == email_field):
         col = i
         break
 
