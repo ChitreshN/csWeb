@@ -1,0 +1,3 @@
+[submodule "sqllama"]
+	path = sqllama
+	url = git@github.com:ChitreshN/sqllama.git
