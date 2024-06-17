@@ -1,5 +1,5 @@
 INTEGER	INTEGER	TEXT	TEXT
-year	rollno	fa	name
+year	rollno	faEmail	name
 2020	112001001	Deepak Rajendraprasad	KARAVADI SUCHITH
 2020	112001002	Deepak Rajendraprasad	AARYUMAN SAWAI
 2020	112001003	Deepak Rajendraprasad	ADITYA RAJ
