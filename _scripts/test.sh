@@ -27,5 +27,6 @@ else
     for problem in "${problems[@]}"; do
         echo "$problem"
     done
+    exit 1
 fi
 

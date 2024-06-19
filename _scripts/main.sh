@@ -15,7 +15,7 @@ psql -U postgres -d postgres -c "create database testdb;"
 ./_scripts/populateTestDB.sh
 
 # TODO test
-# ./_scripts/test.sh
+./_scripts/test.sh
 
 # start the server
 cd Development
