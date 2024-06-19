@@ -36,6 +36,7 @@ field_names = ', '.join(f'"{field}"' for field in fields)
 
 for row in data:
     for i in range(len(row)):
+        row[i] = row[i].replace("\n", "")
         row[i] = row[i].replace("'", "")
         row[i] = row[i].replace('[', '{')  # proper syntax for lists
         row[i] = row[i].replace(']', '}')
