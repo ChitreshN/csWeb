@@ -1,77 +1,60 @@
-
-/* --- Footer --- */
-
-
-@media screen and (min-width: 1600px) {
-  footer {
-    padding: 1.875rem 0;
-    margin-top: 3.125rem;
-    font-size: 0.875rem;
-    background:  linear-gradient(to right,  #303030 15%, #F0F3F5 15%, #F0F3F5 85%, #303030 85% );
-    
-  }
-  }
-  
-  footer {
-    padding: 1.875rem 0;
-    margin-top: 3.125rem;
-    font-size: 0.875rem;
-    background-color: #F0F3F5;
-    
-  }
-  
-  
-  footer p.text-muted {
-    color: #777777 !important;
-  }
-  
-  footer a {
-    color: #404040;
-  }
-  
-  footer a:hover,
-  footer a:focus {
-    color: #0085A1;
-  }
-  
-  footer .list-inline {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1.875rem;
-  }
-  footer .copyright {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  footer .theme-by {
-    text-align: center;
-    margin: 0.625rem 0 0;
-  }
-  footer .footer-custom-content {
-    text-align: center;
-    margin-bottom: 0.9375rem;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-  
-  @media (min-width: 768px) {
-    footer {
-      padding: 3.125rem 0;
-    }
-    footer .footer-links {
-      font-size: 1.125rem;
-    }
-    footer .copyright {
-      font-size: 1rem;
-    }
-    footer .footer-custom-content {
-      font-size: 1rem;
-    }
-  }
-th
+/* css for the contents in common  */
+html >*
 {
-  color: #fff;
-  background-color: #343a40;
-  border-color: #454d55;
+  font-size: 20px;
+}
+/* this is wrapped around all the contents */
+.container
+{
+  margin-top: 40px;
+  background-color: #DCEEF2;
+  padding: 50px;
+}
+/* google fonts css  */
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.crimson-text-semibold {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.crimson-text-bold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* css for all the tables  */
+table,th,td {
+  border: 1px solid black;
+}
+th{
+  background-color: #D98B2B50 !important;
+}
+/* css for checkboxes  */
+.checkBoxes
+{
+  background-color: beige;
 }

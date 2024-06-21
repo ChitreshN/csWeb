@@ -44,15 +44,20 @@ app.post("/displayTable",async(req,res)=>{
     // Log the body content for debugging
     const result1=await db.query("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'");
     const { tableName, ...columnsObject } = req.body;
-    
-    // Check if tableName is provided
     if (!tableName) {
       return res.status(400).send("Table name is required");
     }
-
-    // Join columns to create the SELECT statement
-    // Construct the SQL query
+    const t=await db.query(" SELECT * FROM information_schema.columns WHERE table_name = $1;",[tableName]);
+    
+    var dataColumnNames=[];
+    for(var i=0;i<t.rows.length;i++)
+    {
+        dataColumnNames.push(t.rows[i].column_name);
+    }
     const columnNames = Object.keys(columnsObject).map(col => `"${col}"`).join(', ');
+    const columnNamesArray = Object.keys(columnsObject).map(col => `${col}`);
+
+    // console.log(columnNamesArray);
     const result = await db.query(`SELECT ${columnNames} FROM "${tableName}"`);
 
     // check if table is empty
@@ -60,12 +65,13 @@ app.post("/displayTable",async(req,res)=>{
         return res.send("No entries for selected table")
     }
     const heading=Object.keys(result.rows[0]);
-    console.log(result.rows);
+    // console.log(result.rows);
     // console.log(tableName);
     // console.log(heading);
     // console.log(result1.rows);
-    res.render("index.ejs",{dataColumns:result.rows,tableName:tableName,heading:heading,tables:result1.rows});
-
+    // console.log(columns);
+    res.render("index.ejs",{dataColumns:result.rows,tableName:tableName,heading:heading,tables:result1.rows,columnNamesArray:columnNamesArray,dataColumnNames:dataColumnNames});
+    
 });
 app.listen(port,()=>{
     console.log(`running on port ${port}`);
