@@ -52,11 +52,6 @@ CREATE TABLE "btechAlumni" (
     "faEmail" VARCHAR
 );
 
-CREATE TABLE "carousels" (
-    "UniqueID" SERIAL PRIMARY KEY,
-    "image" VARCHAR
-);
-
 CREATE TABLE "colloquium" (
     "UniqueID" SERIAL PRIMARY KEY,
     "title" VARCHAR,
@@ -87,7 +82,6 @@ CREATE TABLE "currentNPTELCourses" (
     "Link" VARCHAR
 );
 
--- needs email faculty
 CREATE TABLE "internship" (
     "UniqueID" SERIAL PRIMARY KEY,
     "name" VARCHAR,
@@ -97,7 +91,6 @@ CREATE TABLE "internship" (
     "apply" VARCHAR
 );
 
--- needs fa email
 CREATE TABLE "mcam" (
     "year" INT,
     "name" VARCHAR,
@@ -124,7 +117,6 @@ CREATE TABLE "msAlumni" (
     "area" VARCHAR
 );
 
--- fa email
 CREATE TABLE "msocd" (
     "year" INT,
     "name" VARCHAR,
@@ -233,13 +225,6 @@ CREATE TABLE "projects" (
     "TOTAL BUDGET" VARCHAR
 );
 
-CREATE TABLE "projectFaculty" (
-    "projID" VARCHAR,
-    "facEmail" VARCHAR,
-    "isPrincipal" BOOLEAN,
-    PRIMARY KEY ("projID", "facEmail")
-);
-
 CREATE TABLE "scholars" (
     "name" VARCHAR,
     "rollno" VARCHAR PRIMARY KEY,
@@ -262,12 +247,6 @@ create table "seminars"(
     "date" TEXT
 );
 
-CREATE TABLE "MSscholarAdvisor" (
-  "rollno" VARCHAR,
-  "facEmail" VARCHAR,
-  PRIMARY KEY ("rollno", "facEmail")
-);
-
 CREATE TABLE "staff" (
     "name" VARCHAR,
     "office" VARCHAR,
@@ -284,7 +263,6 @@ CREATE TABLE "stats" (
     "phd" INT
 );
 
--- images list
 CREATE TABLE "talks" (
     "title" VARCHAR,
     "speaker" VARCHAR,
@@ -350,6 +328,6 @@ ALTER TABLE "talkseries" ADD FOREIGN KEY ("host") REFERENCES "allfaculty" ("emai
 
 ALTER TABLE "msocd" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
 
---ALTER TABLE "currentCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
+ALTER TABLE "currentCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
 
 --ALTER TABLE "pastCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
