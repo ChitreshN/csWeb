@@ -2,6 +2,7 @@
 html >*
 {
   font-size: 20px;
+  background-color: #EEF7FF;
 }
 /* this is wrapped around all the contents */
 .container
@@ -58,3 +59,25 @@ th{
 {
   background-color: beige;
 }
+.checkbox{
+  height: 15px;
+  width: 15px;
+}
+.goButton {
+  background-color: #1C8C4D !important;
+}
+input{
+  text-align: center;
+}
+
+/* footer css  */
+footer, header{
+  background-color: #FFCBCB ;
+  width: 100%;
+  /* position: fixed; */
+}
+
+
+/* header{
+  position: fixed;
+} */

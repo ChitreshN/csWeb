@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSE |IIT Palakkad</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
     <!-- links for google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +19,22 @@
     </style> -->
 </head>
 <body>
+<!-- header section  -->
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom crimson-text-regular">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    <img src="images/logo.png" height="30px" width="30px"/>
+    <span class="fs-4">CSE IIT Palakkad</span>
+  </a>
+
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+    <!-- <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li> -->
+    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+  </ul>
+</header>
 <!-- this is a dropdown from which you can chose the table name  -->
 <div class="container crimson-text-regular">
   <br />
@@ -52,7 +69,7 @@
           <!-- this is when check boxes are selected  -->
           <%for(var i=0;i<dataColumnNames.length;i++){%>
             <th>
-              <input type="checkbox" name="<%= dataColumnNames[i] %>" value="<%= dataColumnNames[i] %>"
+              <input type="checkbox" class="checkbox" name="<%= dataColumnNames[i] %>" value="<%= dataColumnNames[i] %>"
                 <% if(columnNamesArray.includes(dataColumnNames[i])) { %>
                   checked
                 <% } %>
@@ -70,12 +87,10 @@
             </th>
           <%}%>
           <%}%>
-          <th >
+          <th class="goButton">
             <input type="hidden" name="tableName" value="<%=tableName%>"/>
-            <input type="submit" value="Go" style="width: 100%; padding: 0 !important;"/>
+            <input class="btn btn-success" type="submit" value="Go" style="width: 100%; padding: 0 !important;"/>
           </th>
-          
-          
       </form>
     </table>
   <%}%>
@@ -110,11 +125,18 @@
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li> -->
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
     </ul>
-    <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+
+    <p class="text-center text-body-secondary">© <span id="currentYear"></span> IIT, Palakkad</p>
+
+    <script>
+        var x = new Date();
+        x = x.getFullYear();
+        document.getElementById("currentYear").textContent = x;
+    </script>
   </footer>
    <!-- js script for spreads sheet  -->
    <script src="https://bossanova.uk/jspreadsheet/v4/jexcel.js"></script>
