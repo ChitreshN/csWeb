@@ -10,8 +10,8 @@ problems=()
 for name in `ls $LOC`
 do
     echo ${name%.*} >> count
-    psql -U postgres -d testdb -c "SELECT COUNT(*) FROM \"${name%.*}\"" > count
-    row_count=$(sed -n '3{s/[[:space:]]//g;p;}' count)
+    psql -U postgres -d testdb -c "SELECT COUNT(*) FROM \"${name%.*}\"" -t > count
+    row_count=$(sed -n '1{s/[[:space:]]//g;p;}' count)
 
     line_count=$(wc -l < "./_insert/$name")
 
