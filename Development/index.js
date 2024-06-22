@@ -23,7 +23,7 @@ app.get("/",async(req,res)=>{
     res.render("index.ejs",{tables:result.rows});
 });
 app.post("/GetTableDropDown",async(req,res)=>{
-    console.log(req.body);
+    // console.log(req.body);
     var tableName=req.body.tableName;
     //to get list of table columns names
     const t=await db.query(" SELECT * FROM information_schema.columns WHERE table_name = $1;",[tableName]);
@@ -65,13 +65,21 @@ app.post("/displayTable",async(req,res)=>{
         return res.send("No entries for selected table")
     }
     const heading=Object.keys(result.rows[0]);
-    // console.log(result.rows);
-    // console.log(tableName);
-    // console.log(heading);
-    // console.log(result1.rows);
-    // console.log(columns);
     res.render("index.ejs",{dataColumns:result.rows,tableName:tableName,heading:heading,tables:result1.rows,columnNamesArray:columnNamesArray,dataColumnNames:dataColumnNames});
     
+});
+// chnaging natural language to sql query 
+app.post("/queryDisplay",async(req,res)=>{
+    var naturalLanguage=req.body.naturalLanguage;
+    try{
+        const response=await axios.get("localhost:8080/completion");
+        console.log(response);
+        res.send("hello");
+    }catch(error){
+
+    }
+    const result=await db.query("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'");
+    res.render("index.ejs",{query:naturalLanguage,tables:result.rows});
 });
 app.listen(port,()=>{
     console.log(`running on port ${port}`);

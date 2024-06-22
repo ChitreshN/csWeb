@@ -39,6 +39,31 @@
 <div class="container crimson-text-regular">
   <br />
 <div class="class1">
+<!-- trial  -->
+<p>write query in the box below</p> 
+<form class="container queryBox" method="post" action="/queryDisplay">
+  <textarea rows="5" cols="50" name="naturalLanguage" >
+    
+  </textarea>
+  <div>
+    <br />
+    <!-- <a type="button" class="btn btn-success" href="/queryDisplay">Run</a> -->
+    <input type="submit" value="Run" class="btn btn-success">
+    <a type="button" href="/queryKill"class="btn btn-danger">Exit</a>  
+  </div>  
+</form>
+<%if(locals.query){%>
+  <div class="container queryBox">
+    <textarea rows="5" cols="50" > <%=query%> </textarea>
+    <div>
+      <br />
+      <a type="button" class="btn btn-success" href="/queryDisplay">Run</a>
+      <a type="button" href="/queryKill"class="btn btn-danger">Exit</a>  
+    </div>  
+  </div>
+ <%}%>
+ <!-- trial  -->
+
   <form action="/GetTableDropDown" method="post" id="tableForm">
     <label for="tableName">Choose a Table:</label>
     <select name="tableName" onchange="submitForm()">
@@ -62,6 +87,7 @@
 <br />
   <!-- this provides you list of checkboxes from which you can chose the list of coulms you want to display  -->
   <%if(locals.dataColumnNames){%>
+<p>Chose the data columns manually down here</p>
     <table class="table checkBoxes">
       <form action="/displayTable" method="post">
 
@@ -92,7 +118,7 @@
           <%}%>
           
         <%}else{%>
-                                  <!-- trail -->
+
                                    <th>
                                   <input type="checkbox" id="allCheckBox"/>
                                   <script>
@@ -105,8 +131,6 @@
                                     });
                                   </script>
                                   </th>
-                                
-                                  <!-- trial -->
           <!-- this is when no check boxes are selected  -->
           <%for(var i=0;i<dataColumnNames.length;i++){%>
             <th>
@@ -121,8 +145,11 @@
           </th>
       </form>
     </table>
+ 
   <%}%>
-        
+
+  <!-- displaying natural language to query here  -->
+ 
      
 
 

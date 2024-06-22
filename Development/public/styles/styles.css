@@ -54,6 +54,13 @@ table,th,td {
 th{
   background-color: #D98B2B50 !important;
 }
+/* trail  */
+table {
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+/* trail  */
+
 /* css for checkboxes  */
 .checkBoxes
 {
@@ -80,8 +87,16 @@ footer, header{
   width: 100%;
   /* position: fixed; */
 }
+/* css for query box  */
+.queryBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.queryBox >textarea{
+  background-color: #D98B2B90 !important;
+}
+/* .queryBox >div{
 
-
-/* header{
-  position: fixed;
 } */
