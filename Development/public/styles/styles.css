@@ -2,7 +2,7 @@
 html >*
 {
   font-size: 20px;
-  background-color: #EEF7FF;
+  background-color: whitesmoke;
 }
 /* this is wrapped around all the contents */
 .container
@@ -60,6 +60,10 @@ th{
   background-color: beige;
 }
 .checkbox{
+  height: 15px;
+  width: 15px;
+}
+#allCheckBox{
   height: 15px;
   width: 15px;
 }

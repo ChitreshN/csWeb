@@ -24,7 +24,7 @@
   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
     <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
     <img src="images/logo.png" height="30px" width="30px"/>
-    <span class="fs-4">CSE IIT Palakkad</span>
+    <span class="fs-4">CSE |IIT Palakkad</span>
   </a>
 
   <ul class="nav nav-pills">
@@ -64,9 +64,22 @@
   <%if(locals.dataColumnNames){%>
     <table class="table checkBoxes">
       <form action="/displayTable" method="post">
+
         
         <%if(locals.columnNamesArray){%>
           <!-- this is when check boxes are selected  -->
+          <th>
+            <input type="checkbox" id="allCheckBox"/>
+            <script>
+              
+              document.getElementById('allCheckBox').addEventListener('change', function() {
+                let checkboxes = document.getElementsByClassName('checkbox');
+                for (let i = 0; i < checkboxes.length; i++) {
+                  checkboxes[i].checked = this.checked;
+                }
+              });
+            </script>
+            </th>
           <%for(var i=0;i<dataColumnNames.length;i++){%>
             <th>
               <input type="checkbox" class="checkbox" name="<%= dataColumnNames[i] %>" value="<%= dataColumnNames[i] %>"
@@ -79,15 +92,30 @@
           <%}%>
           
         <%}else{%>
+                                  <!-- trail -->
+                                   <th>
+                                  <input type="checkbox" id="allCheckBox"/>
+                                  <script>
+                                    
+                                    document.getElementById('allCheckBox').addEventListener('change', function() {
+                                      let checkboxes = document.getElementsByClassName('checkbox');
+                                      for (let i = 0; i < checkboxes.length; i++) {
+                                        checkboxes[i].checked = this.checked;
+                                      }
+                                    });
+                                  </script>
+                                  </th>
+                                
+                                  <!-- trial -->
           <!-- this is when no check boxes are selected  -->
           <%for(var i=0;i<dataColumnNames.length;i++){%>
             <th>
-              <input type="checkbox" name="<%= dataColumnNames[i] %>" value="<%= dataColumnNames[i] %>" />
+              <input class="checkbox" type="checkbox" name="<%= dataColumnNames[i] %>" value="<%= dataColumnNames[i] %>" />
               <label for="<%= dataColumnNames[i] %>"><%= dataColumnNames[i] %></label>
             </th>
           <%}%>
           <%}%>
-          <th class="goButton">
+          <th class="goButton ">
             <input type="hidden" name="tableName" value="<%=tableName%>"/>
             <input class="btn btn-success" type="submit" value="Go" style="width: 100%; padding: 0 !important;"/>
           </th>
