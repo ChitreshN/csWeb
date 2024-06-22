@@ -39,31 +39,7 @@
 <div class="container crimson-text-regular">
   <br />
 <div class="class1">
-<!-- trial  -->
-<p>write query in the box below</p> 
-<form class="container queryBox" method="post" action="/queryDisplay">
-  <textarea rows="5" cols="50" name="naturalLanguage" >
-    
-  </textarea>
-  <div>
-    <br />
-    <!-- <a type="button" class="btn btn-success" href="/queryDisplay">Run</a> -->
-    <input type="submit" value="Run" class="btn btn-success">
-    <a type="button" href="/queryKill"class="btn btn-danger">Exit</a>  
-  </div>  
-</form>
-<%if(locals.query){%>
-  <div class="container queryBox">
-    <textarea rows="5" cols="50" > <%=query%> </textarea>
-    <div>
-      <br />
-      <a type="button" class="btn btn-success" href="/queryDisplay">Run</a>
-      <a type="button" href="/queryKill"class="btn btn-danger">Exit</a>  
-    </div>  
-  </div>
- <%}%>
- <!-- trial  -->
-
+<p class="paragraph">Chose the data columns manually here </p>
   <form action="/GetTableDropDown" method="post" id="tableForm">
     <label for="tableName">Choose a Table:</label>
     <select name="tableName" onchange="submitForm()">
@@ -83,11 +59,57 @@
       document.getElementById('tableForm').submit();
     }
   </script>
+
+<!-- trial  -->
+ <p class="paragraph">or</p>
+<p>To write query <button id="query" type="button" class="btn btn-success">Click here</button>  </p> 
+<script>
+  document.getElementById("query").addEventListener("click", () => {
+    const queryBox = document.getElementById("querybox");
+    queryBox.hidden = !queryBox.hidden; // Toggle the hidden property
+  });
+</script>
+
+<form class="container queryBox" method="post" action="/queryDisplay" hidden id="querybox">
+  <%if(locals.query){%>
+    <script>
+    const queryBox = document.getElementById("querybox");
+    queryBox.hidden = !queryBox.hidden;
+  </script>
+  <%}%>
+  <textarea rows="2" cols="50" name="naturalLanguage" >
+  </textarea>
+  <div>
+    <!-- <br /> -->
+    <!-- <a type="button" class="btn btn-success" href="/queryDisplay">Run</a> -->
+     <br />
+    <input type="submit" value="Run" class="btn btn-success">
+    <a type="button" href="/queryKill"class="btn btn-danger">Exit</a>  
+  </div>  
+</form>
+
+<%if(locals.query){%>
+  <form class="container queryBox" method="post" action="/displayTable"  id="querybox">
+    <textarea rows="2" cols="50" name="naturalLanguage" >
+      <%=query%>
+    </textarea>
+    <div>
+      <!-- <br /> -->
+      <!-- <a type="button" class="btn btn-success" href="/queryDisplay">Run</a> -->
+       <br />
+      <input type="submit" value="Run" class="btn btn-success">
+      <a type="button" href="/queryKill"class="btn btn-danger">Exit</a>  
+    </div>  
+  </form>
+ <%}%>
+ <!-- trial  -->
+
 </div>
 <br />
   <!-- this provides you list of checkboxes from which you can chose the list of coulms you want to display  -->
   <%if(locals.dataColumnNames){%>
 <p>Chose the data columns manually down here</p>
+<div class="table-container">
     <table class="table checkBoxes">
       <form action="/displayTable" method="post">
 
@@ -135,16 +157,31 @@
           <%for(var i=0;i<dataColumnNames.length;i++){%>
             <th>
               <input class="checkbox" type="checkbox" name="<%= dataColumnNames[i] %>" value="<%= dataColumnNames[i] %>" />
-              <label for="<%= dataColumnNames[i] %>"><%= dataColumnNames[i] %></label>
+              <label class="columnName" for="<%= dataColumnNames[i] %>"><%= dataColumnNames[i] %></label>
+              <script>
+                var x = document.getElementsByClassName('columnName'); // Replace 'columnName' with your actual class name
+            
+                for (var i = 0; i < x.length; i++) {
+                    var text = x[i].textContent; // Get the text content of the current element
+            
+                    // Capitalize the first letter
+                    var capitalizedText = text.charAt(0).toUpperCase() + text.slice(1);
+            
+                    // Assign the capitalized text back to the element
+                    x[i].textContent = capitalizedText;
+                }
+            </script>
             </th>
           <%}%>
           <%}%>
           <th class="goButton ">
             <input type="hidden" name="tableName" value="<%=tableName%>"/>
             <input class="btn btn-success" type="submit" value="Go" style="width: 100%; padding: 0 !important;"/>
+            
           </th>
       </form>
     </table>
+    </div>
  
   <%}%>
 
@@ -155,12 +192,26 @@
 
 
 <!-- div block that displays the data of the slected table with selected entries  -->
-     <div >
+     <div class="table-container">
       <%if(locals.dataColumns){%> 
-        <table class="table table-striped table-hover">
+        <table class="table table-striped table-hover ">
           <tr>
             <% for(var j=0; j<heading.length; j++) { %>
-              <th><%= heading[j] %></th>
+              <th class="columnName"><%= heading[j] %></th>
+              <script>
+                var x = document.getElementsByClassName('columnName'); // Replace 'columnName' with your actual class name
+            
+                for (var i = 0; i < x.length; i++) {
+                    var text = x[i].textContent; // Get the text content of the current element
+            
+                    // Capitalize the first letter
+                    var capitalizedText = text.charAt(0).toUpperCase() + text.slice(1);
+            
+                    // Assign the capitalized text back to the element
+                    x[i].textContent = capitalizedText;
+                }
+            </script>
+            
             <% } %>
           </tr>
           <% for(var i=0; i<dataColumns.length; i++) { %>
