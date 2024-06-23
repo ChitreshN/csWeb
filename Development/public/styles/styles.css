@@ -55,9 +55,14 @@ th{
   background-color: #D98B2B50 !important;
 }
 /* trail  */
+.table-container {
+  width: 100%; /* Adjust width as needed */
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
 table {
-  border-collapse: collapse;
-  overflow-x: auto;
+  width: 100%; /* Ensure table fills container width */
+  border-collapse: collapse; /* Collapse table borders */
 }
 /* trail  */
 
@@ -96,6 +101,11 @@ footer, header{
 }
 .queryBox >textarea{
   background-color: #D98B2B90 !important;
+}
+.class1 >.paragraph{
+  background-color: #D98B2B90 ;  
+  font-size:15px;
+  text-align: center;
 }
 /* .queryBox >div{
 

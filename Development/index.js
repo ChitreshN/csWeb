@@ -1,4 +1,4 @@
-import express from "express";
+import express, { query } from "express";
 import ejs from "ejs";
 import bodyParser from "body-parser";
 import pg from "pg";
@@ -43,7 +43,36 @@ app.post("/GetTableDropDown",async(req,res)=>{
 
 app.post("/displayTable",async(req,res)=>{
     // Log the body content for debugging
+    // part2
     const result1=await db.query("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'");
+    if(req.body.naturalLanguage){
+    // console.log(req.body.naturalLanguage);
+    try{
+        const queryResult = await db.query(req.body.naturalLanguage);
+
+        // Extract column names
+        var temp = queryResult.fields.map(field => field.name);
+        
+        // Extract row data
+        // const rowData = queryResult.rows.map(row => Object.values(row));
+        
+        // console.log("Column Names:", columnNames);
+        // console.log("Row Data:", rowData);
+        // console.log(columnNames);
+        // console.log("hi from outside");
+
+       
+        // console.log(queryResult.rows);
+        return res.render("index.ejs",{heading:temp,dataColumns:queryResult.rows,tables:result1.rows});
+        console.log("yes going to next line ");
+    }catch(err){
+        return res.render(err.stack);
+    }
+}
+
+
+    // part1
+   
     const { tableName, ...columnsObject } = req.body;
     if (!tableName) {
       return res.status(400).send("Table name is required");
@@ -66,8 +95,13 @@ app.post("/displayTable",async(req,res)=>{
         return res.send("No entries for selected table")
     }
     const heading=Object.keys(result.rows[0]);
+    // console.log(result.rows);
+    // console.log(tableName);
+    // console.log(heading);
+    // console.log(result1.rows);
+    // console.log(columnNamesArray);
+    // console.log(dataColumnNames);
     res.render("index.ejs",{dataColumns:result.rows,tableName:tableName,heading:heading,tables:result1.rows,columnNamesArray:columnNamesArray,dataColumnNames:dataColumnNames});
-    
 });
 // chnaging natural language to sql query 
 app.post("/queryDisplay", async (req, res) => {
