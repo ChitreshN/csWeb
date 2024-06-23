@@ -122,7 +122,7 @@ app.post("/queryDisplay", async (req, res) => {
         res.render("index.ejs", { query: jsonResponse.content, tables: result.rows });
     } catch (error) {
         console.error(error);
-        res.status(500).send("An error occurred");
+        res.status(500).send("Request timed out, try after a while");
     }
 });
 
