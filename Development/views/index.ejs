@@ -205,10 +205,14 @@
                     var text = x[i].textContent; // Get the text content of the current element
             
                     // Capitalize the first letter
-                    var capitalizedText = text.charAt(0).toUpperCase() + text.slice(1);
+                    function titleCase(str) {
+                        return str.toLowerCase().replace(/(?:^|\s)\w/g, function(match) {
+                            return match.toUpperCase();
+                        });
+                    }
             
                     // Assign the capitalized text back to the element
-                    x[i].textContent = capitalizedText;
+                    x[i].textContent = titleCase(text);
                 }
             </script>
             
