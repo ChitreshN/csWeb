@@ -115,7 +115,7 @@ app.post("/queryDisplay",async(req,res)=>{
     // // console.log(temp);
     // // console.log(temp);
     // try{
-    // // console.log(naturalLanguage);
+    // // console.log(naturalLanguage);s
     //     const response = await axios.post("http://localhost:8080/completion", {
     //         data: temp
     //     });
@@ -126,7 +126,7 @@ app.post("/queryDisplay",async(req,res)=>{
     //     res.send(error.stack);
     // }
 
-    res.render("index.ejs",{query:naturalLanguage,tables:result.rows})
+    res.render("index.ejs",{query:naturalLanguage, naturalLanguage:naturalLanguage,tables:result.rows})
 
 });
 app.listen(port,()=>{
