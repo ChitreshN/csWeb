@@ -149,7 +149,7 @@ CREATE TABLE "placement" (
     "count" INTEGER
 );
 
-CREATE TABLE "courses" (
+CREATE TABLE "courses_Core" (
     "Code" VARCHAR PRIMARY KEY,
     "Title" VARCHAR,
     "Last Modified" VARCHAR,
@@ -163,6 +163,26 @@ CREATE TABLE "courses" (
     "Proposingfaculty2" VARCHAR,
     "Proposingfaculty3" VARCHAR,
     "Proposingfaculty4" VARCHAR,
+    "Curriculum" VARCHAR,
+    "Senate approved on" VARCHAR,
+    "Show" BOOLEAN,
+    "Prerequisites" VARCHAR,
+    "Status" varchar,
+    "Prerevision code" varchar,
+    "Dual code" varchar,
+    "Revision info" varchar,
+    "Faculty" varchar,
+    "Remarks" varchar
+);
+
+CREATE TABLE "courses_Elective" (
+    "Code" VARCHAR PRIMARY KEY,
+    "Title" VARCHAR,
+    "Last Modified" VARCHAR,
+    "Credits" VARCHAR,
+    "Category" VARCHAR,
+    "Proposingfaculty" VARCHAR,
+    "Proposingfaculty2" VARCHAR,
     "Curriculum" VARCHAR,
     "Senate approved on" VARCHAR,
     "Show" BOOLEAN,
@@ -328,6 +348,6 @@ ALTER TABLE "talkseries" ADD FOREIGN KEY ("host") REFERENCES "allfaculty" ("emai
 
 ALTER TABLE "msocd" ADD FOREIGN KEY ("faEmail") REFERENCES "allfaculty" ("email");
 
-ALTER TABLE "currentCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
+--ALTER TABLE "currentCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");
 
 --ALTER TABLE "pastCourses" ADD FOREIGN KEY ("code") REFERENCES "courses" ("Code");

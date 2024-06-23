@@ -4,8 +4,6 @@ psql -U postgres -d testdb -f ./_postgresDB/testdb.sql -q
 
 LOC="./_data_csv"
 
-rm _insert/courses.sql
-
 for name in `ls $LOC`
 do
     case "$name" in
@@ -23,11 +21,6 @@ do
         "talkseries.csv")
             echo processing $name
             python3 ./_scripts/csv2psql_replace_email.py $LOC/$name talkseries host > _insert/talkseries.sql
-            ;;
-        # both these files should produce sql files for the courses table
-        "courses_Core.csv" | "courses_Elective.csv")
-            echo processing $name
-            python3 ./_scripts/csv2psql.py $LOC/$name courses >> _insert/courses.sql
             ;;
         # remaining files
         *)
