@@ -61,6 +61,7 @@
   </script>
 
 <!-- trial  -->
+<!--
  <p class="paragraph">or</p>
 <p>To write query <button id="query" type="button" class="btn btn-success">Click here</button>  </p> 
 <script>
@@ -69,7 +70,6 @@
     queryBox.hidden = !queryBox.hidden; // Toggle the hidden property
   });
 </script>
-
 <form class="container queryBox" method="post" action="/queryDisplay" hidden id="querybox">
   <%if(locals.query){%>
     <script>
@@ -82,27 +82,28 @@
   <div>
     <!-- <br /> -->
     <!-- <a type="button" class="btn btn-success" href="/queryDisplay">Run</a> -->
-     <br />
+    <!-- <br />
     <input type="submit" value="Run" class="btn btn-success">
     <a type="button" href="/queryKill"class="btn btn-danger">Exit</a>  
   </div>  
 </form>
-
 <%if(locals.query){%>
-  <form class="container queryBox" method="post" action="/displayTable"  id="querybox">
-    <textarea rows="2" cols="50" name="naturalLanguage" >
-      <%=query%>
-    </textarea>
-    <div>
-      <!-- <br /> -->
-      <!-- <a type="button" class="btn btn-success" href="/queryDisplay">Run</a> -->
-       <br />
-      <input type="submit" value="Run" class="btn btn-success">
-      <a type="button" href="/queryKill"class="btn btn-danger">Exit</a>  
-    </div>  
-  </form>
- <%}%>
- <!-- trial  -->
+<form class="container queryBox" method="post" action="/displayTable"  id="querybox">
+<textarea rows="2" cols="50" name="naturalLanguage" >
+<%=query%>
+</textarea>
+<div>
+<!-- <br /> -->
+<!-- <a type="button" class="btn btn-success" href="/queryDisplay">Run</a> -->
+<!--
+<br />
+<input type="submit" value="Run" class="btn btn-success">
+<a type="button" href="/queryKill"class="btn btn-danger">Exit</a>  
+</div>  
+</form>
+<%}%>
+<!-- trial  -->
+
 
 </div>
 <br />
