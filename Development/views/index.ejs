@@ -26,7 +26,6 @@
     <img src="images/logo.png" height="30px" width="30px"/>
     <span class="fs-4">CSE |IIT Palakkad</span>
   </a>
-
   <ul class="nav nav-pills">
     <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
     <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
@@ -35,6 +34,9 @@
     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
   </ul>
 </header>
+
+
+
 <!-- this is a dropdown from which you can chose the table name  -->
 <div class="container crimson-text-regular">
   <br />
@@ -52,7 +54,6 @@
         <option value="<%=tables[i].table_name%>"><%=tables[i].table_name%></option>
       <% } %>
     </select>
-    <!-- <input type="submit" value="Go"> -->
   </form>
   <script>
     function submitForm() {
@@ -111,14 +112,17 @@
   <%if(locals.dataColumnNames){%>
 <p>Chose the data columns manually down here</p>
 <div class="table-container">
-    <table class="table checkBoxes">
+    
       <form action="/displayTable" method="post">
+        <div class="table-container">
+        <table class="table checkBoxes">
 
         
         <%if(locals.columnNamesArray){%>
           <!-- this is when check boxes are selected  -->
           <th>
             <input type="checkbox" id="allCheckBox"/>
+            <label>Slect All</label>
             <script>
               
               document.getElementById('allCheckBox').addEventListener('change', function() {
@@ -142,8 +146,9 @@
           
         <%}else{%>
 
-                                   <th>
+                                   <th style=" background-color: #F3FF90 !important;">
                                   <input type="checkbox" id="allCheckBox"/>
+                                  <label >Select all</label>
                                   <script>
                                     
                                     document.getElementById('allCheckBox').addEventListener('change', function() {
@@ -175,17 +180,23 @@
             </th>
           <%}%>
           <%}%>
-          <th class="goButton ">
+          <!-- <th class="goButton ">
             <input type="hidden" name="tableName" value="<%=tableName%>"/>
             <input class="btn btn-success" type="submit" value="Go" style="width: 100%; padding: 0 !important;"/>
             
-          </th>
+          </th> -->
+        </table>
+      </div>
+        <div class="btn btn-success goButton">
+          <input type="hidden" name="tableName" value="<%=tableName%>"/>
+          <input class="btn btn-success" type="submit" value="Go"/>  
+        </div>
       </form>
-    </table>
+    
     </div>
  
   <%}%>
-
+<!-- interchnage table and form  -->
   <!-- displaying natural language to query here  -->
  
      

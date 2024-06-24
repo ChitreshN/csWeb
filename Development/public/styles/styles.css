@@ -58,11 +58,17 @@ th{
 .table-container {
   width: 100%; /* Adjust width as needed */
   overflow-x: auto; /* Enable horizontal scrolling */
+  /* display: flex; */
 }
-
+.table-container >form{
+  display: flex;
+}
 table {
   width: 100%; /* Ensure table fills container width */
   border-collapse: collapse; /* Collapse table borders */
+}
+.goClass{
+  display: flex;
 }
 /* trail  */
 
@@ -78,10 +84,24 @@ table {
 #allCheckBox{
   height: 15px;
   width: 15px;
+ 
 }
 .goButton {
   background-color: #1C8C4D !important;
+  width: 50px;
+  height: 50px;
+  /* position: sticky; */
+  /* position: fixed; */
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 input{
   text-align: center;
 }
