@@ -52,7 +52,7 @@ table,th,td {
   border: 1px solid black;
 }
 th{
-  background-color: #D98B2B50 !important;
+  background-color: #F5DD6180 !important;
 }
 /* trail  */
 .table-container {
@@ -87,7 +87,7 @@ table {
  
 }
 .goButton {
-  background-color: #1C8C4D !important;
+  background-color: #F5DD61 !important;
   width: 50px;
   height: 50px;
   /* position: sticky; */
@@ -108,7 +108,7 @@ input{
 
 /* footer css  */
 footer, header{
-  background-color: #FFCBCB ;
+  /* background-color: #FFCBCB ; */
   width: 100%;
   /* position: fixed; */
 }
@@ -123,10 +123,7 @@ footer, header{
   background-color: #D98B2B90 !important;
 }
 .class1 >.paragraph{
-  background-color: #D98B2B90 ;  
+  background-color: #F5DD61 ;  
   font-size:15px;
   text-align: center;
 }
-/* .queryBox >div{
-
-} */

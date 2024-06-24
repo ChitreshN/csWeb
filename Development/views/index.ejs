@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE |IIT Palakkad</title>
-    <link rel="icon" href="images/logo.png" type="image/png">
+    <!-- <link rel="icon" href="images/logo.png" type="image/png"> -->
     <!-- links for google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom crimson-text-regular">
   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
     <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-    <img src="images/logo.png" height="30px" width="30px"/>
+    <!-- <img src="images/logo.png" height="30px" width="30px"/> -->
     <span class="fs-4">CSE |IIT Palakkad</span>
   </a>
   <ul class="nav nav-pills">
@@ -41,9 +41,9 @@
 <div class="container crimson-text-regular">
   <br />
 <div class="class1">
-<p class="paragraph">Chose the data columns manually here </p>
+<p class="paragraph" style="font-weight:1000 !important">Chose the data columns manually here </p>
   <form action="/GetTableDropDown" method="post" id="tableForm">
-    <label for="tableName">Choose a Table:</label>
+    <label for="tableName">Chose a Table:</label>
     <select name="tableName" onchange="submitForm()">
       <% if (locals.tableName) { %>
         <option value="<%=tableName%>"><%=tableName%></option>
@@ -110,7 +110,7 @@
 <br />
   <!-- this provides you list of checkboxes from which you can chose the list of coulms you want to display  -->
   <%if(locals.dataColumnNames){%>
-<p>Chose the data columns manually down here</p>
+<p >Chose the data columns manually down here</p>
 <div class="table-container">
     
       <form action="/displayTable" method="post">
@@ -120,7 +120,8 @@
         
         <%if(locals.columnNamesArray){%>
           <!-- this is when check boxes are selected  -->
-          <th>
+          <th style=" background-color: #F3FF90 !important;">
+            
             <input type="checkbox" id="allCheckBox"/>
             <label>Slect All</label>
             <script>
@@ -148,7 +149,7 @@
 
                                    <th style=" background-color: #F3FF90 !important;">
                                   <input type="checkbox" id="allCheckBox"/>
-                                  <label >Select all</label>
+                                  <label >Select All</label>
                                   <script>
                                     
                                     document.getElementById('allCheckBox').addEventListener('change', function() {
@@ -187,9 +188,9 @@
           </th> -->
         </table>
       </div>
-        <div class="btn btn-success goButton">
+        <div class="btn btn-warning goButton">
           <input type="hidden" name="tableName" value="<%=tableName%>"/>
-          <input class="btn btn-success" type="submit" value="Go"/>  
+          <input class="btn btn-warning" type="submit" value="Go"/>  
         </div>
       </form>
     
