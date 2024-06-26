@@ -123,8 +123,15 @@ app.post("/getCSV", async(req,res)=> {
     await fs.writeFile(fileName, csv)
 
     res.setHeader('Content-Disposition', 'attachment; filename=' + fileName);
-    res.sendFile(fileName,{root: curDir})
+    await new Promise((resolve, reject) => {
+        res.sendFile(fileName, { root: curDir }, (err) => {
+            if (err) reject(err);
+            else resolve();
+        });
+    });
 
+    // Delete the file after sending
+    await fs.unlink(fileName);
 })
 
 
