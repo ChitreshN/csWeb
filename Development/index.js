@@ -98,7 +98,6 @@ app.post("/displayTable",async(req,res)=>{
 app.post("/getCSV", async(req,res)=> {
     const tableName = req.body.tableName
     const dataColumns = req.body.dataColumns
-    console.log(dataColumns)
     if (!tableName){
         res.send("Select table before downloading csv")
         return
