@@ -3,10 +3,16 @@ import ejs from "ejs";
 import bodyParser from "body-parser";
 import pg from "pg";
 import env from "dotenv";
-import axios from 'axios';
+import papa from "papaparse"
+import arrayToCSV from "./utils.js";
+import { promises as fs } from 'fs';
+
 env.config();
+
+const curDir = process.cwd()
 const port=3000;
 const app=express();
+
 const db = new pg.Client({
     user: process.env.PG_USER,
     host: process.env.PG_HOST,
@@ -15,8 +21,10 @@ const db = new pg.Client({
     port: process.env.PG_PORT,
   });
 db.connect();
+
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
+
 app.get("/",async(req,res)=>{
     //to get list of all table names
 
@@ -86,6 +94,39 @@ app.post("/displayTable",async(req,res)=>{
     const heading=Object.keys(result.rows[0]);
     res.render("index.ejs",{dataColumns:result.rows,tableName:tableName,heading:heading,tables:result1.rows,columnNamesArray:columnNamesArray,dataColumnNames:dataColumnNames});
 });
+
+app.post("/getCSV", async(req,res)=> {
+    const tableName = req.body.tableName
+    const dataColumns = req.body.dataColumns
+    console.log(dataColumns)
+    if (!tableName){
+        res.send("Select table before downloading csv")
+        return
+    }
+    const cols = await db.query(" SELECT * FROM information_schema.columns WHERE table_name = $1;",[tableName]);
+    
+    var dataColumnNames=[];
+    for(var i=0;i<cols.rows.length;i++)
+    {
+        dataColumnNames.push(cols.rows[i].column_name);
+    }
+    
+    var dummyEntries = [];    
+    for(var i=0;i<cols.rows.length;i++)
+    {
+        dummyEntries.push("Enter data from here");
+    }
+
+    const csv = arrayToCSV(dataColumnNames,dataColumns)
+    const fileName = `${tableName}.csv`
+
+    await fs.writeFile(fileName, csv)
+
+    res.setHeader('Content-Disposition', 'attachment; filename=' + fileName);
+    res.sendFile(fileName,{root: curDir})
+
+})
+
 
 app.listen(port,()=>{
     console.log(`running on port ${port}`);
