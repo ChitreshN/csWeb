@@ -110,13 +110,46 @@ app.post("/getCSV", async(req,res)=> {
         dataColumnNames.push(cols.rows[i].column_name);
     }
     
-    var dummyEntries = [];    
+    const csv = arrayToCSV(dataColumnNames,dataColumns)
+    const fileName = `${tableName}.csv`
+
+    await fs.writeFile(fileName, csv)
+
+    res.setHeader('Content-Disposition', 'attachment; filename=' + fileName);
+    await new Promise((resolve, reject) => {
+        res.sendFile(fileName, { root: curDir }, (err) => {
+            if (err) reject(err);
+            else resolve();
+        });
+    });
+
+    // Delete the file after sending
+    await fs.unlink(fileName);
+})
+
+app.post("/sendCSV",async(req,res) => {
+    const file = req.body.file
+    console.log(file)
+    res.send("recieved")
+})
+
+app.post("/getTemplate", async(req,res)=> {
+    const tableName = req.body.tableName
+    if (!tableName){
+        res.send("Select table before downloading csv")
+        return
+    }
+    const cols = await db.query(" SELECT * FROM information_schema.columns WHERE table_name = $1;",[tableName]);
+    
+    var dataColumnNames=[];
     for(var i=0;i<cols.rows.length;i++)
     {
-        dummyEntries.push("Enter data from here");
+        dataColumnNames.push(cols.rows[i].column_name);
     }
 
-    const csv = arrayToCSV(dataColumnNames,dataColumns)
+    var data = []
+
+    const csv = arrayToCSV(dataColumnNames,data)
     const fileName = `${tableName}.csv`
 
     await fs.writeFile(fileName, csv)

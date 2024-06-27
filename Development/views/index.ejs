@@ -195,6 +195,15 @@
           <% } %>
         </table>  
         <%}%>
+
+        <% if (locals.tableName) { %>
+        <form action="/getTemplate" method="post">
+            <input type="hidden" name="tableName" value="<%= tableName %>"/>
+            <button type="submit" class="btn btn-primary">Download Template</button>
+        </form>
+        <% } %>
+        <br />
+
         <% if (locals.dataColumns) { %>
         <form action="/getCSV" method="post">
             <input type="hidden" name="tableName" value="<%= tableName %>"/>
