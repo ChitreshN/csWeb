@@ -1,12 +1,11 @@
 import express, { query } from "express";
-import ejs from "ejs";
 import bodyParser from "body-parser";
 import pg from "pg";
 import env from "dotenv";
-import papa from "papaparse"
+import { promises as pr } from 'fs';
+import fs from "fs"
+import multer from "multer"
 import arrayToCSV from "./utils.js";
-import { promises as fs } from 'fs';
-
 env.config();
 
 const curDir = process.cwd()
@@ -21,6 +20,22 @@ const db = new pg.Client({
     port: process.env.PG_PORT,
   });
 db.connect();
+
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, 'uploads/');
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname);
+    }
+});
+
+const upload = multer({ storage: storage });
+
+const uploadDir = 'uploads';
+if (!fs.existsSync(uploadDir)) {
+    fs.mkdirSync(uploadDir);
+}
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
@@ -113,7 +128,7 @@ app.post("/getCSV", async(req,res)=> {
     const csv = arrayToCSV(dataColumnNames,dataColumns)
     const fileName = `${tableName}.csv`
 
-    await fs.writeFile(fileName, csv)
+    await pr.writeFile(fileName, csv)
 
     res.setHeader('Content-Disposition', 'attachment; filename=' + fileName);
     await new Promise((resolve, reject) => {
@@ -124,14 +139,14 @@ app.post("/getCSV", async(req,res)=> {
     });
 
     // Delete the file after sending
-    await fs.unlink(fileName);
+    await pr.unlink(fileName);
 })
 
-app.post("/sendCSV",async(req,res) => {
-    const file = req.body.file
-    console.log(file)
-    res.send("recieved")
-})
+
+//TODO
+app.post('/sendCSV', upload.single('myFile'), (req, res) => {
+    res.send('File uploaded successfully!');
+});
 
 app.post("/getTemplate", async(req,res)=> {
     const tableName = req.body.tableName
@@ -152,7 +167,7 @@ app.post("/getTemplate", async(req,res)=> {
     const csv = arrayToCSV(dataColumnNames,data)
     const fileName = `${tableName}.csv`
 
-    await fs.writeFile(fileName, csv)
+    await pr.writeFile(fileName, csv)
 
     res.setHeader('Content-Disposition', 'attachment; filename=' + fileName);
     await new Promise((resolve, reject) => {
@@ -163,7 +178,7 @@ app.post("/getTemplate", async(req,res)=> {
     });
 
     // Delete the file after sending
-    await fs.unlink(fileName);
+    await pr.unlink(fileName);
 })
 
 
