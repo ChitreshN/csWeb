@@ -6,6 +6,7 @@ import { promises as pr } from 'fs';
 import fs from "fs"
 import multer from "multer"
 import arrayToCSV from "./utils.js";
+import processCSV from "./csv.js";
 env.config();
 
 const curDir = process.cwd()
@@ -144,8 +145,32 @@ app.post("/getCSV", async(req,res)=> {
 
 
 //TODO
-app.post('/sendCSV', upload.single('myFile'), (req, res) => {
+app.post('/sendCSV', upload.single('myFile'), async(req, res) => {
+    const filepath = `uploads/${req.file.originalname}`
+    const tableName = req.body.tableName
+
+    const csv = fs.createReadStream(filepath)    
+    
+    const {fields, data} = await processCSV(csv)
+
+    const columnNames = fields.map(col => `"${col}"`).join(', ');
+    console.log(columnNames)
+
+    for (const values of data){
+        console.log(values)
+        const dataString = values.map(val => `'${val}'`).join(', ')
+        try{
+            await db.query(`INSERT INTO "${tableName}"(${columnNames}) VALUES (${dataString})`)
+        }
+        catch(error){
+            console.log(error.detail)
+            res.send(`the following error occured: ${error.detail}`)
+            return
+        }
+    }
+
     res.send('File uploaded successfully!');
+
 });
 
 app.post("/getTemplate", async(req,res)=> {

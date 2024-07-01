@@ -207,6 +207,7 @@
         <% if (locals.tableName) { %>
         <form action="/sendCSV" method="post" enctype="multipart/form-data">
             <input type="file" name="myFile" />
+            <input type="hidden" name="tableName" value="<%= tableName %>"/>
             <button type="submit" class="btn btn-primary">Upload CSV</button>
         </form>
         <% } %>
