@@ -143,9 +143,8 @@ app.post("/getCSV", async(req,res)=> {
     await pr.unlink(fileName);
 })
 
-
-//TODO
-app.post('/sendCSV', upload.single('myFile'), async(req, res) => {
+// handler for inserting entries in database
+app.post('/insertDB', upload.single('myFile'), async(req, res) => {
     const filepath = `uploads/${req.file.originalname}`
     const tableName = req.body.tableName
 
@@ -154,10 +153,97 @@ app.post('/sendCSV', upload.single('myFile'), async(req, res) => {
     const {fields, data} = await processCSV(csv)
 
     const columnNames = fields.map(col => `"${col}"`).join(', ');
-    console.log(columnNames)
 
     for (const values of data){
-        console.log(values)
+        const dataString = values.map(val => `'${val}'`).join(', ')
+        try{
+            await db.query(`INSERT INTO "${tableName}"(${columnNames}) VALUES (${dataString})`)
+        }
+        catch(error){
+            console.log(error)
+            res.send(`the following error occured: ${error.detail}`)
+            return
+        }
+    }
+    res.send('Values inserted successfully!');
+});
+
+// handler for updating entries in database
+// TODO
+app.post('/updateDB', upload.single('myFile'), async(req, res) => {
+    // send insert csv, but when updating, use this information
+    // i.e the primary key column
+    const filepath = `uploads/${req.file.originalname}`
+    const tableName = req.body.tableName
+
+    const primary_key = await db.query(`
+        SELECT 
+        c.column_name, 
+        c.data_type
+        FROM 
+        information_schema.table_constraints tc 
+        JOIN 
+        information_schema.constraint_column_usage AS ccu 
+        USING (constraint_schema, constraint_name) 
+        JOIN 
+        information_schema.columns AS c 
+        ON c.table_schema = tc.constraint_schema
+        AND tc.table_name = c.table_name 
+        AND ccu.column_name = c.column_name
+        WHERE 
+        constraint_type = 'PRIMARY KEY' 
+        AND tc.table_name = '${tableName}';
+        `)
+
+    const column = primary_key.rows[0].column_name
+    const csv = fs.createReadStream(filepath)    
+
+    const {fields, data} = await processCSV(csv)
+
+    for (const values of data){
+        let j = 0
+        let key
+        let updateString = ''
+        for (let i=0; i < values.length ;i++) {
+            if (fields[i] == column) {
+                key = values[i]
+                continue
+            }
+            if (j == 0){
+                updateString += ` "${fields[i]}" = '${values[i]}' `
+                j++;
+            }
+            else updateString += `, "${fields[i]}" = '${values[i]}' `
+        }
+       try{
+           await db.query(`
+               update ${tableName}
+               set ${updateString}
+               where "${column}" = '${key}';
+               `)
+       }
+       catch(error){
+           console.log(error)
+           res.send(`the following error occured: ${error.detail}`)
+           return
+       }
+    }
+    res.send("Information updated for the given values!");
+});
+
+// handler for deleting entries from database
+// TODO
+app.post('/deleteDB', upload.single('myFile'), async(req, res) => {
+    const filepath = `uploads/${req.file.originalname}`
+    const tableName = req.body.tableName
+
+    const csv = fs.createReadStream(filepath)    
+    
+    const {fields, data} = await processCSV(csv)
+
+    const columnNames = fields.map(col => `"${col}"`).join(', ');
+
+    for (const values of data){
         const dataString = values.map(val => `'${val}'`).join(', ')
         try{
             await db.query(`INSERT INTO "${tableName}"(${columnNames}) VALUES (${dataString})`)
@@ -168,9 +254,7 @@ app.post('/sendCSV', upload.single('myFile'), async(req, res) => {
             return
         }
     }
-
     res.send('File uploaded successfully!');
-
 });
 
 app.post("/getTemplate", async(req,res)=> {
