@@ -168,8 +168,6 @@ app.post('/insertDB', upload.single('myFile'), async(req, res) => {
     res.send('Values inserted successfully!');
 });
 
-// handler for updating entries in database
-// TODO
 app.post('/updateDB', upload.single('myFile'), async(req, res) => {
     // send insert csv, but when updating, use this information
     // i.e the primary key column
@@ -196,6 +194,7 @@ app.post('/updateDB', upload.single('myFile'), async(req, res) => {
         `)
 
     const column = primary_key.rows[0].column_name
+    if (!column) res.send('No primary key for the table') //TODO handle this case better
     const csv = fs.createReadStream(filepath)    
 
     const {fields, data} = await processCSV(csv)
@@ -237,16 +236,43 @@ app.post('/deleteDB', upload.single('myFile'), async(req, res) => {
     const filepath = `uploads/${req.file.originalname}`
     const tableName = req.body.tableName
 
+    const primary_key = await db.query(`
+        SELECT 
+        c.column_name, 
+        c.data_type
+        FROM 
+        information_schema.table_constraints tc 
+        JOIN 
+        information_schema.constraint_column_usage AS ccu 
+        USING (constraint_schema, constraint_name) 
+        JOIN 
+        information_schema.columns AS c 
+        ON c.table_schema = tc.constraint_schema
+        AND tc.table_name = c.table_name 
+        AND ccu.column_name = c.column_name
+        WHERE 
+        constraint_type = 'PRIMARY KEY' 
+        AND tc.table_name = '${tableName}';
+        `)
+
+    const column = primary_key.rows[0].column_name
+    if (!column) res.send('No primary key for the table') //TODO handle this case better
     const csv = fs.createReadStream(filepath)    
     
     const {fields, data} = await processCSV(csv)
 
-    const columnNames = fields.map(col => `"${col}"`).join(', ');
-
     for (const values of data){
-        const dataString = values.map(val => `'${val}'`).join(', ')
+        let key
+        for (let i=0; i < values.length ;i++) {
+            if (fields[i] == column) {
+                key = values[i]
+                continue
+            }
+        }
         try{
-            await db.query(`INSERT INTO "${tableName}"(${columnNames}) VALUES (${dataString})`)
+            await db.query(`DELETE FROM "${tableName}" 
+               WHERE "${column}" = '${key}';
+            `)
         }
         catch(error){
             console.log(error.detail)
@@ -254,7 +280,7 @@ app.post('/deleteDB', upload.single('myFile'), async(req, res) => {
             return
         }
     }
-    res.send('File uploaded successfully!');
+    res.send('Entries deleted!');
 });
 
 app.post("/getTemplate", async(req,res)=> {

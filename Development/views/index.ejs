@@ -211,7 +211,6 @@
             <button type="submit" class="btn btn-primary">Upload CSV to insert</button>
         </form>
         <% } %>
-        
         <br />
 
         <% if (locals.tableName) { %>
@@ -221,8 +220,17 @@
             <button type="submit" class="btn btn-primary">Upload CSV to update</button>
         </form>
         <% } %>
-        
         <br />
+
+        <% if (locals.tableName) { %>
+        <form action="/deleteDB" method="post" enctype="multipart/form-data">
+            <input type="file" name="myFile" />
+            <input type="hidden" name="tableName" value="<%= tableName %>"/>
+            <button type="submit" class="btn btn-primary">Upload CSV to delete</button>
+        </form>
+        <% } %>
+        <br />
+
         <% if (locals.dataColumns) { %>
         <form action="/getCSV" method="post">
             <input type="hidden" name="tableName" value="<%= tableName %>"/>
