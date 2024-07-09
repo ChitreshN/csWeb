@@ -118,11 +118,13 @@
         <input type="hidden" name="tableName" value="<%= tableName %>"/>
 
         <!-- Hidden inputs for each row in dataColumns -->
-        <% for (let i = 0; i < dataColumns.length; i++) { %>
+        <% for (let i = 0; i < dataColumns.length ; i++) { %>
+        <% if (i != 1) { %>
         <% let row = dataColumns[i]; %>
         <% Object.values(row).forEach(value => { %>
         <input type="hidden" name="dataColumns[<%= i %>][]" value="<%= value %>"/>
         <% }); %>
+        <% } %>
         <% } %>
 
         <button type="submit" class="btn btn-primary">Download CSV</button>
@@ -134,132 +136,141 @@
         <table class="table checkBoxes">
 
         
-        <%if(locals.columnNamesArray){%>
-          <!-- this is when check boxes are selected  -->
-          <th style=" background-color: #F3FF90 !important;">
-            
-            <input type="checkbox" id="allCheckBox"/>
-            <label>Slect All</label>
-            <script>
-              
-              document.getElementById('allCheckBox').addEventListener('change', function() {
-                let checkboxes = document.getElementsByClassName('checkbox');
-                for (let i = 0; i < checkboxes.length; i++) {
-                  checkboxes[i].checked = this.checked;
-                }
-              });
-            </script>
-            </th>
-          <%for(var i=0;i<dataColumnNames.length;i++){%>
-            <th>
-              <input type="checkbox" class="checkbox" name="<%= dataColumnNames[i] %>" value="<%= dataColumnNames[i] %>"
-                <% if(columnNamesArray.includes(dataColumnNames[i])) { %>
-                  checked
-                <% } %>
-              />
-              <label for="<%= dataColumnNames[i] %>"><%= dataColumnNames[i] %></label>
-            </th>
-          <%}%>
-          
-        <%}else{%>
-
-                                   <th style=" background-color: #F3FF90 !important;">
-                                  <input type="checkbox" id="allCheckBox"/>
-                                  <label >Select All</label>
-                                  <script>
-                                    
-                                    document.getElementById('allCheckBox').addEventListener('change', function() {
-                                      let checkboxes = document.getElementsByClassName('checkbox');
-                                      for (let i = 0; i < checkboxes.length; i++) {
-                                        checkboxes[i].checked = this.checked;
-                                      }
-                                    });
-                                  </script>
-                                  </th>
-          <!-- this is when no check boxes are selected  -->
-          <%for(var i=0;i<dataColumnNames.length;i++){%>
-            <th>
-              <input class="checkbox" type="checkbox" name="<%= dataColumnNames[i] %>" value="<%= dataColumnNames[i] %>" />
-              <label class="columnName" for="<%= dataColumnNames[i] %>"><%= dataColumnNames[i] %></label>
-              <script>
-                var x = document.getElementsByClassName('columnName'); // Replace 'columnName' with your actual class name
-            
-                for (var i = 0; i < x.length; i++) {
-                    var text = x[i].textContent; // Get the text content of the current element
-            
-                    // Capitalize the first letter
-                    var capitalizedText = text.charAt(0).toUpperCase() + text.slice(1);
-            
-                    // Assign the capitalized text back to the element
-                    x[i].textContent = capitalizedText;
-                }
-            </script>
-            </th>
-          <%}%>
-          <%}%>
-          <!-- <th class="goButton ">
-            <input type="hidden" name="tableName" value="<%=tableName%>"/>
-            <input class="btn btn-success" type="submit" value="Go" style="width: 100%; padding: 0 !important;"/>
-            
-          </th> -->
-        </table>
-      </div>
-        <div class="btn btn-warning goButton">
-          <input type="hidden" name="tableName" value="<%=tableName%>"/>
-          <input class="btn btn-warning" type="submit" value="Go"/>  
-        </div>
-      </form>
-    
-    </div>
- 
-  <%}%>
-<!-- interchnage table and form  -->
-  <!-- displaying natural language to query here  -->
- 
-     
-
-
-
-<!-- div block that displays the data of the slected table with selected entries  -->
+<% if (locals.columnNamesArray) { %>
+  <!-- this is when check boxes are selected  -->
+  <th style=" background-color: #F3FF90 !important;">
+    <input type="checkbox" id="allCheckBox"/>
+    <label>Select All</label>
+    <script>
+      document.getElementById('allCheckBox').addEventListener('change', function() {
+        let checkboxes = document.getElementsByClassName('checkbox');
+        for (let i = 0; i < checkboxes.length; i++) {
+          checkboxes[i].checked = this.checked;
+        }
+      });
+    </script>
+  </th>
+  <% for (var i = 0; i < dataColumnNames.length; i++) { %>
+    <th>
+      <input type="checkbox" class="checkbox" name="<%= dataColumnNames[i] %>" value="<%= dataColumnNames[i] %>"
+        <% if (columnNamesArray.includes(dataColumnNames[i])) { %>
+          checked
+        <% } %>
+      />
+      <label for="<%= dataColumnNames[i] %>"><%= dataColumnNames[i] %></label>
+    </th>
+  <% } %>
+<% } else { %>
+  <th style=" background-color: #F3FF90 !important;">
+    <input type="checkbox" id="allCheckBox"/>
+    <label>Select All</label>
+    <script>
+      document.getElementById('allCheckBox').addEventListener('change', function() {
+        let checkboxes = document.getElementsByClassName('checkbox');
+        for (let i = 0; i < checkboxes.length; i++) {
+          checkboxes[i].checked = this.checked;
+        }
+      });
+    </script>
+  </th>
+  <!-- this is when no check boxes are selected  -->
+  <% for (var i = 0; i < dataColumnNames.length; i++) { %>
+    <th>
+      <input class="checkbox" type="checkbox" name="<%= dataColumnNames[i] %>" value="<%= dataColumnNames[i] %>" />
+      <label class="columnName" for="<%= dataColumnNames[i] %>"><%= dataColumnNames[i] %></label>
+      <script>
+        var x = document.getElementsByClassName('columnName');
+        for (var i = 0; i < x.length; i++) {
+          var text = x[i].textContent;
+          var capitalizedText = text.charAt(0).toUpperCase() + text.slice(1);
+          x[i].textContent = capitalizedText;
+        }
+      </script>
+    </th>
+  <% } %>
+<% } %>
+</tr>
+<!-- Add your form and button here as needed -->
+</table>
+</div>
+<div class="btn btn-warning goButton">
+  <input type="hidden" name="tableName" value="<%=tableName%>"/>
+  <input class="btn btn-warning" type="submit" value="Go"/>  
+</div>
+</form>
+</div>
+<% } %>
 <div class="table-container">
-
-    <%if(locals.dataColumns){%> 
-        <table class="table table-striped table-hover ">
-          <tr>
-            <% for(var j=0; j<heading.length; j++) { %>
-              <th class="columnName"><%= heading[j] %></th>
-              <script>
-                var x = document.getElementsByClassName('columnName'); // Replace 'columnName' with your actual class name
-            
-                for (var i = 0; i < x.length; i++) {
-                    var text = x[i].textContent; // Get the text content of the current element
-            
-                    // Capitalize the first letter
-                    function titleCase(str) {
-                        return str.toLowerCase().replace(/(?:^|\s)\w/g, function(match) {
-                            return match.toUpperCase();
-                        });
-                    }
-            
-                    // Assign the capitalized text back to the element
-                    x[i].textContent = titleCase(text);
-                }
-            </script>
-            
-            <% } %>
-          </tr>
-          <% for(var i=0; i<dataColumns.length; i++) { %>
-            <tr>
-              <% for(var j=0; j<heading.length; j++) { %>
-                <td><%= dataColumns[i][heading[j]] %></td>
-              <% } %>
-            </tr>
+  <% if (locals.dataColumns) { %> 
+    <table class="table table-striped table-hover ">
+      <tr>
+        <% for (var j = 0; j < heading.length; j++) { %>
+          <th class="columnName"><%= heading[j] %></th>
+          <script>
+            var x = document.getElementsByClassName('columnName');
+            for (var i = 0; i < x.length; i++) {
+              var text = x[i].textContent;
+              function titleCase(str) {
+                return str.toLowerCase().replace(/(?:^|\s)\w/g, function(match) {
+                  return match.toUpperCase();
+                });
+              }
+              x[i].textContent = titleCase(text);
+            }
+          </script>
+        <% } %>
+      </tr>
+      <tr>
+        <% for (var j = 0; j < heading.length; j++) { %>
+          <th>
+            <select class="filter-select" data-column="<%= j %>">
+              <option value="">All</option>
+              <% var uniqueValues = [...new Set(dataColumns.map(row => row[heading[j]]))]; %>
+              <% uniqueValues.forEach(function(value) { %>
+                <option value="<%= value %>"><%= value %></option>
+              <% }); %>
+            </select>
+          </th>
+        <% } %>
+      </tr>
+      <% for (var i = 0; i < dataColumns.length; i++) { %>
+        <tr class="data-row">
+          <% for (var j = 0; j < heading.length; j++) { %>
+            <td><%= dataColumns[i][heading[j]] %></td>
           <% } %>
-        </table>  
-        <%}%>
-    </div>
-  </div>
-  <!-- footer  -->
+        </tr>
+      <% } %>
+    </table>  
+  <% } %>
+</div>
+
+<script>
+  document.querySelectorAll('.filter-select').forEach(select => {
+    select.addEventListener('change', function() {
+      const filters = {};
+      document.querySelectorAll('.filter-select').forEach(select => {
+        const column = select.dataset.column;
+        const value = select.value.toLowerCase();
+        if (value) {
+          filters[column] = value;
+        }
+      });
+      
+      document.querySelectorAll('.data-row').forEach(row => {
+        let display = true;
+        Object.keys(filters).forEach(column => {
+          const cell = row.children[column];
+          const cellValue = cell.textContent.toLowerCase();
+          if (cellValue !== filters[column]) {
+            display = false;
+          }
+        });
+        row.style.display = display ? '' : 'none';
+      });
+    });
+  });
+</script>
+<!-- footer  -->
   <footer class="py-3 my-4 crimson-text-regular">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
