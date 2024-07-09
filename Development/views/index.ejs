@@ -34,7 +34,17 @@
     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
   </ul>
 </header>
-
+<script>
+    function confirmInsert() {
+        return confirm(`Are you sure you want to INSERT the entries?`);
+    }
+    function confirmUpdate() {
+        return confirm(`Are you sure you want to UPDATE the entries?`);
+    }
+    function confirmDelete() {
+        return confirm(`Are you sure you want to DELETE the entries?`);
+    }
+</script>
 
 
 <!-- this is a dropdown from which you can chose the table name  -->
@@ -68,6 +78,57 @@
 <p >Chose the data columns manually down here</p>
 <div class="table-container">
     
+    <% if (locals.tableName) { %>
+    <form action="/getTemplate" method="post">
+        <input type="hidden" name="tableName" value="<%= tableName %>"/>
+        <button type="submit" class="btn btn-primary">Download Template</button>
+    </form>
+    <% } %>
+    <br />
+
+    <% if (locals.tableName) { %>
+    <form action="/insertDB" method="post" enctype="multipart/form-data" onsubmit="return confirmInsert()">
+        <input type="file" name="myFile" />
+        <input type="hidden" name="tableName" value="<%= tableName %>"/>
+        <button type="submit" class="btn btn-primary">Upload CSV to insert</button>
+    </form>
+    <% } %>
+    <br />
+
+    <% if (locals.tableName) { %>
+    <form action="/updateDB" method="post" enctype="multipart/form-data" onsubmit="return confirmUpdate()">
+        <input type="file" name="myFile" />
+        <input type="hidden" name="tableName" value="<%= tableName %>"/>
+        <button type="submit" class="btn btn-primary">Upload CSV to update</button>
+    </form>
+    <% } %>
+    <br />
+
+    <% if (locals.tableName) { %>
+    <form action="/deleteDB" method="post" enctype="multipart/form-data" onsubmit="return confirmDelete()">
+        <input type="file" name="myFile" />
+        <input type="hidden" name="tableName" value="<%= tableName %>"/>
+        <button type="submit" class="btn btn-primary">Upload CSV to delete</button>
+    </form>
+    <% } %>
+    <br />
+
+    <% if (locals.dataColumns) { %>
+    <form action="/getCSV" method="post">
+        <input type="hidden" name="tableName" value="<%= tableName %>"/>
+
+        <!-- Hidden inputs for each row in dataColumns -->
+        <% for (let i = 0; i < dataColumns.length; i++) { %>
+        <% let row = dataColumns[i]; %>
+        <% Object.values(row).forEach(value => { %>
+        <input type="hidden" name="dataColumns[<%= i %>][]" value="<%= value %>"/>
+        <% }); %>
+        <% } %>
+
+        <button type="submit" class="btn btn-primary">Download CSV</button>
+    </form>
+    <br />
+    <% } %>
       <form action="/displayTable" method="post">
         <div class="table-container">
         <table class="table checkBoxes">
@@ -160,8 +221,9 @@
 
 
 <!-- div block that displays the data of the slected table with selected entries  -->
-     <div class="table-container">
-      <%if(locals.dataColumns){%> 
+<div class="table-container">
+
+    <%if(locals.dataColumns){%> 
         <table class="table table-striped table-hover ">
           <tr>
             <% for(var j=0; j<heading.length; j++) { %>
@@ -195,59 +257,7 @@
           <% } %>
         </table>  
         <%}%>
-
-        <% if (locals.tableName) { %>
-        <form action="/getTemplate" method="post">
-            <input type="hidden" name="tableName" value="<%= tableName %>"/>
-            <button type="submit" class="btn btn-primary">Download Template</button>
-        </form>
-        <% } %>
-        <br />
-
-        <% if (locals.tableName) { %>
-        <form action="/insertDB" method="post" enctype="multipart/form-data">
-            <input type="file" name="myFile" />
-            <input type="hidden" name="tableName" value="<%= tableName %>"/>
-            <button type="submit" class="btn btn-primary">Upload CSV to insert</button>
-        </form>
-        <% } %>
-        <br />
-
-        <% if (locals.tableName) { %>
-        <form action="/updateDB" method="post" enctype="multipart/form-data">
-            <input type="file" name="myFile" />
-            <input type="hidden" name="tableName" value="<%= tableName %>"/>
-            <button type="submit" class="btn btn-primary">Upload CSV to update</button>
-        </form>
-        <% } %>
-        <br />
-
-        <% if (locals.tableName) { %>
-        <form action="/deleteDB" method="post" enctype="multipart/form-data">
-            <input type="file" name="myFile" />
-            <input type="hidden" name="tableName" value="<%= tableName %>"/>
-            <button type="submit" class="btn btn-primary">Upload CSV to delete</button>
-        </form>
-        <% } %>
-        <br />
-
-        <% if (locals.dataColumns) { %>
-        <form action="/getCSV" method="post">
-            <input type="hidden" name="tableName" value="<%= tableName %>"/>
-
-            <!-- Hidden inputs for each row in dataColumns -->
-            <% for (let i = 0; i < dataColumns.length; i++) { %>
-            <% let row = dataColumns[i]; %>
-            <% Object.values(row).forEach(value => { %>
-                <input type="hidden" name="dataColumns[<%= i %>][]" value="<%= value %>"/>
-            <% }); %>
-            <% } %>
-
-            <button type="submit" class="btn btn-primary">Download CSV</button>
-        </form>
-        <% } %>
     </div>
-  
   </div>
   <!-- footer  -->
   <footer class="py-3 my-4 crimson-text-regular">
