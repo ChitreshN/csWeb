@@ -113,24 +113,6 @@
     <% } %>
     <br />
 
-    <% if (locals.dataColumns) { %>
-    <form action="/getCSV" method="post">
-        <input type="hidden" name="tableName" value="<%= tableName %>"/>
-
-        <!-- Hidden inputs for each row in dataColumns -->
-        <% for (let i = 0; i < dataColumns.length ; i++) { %>
-        <% if (i != 1) { %>
-        <% let row = dataColumns[i]; %>
-        <% Object.values(row).forEach(value => { %>
-        <input type="hidden" name="dataColumns[<%= i %>][]" value="<%= value %>"/>
-        <% }); %>
-        <% } %>
-        <% } %>
-
-        <button type="submit" class="btn btn-primary">Download CSV</button>
-    </form>
-    <br />
-    <% } %>
       <form action="/displayTable" method="post">
         <div class="table-container">
         <table class="table checkBoxes">
@@ -244,30 +226,107 @@
   <% } %>
 </div>
 
+<br />
+<% if (locals.dataColumns) { %>
+<form id="csvForm">
+    <input type="hidden" name="tableName" value="<%= tableName %>"/>
+
+    <% for (let i = 0; i < heading.length ; i++) { %>
+    <input type="hidden" name="heading[<%= i %>]" value="<%= heading[i] %>"/>
+    <% } %>
+    <!-- Hidden inputs for each row in dataColumns -->
+    <% for (let i = 0; i < dataColumns.length ; i++) { %>
+    <% let row = dataColumns[i]; %>
+    <% Object.values(row).forEach(value => { %>
+    <input type="hidden" name="dataColumns[<%= i %>][]" value="<%= value %>"/>
+    <% }); %>
+    <% } %>
+
+    <button type="button" class="btn btn-primary" onclick="downloadCSV()">Download CSV</button>
+</form>
+<% } %>
 <script>
-  document.querySelectorAll('.filter-select').forEach(select => {
-    select.addEventListener('change', function() {
-      const filters = {};
-      document.querySelectorAll('.filter-select').forEach(select => {
-        const column = select.dataset.column;
-        const value = select.value.toLowerCase();
-        if (value) {
-          filters[column] = value;
-        }
-      });
-      
-      document.querySelectorAll('.data-row').forEach(row => {
-        let display = true;
-        Object.keys(filters).forEach(column => {
-          const cell = row.children[column];
-          const cellValue = cell.textContent.toLowerCase();
-          if (cellValue !== filters[column]) {
-            display = false;
-          }
-        });
-        row.style.display = display ? '' : 'none';
-      });
+function downloadCSV() {
+    const tableName = document.querySelector('input[name="tableName"]').value;
+    const heading = [];
+    const dataColumns = [];
+
+    // Extract heading
+    document.querySelectorAll('input[name^="heading["]').forEach(input => {
+        heading.push(input.value);
     });
+
+    // Extract dataColumns
+    document.querySelectorAll('input[name^="dataColumns["]').forEach(input => {
+        const index = input.name.match(/\[(\d+)\]/)[1];
+        if (!dataColumns[index]) dataColumns[index] = [];
+        dataColumns[index].push(input.value);
+    });
+
+    // Convert data to CSV format
+    let csvContent = heading.join('\t') + '\n';
+    dataColumns.forEach(row => {
+        csvContent += row.join('\t') + '\n';
+    });
+
+    // Create a Blob and trigger the download
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${tableName}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+</script>
+<script>
+    document.querySelectorAll('.filter-select').forEach(select => {
+        select.addEventListener('change', function() {
+            const filters = {};
+            document.querySelectorAll('.filter-select').forEach(select => {
+                const column = select.dataset.column;
+                const value = select.value.toLowerCase();
+                if (value) {
+                    filters[column] = value;
+                }
+            });
+
+            document.querySelectorAll('.data-row').forEach(row => {
+                let display = true;
+                Object.keys(filters).forEach(column => {
+                    const cell = row.children[column];
+                    const cellValue = cell.textContent.toLowerCase();
+                    if (cellValue !== filters[column]) {
+                        display = false;
+                    }
+                });
+                row.style.display = display ? '' : 'none';
+            });
+        });
+    });
+  document.getElementById('downloadForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Clear previous hidden inputs
+      const filteredDataInputs = document.getElementById('filteredDataInputs');
+      filteredDataInputs.innerHTML = '';
+
+      // Collect filtered data
+      document.querySelectorAll('.data-row').forEach((row, rowIndex) => {
+          if (row.style.display !== 'none') {
+              Array.from(row.children).forEach((cell, cellIndex) => {
+                  const input = document.createElement('input');
+                  input.type = 'hidden';
+                  input.name = `dataColumns[${rowIndex}][${cellIndex}]`;
+                  input.value = cell.textContent;
+                  filteredDataInputs.appendChild(input);
+              });
+          }
+      });
+
+      // Submit the form
+      this.submit();
   });
 </script>
 <!-- footer  -->
