@@ -37,8 +37,7 @@ const uploadDir = 'uploads';
 if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir);
 }
-
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({ limit: '1000mb', extended: true }));
 app.use(express.static("public"));
 
 app.get("/",async(req,res)=>{
@@ -108,25 +107,20 @@ app.post("/displayTable",async(req,res)=>{
         return res.send("No entries for selected table")
     }
     const heading=Object.keys(result.rows[0]);
-    res.render("index.ejs",{dataColumns:result.rows,tableName:tableName,heading:heading,tables:result1.rows,columnNamesArray:columnNamesArray,dataColumnNames:dataColumnNames});
+    res.render("index.ejs",{heading:heading,dataColumns:result.rows,tableName:tableName,heading:heading,tables:result1.rows,columnNamesArray:columnNamesArray,dataColumnNames:dataColumnNames});
 });
 
 app.post("/getCSV", async(req,res)=> {
     const tableName = req.body.tableName
     const dataColumns = req.body.dataColumns
+    const heading = req.body.heading
     if (!tableName){
         res.send("Select table before downloading csv")
         return
     }
-    const cols = await db.query(" SELECT * FROM information_schema.columns WHERE table_name = $1;",[tableName]);
     
-    var dataColumnNames=[];
-    for(var i=0;i<cols.rows.length;i++)
-    {
-        dataColumnNames.push(cols.rows[i].column_name);
-    }
+    const csv = arrayToCSV(heading,dataColumns)
     
-    const csv = arrayToCSV(dataColumnNames,dataColumns)
     const fileName = `${tableName}.csv`
 
     await pr.writeFile(fileName, csv)
