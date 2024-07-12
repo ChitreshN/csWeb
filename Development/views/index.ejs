@@ -263,9 +263,22 @@ function downloadCSV() {
         dataColumns[index].push(input.value);
     });
 
-    // Convert data to CSV format
+    // Extract selected filter values
+    const filters = [];
+    document.querySelectorAll('.filter-select').forEach(select => {
+        filters.push(select.value);
+    });
+
+    // Filter dataColumns based on the selected filters
+    const filteredDataColumns = dataColumns.filter(row => {
+        return filters.every((filter, index) => {
+            return filter === "" || row[index] === filter;
+        });
+    });
+
+    // Convert filtered data to CSV format
     let csvContent = heading.join('\t') + '\n';
-    dataColumns.forEach(row => {
+    filteredDataColumns.forEach(row => {
         csvContent += row.join('\t') + '\n';
     });
 
