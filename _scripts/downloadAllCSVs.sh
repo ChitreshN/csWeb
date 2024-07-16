@@ -1,4 +1,5 @@
 python3 _scripts/download_from_drive.py "adjfaculty" "adjfaculty"
+python3 _scripts/download_from_drive.py "allfaculty" "allfaculty"
 python3 _scripts/download_from_drive.py "announce" "announce"
 python3 _scripts/download_from_drive.py "awards" "awards"
 python3 _scripts/download_from_drive.py "btech" "btech"
