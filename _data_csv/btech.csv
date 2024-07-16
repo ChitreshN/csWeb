@@ -1,10 +1,8 @@
-INTEGER	INTEGER	TEXT	TEXT
 year	rollno	faEmail	name
 2020	112001001	Deepak Rajendraprasad	KARAVADI SUCHITH
 2020	112001002	Deepak Rajendraprasad	AARYUMAN SAWAI
 2020	112001003	Deepak Rajendraprasad	ADITYA RAJ
 2020	112001004	Deepak Rajendraprasad	AGHNASH RANJITH
-2020	112001005	Deepak Rajendraprasad	ALUGONDA SATHVIK
 2020	112001006	Deepak Rajendraprasad	ARADHYA BIJALWAN
 2020	112001007	Deepak Rajendraprasad	ARAVIND S
 2020	112001008	Deepak Rajendraprasad	ARUN SANKAR
@@ -162,8 +160,8 @@ year	rollno	faEmail	name
 2022	112201038	Vivek Chaturvedi	SHREYAS VADTHYA
 2022	112201041	Vivek Chaturvedi	Aman Rahaman Biswas
 2022	112201042	Piyush P Kurur	Anup Kumar
-2022	112201043	Vivek Chaturvedi	Anusha
-2022	112201044	Albert Sunny	Kallepally
+2022	112201043	Vivek Chaturvedi	Dadam Anusha
+2022	112201044	Albert Sunny	Kallepally Sai Kiran
 2022	112201045	Albert Sunny	Lakavath Ramcharan
 2022	112201046	Piyush P Kurur	Mohammed Yasin
 2022	112201047	Vivek Chaturvedi	Nikhil S Thomas

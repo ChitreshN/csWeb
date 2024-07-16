@@ -1,4 +1,3 @@
-TEXT	TEXT	DATE	LIST(TEXT)	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT	INTEGER	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT	TEXT
 Code	Title	Last Modified	Core	CoreMSOCD	CoreMCAM	CoreUG	Credits	Category	Proposingfaculty	Proposingfaculty2	Proposingfaculty3	Curriculum	Senate approved on	Show	Prerequisites	Status	Prerevision code	Dual code	Revision info	Faculty
 CS5019	Advanced Computer Architecture	2022/05/15	[msocd]	Yes	No	No	3-0-0-3	PMT	Sandeep Chandran	Vivek Chaturvedi		2020	11	TRUE	A basic course on Computer Organization/Architecture	new			This course will replace another course offered under the same name by the CSE Department (CS4505: Advanced Computer Architecture). The original course will be discontinued going forward. The syllabus of this course is tailored to suit graduate students.               	
 CS5119	Advanced Computer Architecture Lab		[msocd]	Yes	No	No	0-0-3-2	PML	Sandeep Chandran	Vivek Chaturvedi		2020	18	TRUE						

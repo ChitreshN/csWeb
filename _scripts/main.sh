@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # download csv
-#./_scripts/downloadAllCSVs.sh
+./_scripts/downloadAllCSVs.sh
 
 # refresh db
 
