@@ -1,0 +1,1 @@
+Insert into "staff"("name", "office", "designation", "details", "email") values ('Megha S Mathew', 'Room no. 014, Ahalia Campus', 'Junior Assistant Adhoc', 'Queries related to CS department affairs are to be sent to office_cs@iitpkd.ac.in and they will be handled by Ms. Megha.', 'office_cs');

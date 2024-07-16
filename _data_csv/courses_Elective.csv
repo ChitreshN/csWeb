@@ -1,0 +1,41 @@
+Code	Title	Last Modified	Credits	Category	Proposingfaculty	Proposingfaculty2	Senate approved on	Prerequisites	Status	Revision info	Remarks
+CS5002	Functional Programming		3-0-0-3	ERC	Piyush P Kurur		5		New		
+CS5003	Parameterized Algorithms		3-0-0-3	PME	Krithika Ramaswamy		6	A first course in the design and analysis of algorithms	New		
+CS5004	Approximation Algorithms		3-0-0-3	PME	Jasine Babu		6	A first course in the design and analysis of algorithms	New		
+CS5005	Parallel Programming		3-0-0-3	PME	Sandeep Chandran		6	Data Structures, Analysis & Design of Algorithms, Computer Organizations	New		
+CS5006	Probabilistic Machine Learning		3-0-0-3	PME	Mrinal Das		6	Probability, Data Structures & Algorithms	Old	This course is a revised version of Theory and Practice of Data Science course offered in the last semester. The course is now 5 thousand level.This can be used to address the comment in the senate to have an introductory course for PhD students. This can also be used for MTech program.	
+CS5008	Reinforcement Learning		3-0-0-3	ERC	Chandra Sekhar Lakshminarayanan		7	Probability, Linear Algebra, Data Structures & Algorithms	New		
+CS5012	AI for Cyber Security		3-0-0-3	PME	Vivek Chaturvedi		11	Familiarity with Probability, Machine Learning	New		
+CS5509	Embedded Systems Design		1-0-3-3	ERC	Vivek Chaturvedi		8				
+CS5510	Compiler Optimizations and Program Analysis		3-0-0-3	ERC	Unnikrishnan Cheramangalath		8	Compiler Design	New		
+CS5511	Probability Models		3-0-0-3	ERC	Mrinal Das		8	Familiarity with Basic Probability	New		
+CS5613	Cryptography		3-0-0-3	PME	Satyajit Das		9	NIL	New		
+CS5614	Game Theory and Mechanism Design		3-0-0-3	PME	Albert Sunny		11	Basic Knowledge of Calculus& Probability	New		
+CS5615	Coding Theory		3-0-0-3	PME	Jasine Babu		11	Linear Algebra	New		
+CS5616	Computational Complexity		3-0-0-3	PME	Jasine Babu		11	Basic understanding of Algoritms	New		
+CS5617	Software Engineering		1-0-3-3	PME	Jasine Babu	Sandeep Chandran	12	A basic course on Programming	New	This will be an elective that subsumes two core courses CS4400 (Software Engineering Lab) that was PMT and PML respectively in the 2015 batch B.Tech curriculum. These two courses are discontinued from the core in later curriculum.	
+CS5618	Real Time Systems		3-0-0-3	PME	Unnikrishnan Cheramangalath		14	Basic knowlwdge of Programming & Data Structures	New		
+CS5619	Synthesis of Digital Systems		3-0-0-3	PME	Sandeep Chandran		14	Basic Data Structures, VHDL/Verilog	New		
+CS5625	Software Product Management		3-0-0-3	GCE	Haragopal Mangipudi		18	NIL	New		
+CS5626	PreSilicon Design Verification using Formal Property Verification		3-0-0-3	PME	Sandeep Chandran	M Achutha Kirankumar V	18	Computer Architecture	New		
+CS5820	Probability and Computing		3-0-0-3	PME	Jasine Babu	Krithika Ramaswamy	14	NIL	revised	Replacement of a 4 credit course with the same title and course code	
+CS6001	Topics in Graph Theory		3-0-0-3	RESEARCH	Jasine Babu	Deepak Rajendraprasad	3	NIL	NEW		
+CS6002	Combinatorial Optimization		3-0-0-3	PME	Jasine Babu	Krithika Ramaswamy	11	Basic knowledge of Linear Algebra & Algorithms	NEW		
+CS6003	Probabilistic Method		3-0-0-3	PME	Jasine Babu	Krithika Ramaswamy	11	Basic knowledge of Discrete Mathematics and Probability	NEW		
+CS6004	Logic		3-0-0-3	PME	Piyush P Kurur		11		NEW		
+CS6005	Instructional Design and Technologies		3-0-0-3	Directed Reading & Research	Sandeep Chandran		11		NEW		
+DS3010	Machine Learning		3-0-3-5	PME	Sahely Bhadra		20	Intrtoduction to Optimization Probability and Statistics	NEW	Same as CS5512	
+DS3040	Deep Learning		3-0-3-5	PME	Mrinal Das		20	Introduction to Optimization Machine Learning	NEW	Same as CS5007	
+DS5602	Computer Vision		3-1-0-4	PME	Satyajit Das		16	Basics of Machine Learning, Deep Learning	New	Same as CS5602	
+DS5603	Information Retrieval		3-0-0-3	PME	Koninika Pal	Mrinal Das	16	Probability and Statistics, Programming	New		
+DS5604	Responsible Artificial Intelligence		3-0-0-3	ERC	Sahely Bhadra		15		New		
+CS5633	Model Checking		3-0-2-4	PME	Jasine Babu		21		New		
+CS6601	Advanced Computational Complexity		3-0-0-3	PME	Krishnamoorthy Dinesh		21	CS5616 Computational Complexity as a prerequisite	New		
+CS5627	Proofs Programs and Types		3-0-0-3	PME	Piyush P Kurur		21		New		
+CS5628	Runtime Verification		3-0-0-3	PME	Sandeep Chandran		21		New		
+CS5634	Computational Algebra and Number Theory		3-0-0-3	PME	Piyush P Kurur		22		New		
+CS5638	Quantum Computing		3-0-0-3	PME	Srimanta Bhattacharya	Krishnamoorthy Dinesh	24		New		
+CS4502	Convex Optimization		3-0-0-3	PME	Sahely Bhadra		3		old		
+CS4507	Theory and Practise of Data Science			PME					old		
+CS4602	Convex Optimization			PME					old		
+CS5639	Topics in Networks		1-0-3-3	PME	Anish Hirwe		25	Computer Networks	New		
