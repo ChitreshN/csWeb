@@ -28,7 +28,6 @@ data = []
 with open(csv_file_name, 'r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='\t')
 
-    types = next(csv_reader)
     fields = next(csv_reader)
 
     for row in csv_reader:
@@ -48,7 +47,6 @@ email_dict = {}
 
 with open('_data_csv/allfaculty.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='\t')
-    types = next(csv_reader)
     fields = next(csv_reader)
     new_reader = csv.DictReader(csv_file,
                                 delimiter='\t',
